@@ -226,21 +226,8 @@
         "cultural_suggest": "Vành đai rừng Nam Valley (bao gồm cả di tích lịch sử sông Qijiawan)."
     },
     "peach": {
-      "title": "Thông báo giá bán năm 2018 đào",
-      "juicy_peach": "Đào ngọt",
-      "name": "Tên",
-      "class": "Lớp",
-      "spec": "Thông số",
-      "price": "Giá bán",
-      "small": "nhỏ ",
-      "big": "to ",
-      "large": "lớn ",
-      "box": "hộp ",
-      "bulk": "số lượng lớn ",
-      "weight": "600g ",
-      "size": "g /mỗi một ",
-      "over": "g hoặc hơn/mỗi một ",
-      "under": "g hoặc ít hơn/mỗi một "
+        "slogan":"2018 đào được liệt kê",
+        "contain": "Đó là mùa thu hoạch đào. Dưới sự canh tác của môi trường tự nhiên, cho phép bạn mua yên tâm, ăn an tâm. Trang trại mời bạn chia sẻ những điều tuyệt vời nhất của thế giới và tận hưởng khung cảnh tuyệt đẹp của Wuling."   
     },
     "agricultural":{
       "products":"Sản phẩm",

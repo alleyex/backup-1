@@ -1,0 +1,16 @@
+div{
+    width: calc(100% -10px);
+    height:390px;
+    display: block;
+    position: relative;  
+  }
+  
+  mat-radio-group {
+    bottom: 2%;
+    left: calc(50% - 25px);
+    position: absolute;
+    z-index: 100;    
+  }
+  
+
+  

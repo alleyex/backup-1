@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from "@angular/common"; 
+import { NgModule } from '@angular/core'; 
 
 import { WeatherStationComponent } from './weather-station/weather-station.component';
 import { WeatherBureauService } from './weather-bureau.service';
+import { SharedModule } from '../shared/shared.module';
 
  
 
@@ -11,7 +11,7 @@ import { WeatherBureauService } from './weather-bureau.service';
         WeatherStationComponent
     ],
     imports:[
-        CommonModule
+       SharedModule
     ],
     exports: [
         WeatherStationComponent

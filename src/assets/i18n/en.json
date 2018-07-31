@@ -19,10 +19,10 @@
     "transportation": "Transportation",
     "restaurant": "Restaurant",
     "ecotourism": "Ecotourism",
-    "coffee_bar":"Forest coffee bar",
-    "meeting_room":"Meeting room",
-    "tour_guide":"Tour guide",
-    "salmon":"Taiwan salmon"
+    "coffee_bar": "Forest coffee bar",
+    "meeting_room": "Meeting room",
+    "tour_guide": "Tour guide",
+    "salmon": "Taiwan salmon"
   },
   "translation": {
     "select_language": "select language",
@@ -115,12 +115,11 @@
     "rule_10": "The camping area forest coffee bar offers breakfast, drinks, sandwiches, quiche, chicken noodles and more.",
     "rule_11": "The camp management center is open from 7:00 to 21:30.",
     "rule_12": "Non-camping area residents cook in the camping area for every 6 people to charge the cooking venue fee of NT$ 200, 12 people NT$ 400 and so on.",
-    "rule_13": "When passengers enter the camping area, they must report to the management center and request a uniform invoice as proof of using the camping area.",  
+    "rule_13": "When passengers enter the camping area, they must report to the management center and request a uniform invoice as proof of using the camping area.",
     "rule_15": "All areas of the camping area have lighting at night.",
     "rule_16": "Hot water supply time: Public baths in areas A1, D, E: 24hr hot water (daily), with hair dryer. Public toilets on both sides of the management center: The boiler is supplied with hot water from 17:00 to 22:00 (only available on holidays), and there is only one 24hr hot water (the last one for men and women) with a hair dryer.",
     "rule_17": "There is a public outlet and a refrigerator in front of the management center for visitors.",
     "rule_18": "All reservations in the camping area, including camps and wooden houses, if the remittance procedure is not completed on the day, the camping area reserves the right to delete."
-
   },
   "tea_saloon": {
     "name": "Wuling Farm Tea Saloon",
@@ -227,30 +226,16 @@
     "cultural_suggest": "The South Valley Forest Belt (including Qijiawan River historical site)."
   },
   "peach": {
-    "title": "The 2018 years peach sales price announcement",
-    "juicy_peach": "Juicy peach",
-    "name": "Name",
-    "class": "Class",
-    "spec": "Spec",
-    "price": "Price",
-    "small": "small ",
-    "big": "big ",
-    "large": "large ",
-    "box": "/box ",
-    "bulk": "bulk ",
-    "weight": "600g ",
-    "size": "g /per one ",
-    "over": "g or more/per one ",
-    "under": "g or less/per one "
+    "slogan": "2018 peaches listed",
+    "contain": "It is the season of peach harvesting. Under the cultivation of the natural environment, let you buy the rest assured, eat peace of mind. The farm invites you to share the best of the world and enjoy the beautiful scenery of Wuling."
   },
-  "agricultural":{
-    "products":"Wuling Products",
-    "wuling_tea":"Wuling Tea",
-    "tea_introduction":"As national co-exist in ecological protected areas of Shei-Pa National Park, Wuling Farm should take precedence over public lands within the set, so the Wuling Farm also subject to the Wildlife Protection Act and the National Parks Act, the Republic has been gradually transformed into organic agricultural production since 2003. Pesticide residue testing the value of tea over the years are far below national tolerance, 100 annual tea and tea Fresh Tea Leaves dry pesticide residues test results and achieved a 'not detected' level, that by dividing the unique flavor of black tea Wuling long known, but it is both 'safety health' of the rare mountain tea.",
-    "fruit":"Peaches, pears and apples",
-    "fruit_introduction":"We have high mountain temperate area fruit, ripened during the summer / autumn months (July to October is the fruit season). Peaches and apples are a top gift for national guests, which have been shipped out as national treasures for celebrities of foreign governments. With organic farming, the fruits are free from pesticide and are 100% examined by the Agricultural Produce Safety Commission of Taichung City Government and is granted to bear its logo as well as safe for buying and consuming.",
-    "souvenirs":"Souvenirs",
-    "souvenirs_introduction":"Caps, clothes, decorations, picture frames, fruit bowls, canes, umbrellas and lighters are all for sale. All of them bear the Wuling mark and are useful and have a high memorial value. The high mountain pine seed, is also available for those who are looking for a different kind of treasure."    
+  "agricultural": {
+    "products": "Wuling Products",
+    "wuling_tea": "Wuling Tea",
+    "tea_introduction": "As national co-exist in ecological protected areas of Shei-Pa National Park, Wuling Farm should take precedence over public lands within the set, so the Wuling Farm also subject to the Wildlife Protection Act and the National Parks Act, the Republic has been gradually transformed into organic agricultural production since 2003. Pesticide residue testing the value of tea over the years are far below national tolerance, 100 annual tea and tea Fresh Tea Leaves dry pesticide residues test results and achieved a 'not detected' level, that by dividing the unique flavor of black tea Wuling long known, but it is both 'safety health' of the rare mountain tea.",
+    "fruit": "Peaches, pears and apples",
+    "fruit_introduction": "We have high mountain temperate area fruit, ripened during the summer / autumn months (July to October is the fruit season). Peaches and apples are a top gift for national guests, which have been shipped out as national treasures for celebrities of foreign governments. With organic farming, the fruits are free from pesticide and are 100% examined by the Agricultural Produce Safety Commission of Taichung City Government and is granted to bear its logo as well as safe for buying and consuming.",
+    "souvenirs": "Souvenirs",
+    "souvenirs_introduction": "Caps, clothes, decorations, picture frames, fruit bowls, canes, umbrellas and lighters are all for sale. All of them bear the Wuling mark and are useful and have a high memorial value. The high mountain pine seed, is also available for those who are looking for a different kind of treasure."
   }
-
 }

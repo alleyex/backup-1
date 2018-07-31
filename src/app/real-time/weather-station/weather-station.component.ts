@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs';
 @Component({
     selector: 'app-weather-station',
     templateUrl: './weather-station.component.html',
-    styleUrls: ['./weather-station.component.css']
+    styleUrls: ['./weather-station.component.scss']
 })
 export class WeatherStationComponent implements OnInit,OnDestroy{
     newly: WeatherStation = {

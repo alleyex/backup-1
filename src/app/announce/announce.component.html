@@ -1,0 +1,7 @@
+<div>
+    <app-kanban [kanbans]="kanbans" (changed)="kanbanChanged($event)"></app-kanban>
+    <mat-radio-group >
+      <mat-radio-button *ngFor="let kanban of kanbans; let i = index" [value]="i" (click)="kanbanSelected(i)" [checked]="i == index"></mat-radio-button>
+    </mat-radio-group>
+  </div >
+  

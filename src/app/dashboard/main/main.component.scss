@@ -1,0 +1,65 @@
+.content {
+    max-width: 1200px;
+    margin: auto;     
+    text-align: center;
+    width: auto;
+    // background-color: darkorange;
+  }
+   
+  .banner {   
+    margin: 8px 4px ;    
+    min-height: 400px;
+    // background-color: rosybrown;
+  }
+  .box {   
+    margin: 8px 4px ;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+  }
+
+  .status {
+    width: calc((100% /2) - 8px);
+    min-height: 75px; 
+  }
+
+  .weather, .traffic {
+    background-image: linear-gradient( to bottom right, #D3D3D3 0%, #DCDCDC 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+   
+  
+@media only screen and (max-width:1200px) {
+
+}
+  
+  @media screen and (max-width:1023px) {
+    
+  }
+  
+   
+  
+  @media only screen and (max-width:768px) {
+
+  } 
+   
+  
+  @media only screen and (max-width:480px) {
+    .content {
+      width: 100%;
+      text-align: center;  
+    }
+    .banner {
+      width: auto;       
+    }  
+
+    .status {
+      width: calc(100% - 8px);
+    }
+    
+  }
+  

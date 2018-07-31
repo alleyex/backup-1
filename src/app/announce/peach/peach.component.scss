@@ -1,0 +1,85 @@
+.container {  
+    min-height: 400px;
+    background-image: linear-gradient( to bottom right, #D3D3D3 30%, #DCDCDC 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+  .content {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 8px);
+    height: 390px;
+    margin: 4px 4px 4px 4px;
+    background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.9) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fpeach.jpg?alt=media&token=ac3272f5-a5e0-41c4-b8c4-58a3c5970942);    
+    background-size: cover;
+  }
+  
+  .slogan {
+    max-width: 460px;
+    bottom: 40px;
+    right: 60px;
+    position: absolute;
+    z-index: 40;
+  }
+  
+  .article {
+    text-align: left;
+  }
+  
+  .contain {
+    text-align: left;
+    margin: 8px;
+  }
+  
+  @media only screen and (max-width:1200px) {
+   
+  }
+  
+  /* Small tablet to big tablet: 768px to 1023  */
+  
+  @media screen and (max-width:1023px) {}
+  
+  /* Small phones to small tablets: from 0 to 480px */
+  
+  @media only screen and (max-width:768px) {
+    .article {    
+      margin: 20px;
+    }
+    
+    .contain {   
+      margin: 20px;
+    }
+  }
+  
+  /* Small phone: from 0 to 480px */
+  
+  @media only screen and (max-width:480px) {
+    .slogan {
+      width:calc(100%-20px);
+      bottom: 40px;
+      right: 4px;
+      left: 4px;
+      
+    }
+    h1{
+      font-size: 20px;
+    }
+    .article {         
+      margin: 8px;
+    }  
+    .contain {   
+      font-size: 16px;
+      margin: 8px;
+       
+    }
+  }
+  
+  @media only screen and (max-width:280px) {
+    h1{
+      font-size: 18px;
+    }
+    .contain {   
+      font-size: 14px;
+    }
+  }

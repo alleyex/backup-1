@@ -7,6 +7,8 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 import { AppComponent } from './app.component';
 import { RealTimeModule } from './real-time/real-time.module';
+import { DashboardModule } from './dashboard/dashboard.module'; 
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { RealTimeModule } from './real-time/real-time.module';
   imports: [
     BrowserModule,
     HttpClientModule,
-    RealTimeModule,
+    RealTimeModule,    
+    DashboardModule,    
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
