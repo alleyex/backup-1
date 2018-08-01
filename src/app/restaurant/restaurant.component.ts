@@ -1,28 +1,13 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Gallery, GalleryItem, ImageItem } from '@ngx-gallery/core';
+import { ExpandModel } from '../dashboard/main/main.model';
 
 
 @Component({
     selector: 'app-restaurant',
     templateUrl: './restaurant.component.html',
     styleUrls: ['./restaurant.component.scss'],
-    animations: [
-        trigger('place', [
-            state('false', style({
-                overflow: 'hidden',
-                height: '0px',
-                transform: 'scale(0)'
-            })),
-            state('true', style({
-                overflow: 'hidden',
-                height: '*',
-                transform: 'scale(1)'
-            })),
-            transition('false =>true', animate('480ms 200ms ease-in')),
-            transition('true =>false', animate('450ms  ease-in'))
-        ])
-    ]
+    animations: [ExpandModel]
 })
 export class RestaurantComponent implements OnInit, OnChanges {
     constructor(private gallery: Gallery) { }

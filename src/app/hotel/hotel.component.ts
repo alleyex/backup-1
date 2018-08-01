@@ -1,36 +1,40 @@
 import { Component, OnChanges, Input } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { ExpandModel } from '../dashboard/main/main.model';
 
 @Component({
     selector: 'app-hotel',
     templateUrl: './hotel.component.html',
     styleUrls: ['./hotel.component.scss'],
-    animations: [
-        trigger('place', [
-            state('false', style({
-                overflow: 'hidden',
-                height: '0px',
-                transform: 'scale(0)'
-            })),
-            state('true', style({
-                overflow: 'hidden',
-                height: '*',
-                transform: 'scale(1)'
-            })),
-            transition('false =>true', animate('480ms 200ms ease-in')),
-            transition('true =>false', animate('450ms  ease-out'))
-        ])
-    ]
+    animations: [ExpandModel]
 })
 export class HotelComponent implements OnChanges {
     isDivVisible = false;
     @Input() place: string;
 
     ngOnChanges() {
-        if (this.place == 'hotel') {
-            this.isDivVisible = true;
-        } else {
-            this.isDivVisible = false;
-        }
+        // let cellphone = window.innerWidth <= 480;
+
+        // console.log('---------------------------');
+        // console.log('this.place = ' + this.place);
+        // console.log('this.isDivVisible = ' + this.isDivVisible);
+
+        // if (cellphone) {
+        //     if (this.place == 'hotel') {
+        //         if (this.isDivVisible) {
+        //             this.isDivVisible = false;
+        //         } else {
+        //             this.isDivVisible = true;
+        //         }
+        //     } else if (this.place == 'hotel-close') {
+        //         this.isDivVisible = false;
+        //     }
+        // }
+        // else {
+            if (this.place == 'hotel') {
+                this.isDivVisible = true;
+            } else {
+                this.isDivVisible = false;
+            }
+        // }
     }
 }

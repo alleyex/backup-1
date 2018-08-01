@@ -1,0 +1,71 @@
+div.content {
+    text-align: left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #4A4A4A;   
+  }
+
+ul.explain{
+	display: block;
+	margin: 0px;
+	padding: 0px;	
+	max-width: 800px;
+	list-style-position: inside;
+	list-style-image: none;
+	list-style-type: none;
+    position: relative;
+    padding: 20px 35px 15px 35px;
+}
+ ul.explain li{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	display: block;
+	margin: 0px;
+    max-width: 800px;
+	list-style-position: inside;
+	list-style-image: none;
+	list-style-type: none;
+
+}
+ ul.explain li h1{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 25px;
+	font-weight: normal;
+	color: #603A0A;
+	background-color: #D5D5D5;
+	display:inline-block; 
+}
+ ul.explain li h2{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 25px;
+	font-weight: normal;
+	color: #010101;
+	display: block;
+	margin: 0px;	 
+	max-width: 800px;
+}
+ ul.explain li h2 strong{
+	font-size: 11pt;
+	font-weight: normal;
+	color: #50940D;
+}
+
+ul.explain li ul{
+	list-style-type:decimal;
+	 
+}
+
+@media only screen and (max-width:480px) {  
+	ul.explain{		 
+		padding: 20px  5px 15px  5px;
+	} 
+	ul.explain li h2{		
+		padding: 25px 5px 25px 5px;	
+	}
+	ul.explain li{
+		padding: 25px 5px 25px 5px;
+	}
+  }

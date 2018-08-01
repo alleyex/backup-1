@@ -11,11 +11,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component'; 
 import { AnnounceModule } from '../announce/announce.mudule';
 import { HotelComponent } from '../hotel/hotel.component';
-import { CampsiteComponent } from '../campsite/campside.component';  
+import { CampsiteComponent } from '../campsite/campsite.component';  
 import { RestaurantComponent } from '../restaurant/restaurant.component';
 import { AppRoutingModule } from '../app-routing.module';
-import { ScrollToModule } from '../../../node_modules/@nicky-lenaers/ngx-scroll-to';
-import { GalleryModule } from '../../../node_modules/@ngx-gallery/core';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { GalleryModule } from '@ngx-gallery/core';
+import { MainService } from './main/main.service';
+import { TollboothComponent } from '../tollbooth/tollbooth.component';
+import { DepartureComponent } from '../departure/departure.component';
 
 @NgModule({
     declarations: [
@@ -27,7 +30,9 @@ import { GalleryModule } from '../../../node_modules/@ngx-gallery/core';
         FooterComponent,
         HotelComponent,
         CampsiteComponent,
-        RestaurantComponent
+        RestaurantComponent,
+        TollboothComponent,
+        DepartureComponent
     ],
     imports: [ 
         SharedModule,
@@ -37,11 +42,10 @@ import { GalleryModule } from '../../../node_modules/@ngx-gallery/core';
         AppRoutingModule,
         ScrollToModule.forRoot(),
         GalleryModule.forRoot()
-
     ],
     exports: [
         DashboardComponent
     ],
-    providers: [],
+    providers: [MainService],
 })
 export class DashboardModule {}

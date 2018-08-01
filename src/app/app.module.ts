@@ -7,11 +7,6 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 import { AppComponent } from './app.component';
 import { DashboardModule } from './dashboard/dashboard.module';
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-
-
- 
- 
 
 @NgModule({
   declarations: [

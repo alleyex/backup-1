@@ -88,8 +88,8 @@
         </div>
     </div>
     <!-- 交通 -->
-    <div id="traffic_guide" class="box offer" (click)="onClick('traffic_guide','traffic-contain')">
-        <div class="traffic_guide">
+    <div id="departure" class="box offer" (click)="onClick('departure','departure-contain')">
+        <div class="departure">
             <div class="title">{{'home.transportation'|translate}}</div>
             <div> </div>
             <div> </div>
@@ -115,12 +115,12 @@
 
     <div id="toll-contain" class="content ">
         <div class="show">
-            <!-- <app-tollbooth [place]="place"></app-tollbooth> -->
+            <app-tollbooth [place]="place"></app-tollbooth> 
         </div>
     </div>
-    <div id="traffic-contain" class="content ">
+    <div id="departure-contain" class="content ">
         <div class="show">
-            <!-- <app-traffic [place]="place"></app-traffic> -->
+            <app-departure [place]="place"></app-departure> 
         </div>
     </div>
     <div id="tour-contain" class="content">
@@ -133,8 +133,6 @@
             <!-- <app-visitor [place]="place"></app-visitor> -->
         </div>
     </div>
-
-
 
     <div id="tea" class="box offer" (click)="onClick('tea','tea-content')">
         <div class="tea">
