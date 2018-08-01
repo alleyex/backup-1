@@ -1,0 +1,103 @@
+<div class="content" [@place]="isDivVisible">
+    <div>
+        <h1>{{'restaurant.environment'|translate}}</h1>
+    </div>
+    <div class="introduction">
+        <div class="contain">
+            {{'restaurant.introduction'|translate}}
+        </div>
+    </div>
+    <gallery [items]="items" [loop]="true"></gallery>
+    <br/>
+    <div>
+        <h1>{{'restaurant.fare'|translate}}</h1>
+    </div>
+    <div>
+        <div class="picture">
+            <img class="meal" src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/restaurant%2Fmeal%2Fbreakfast.jpg?alt=media&token=bb7fc163-4933-4cc0-bf76-d90cd8f7ac83" alt="">
+        </div>
+        <div class="menu">
+            <div class="title">
+                {{'restaurant.breakfast'|translate}}
+            </div>
+            <div>
+                07:00~09:00
+            </div>
+            <ul>
+                <li>
+                    <div> {{'restaurant.breakfast_family'|translate}} </div>
+                    <div> {{'restaurant.location_Plum'|translate}} </div>
+                </li>
+                <li>
+                    <div>{{'restaurant.breakfast_buffet'|translate}} </div>
+                    <div>{{'restaurant.breakfast_item'|translate}} </div>
+                    <div>{{'restaurant.location_hotel'|translate}} </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="picture">
+            <img class="meal" src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/restaurant%2Fmeal%2Ffamily-style.jpg?alt=media&token=a62c5314-571d-4921-be62-1edf323feb98" alt="">
+        </div>
+        <div class="menu">
+            <div class="title">
+                {{'restaurant.family_style'|translate}}
+            </div>
+            <div>
+                11:30~14:00　 17:30~20:00
+            </div>
+            <ul>
+                <li>
+                    <div> {{'restaurant.family_seven'|translate}} </div>
+                </li>
+                <li>
+                    <div> {{'restaurant.family_eight'|translate}} </div>
+                </li>
+            </ul>
+            <div>
+                {{'restaurant.family_item'|translate}}
+            </div>
+            <div> {{'restaurant.location_Plum'|translate}} </div>
+
+        </div>
+    </div>
+    <div>
+        <div class="picture">
+            <img class="meal" src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/restaurant%2Fmeal%2Flunch.jpg?alt=media&token=479ed177-07bb-49ee-94a8-5364531447d8" alt="">
+        </div>
+        <div class="menu">
+            <div class="title">
+                {{'restaurant.lunch_set'|translate}}
+            </div>
+            <div>
+                11:30~14:00
+            </div>
+            <ul>
+                <li>
+                    <div> {{'restaurant.private_set'|translate}} </div>
+                    <div>{{'restaurant.location_hotel'|translate}} </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="picture">
+            <img class="meal" src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/restaurant%2Fmeal%2Fbuffet.jpg?alt=media&token=2d7c06c0-f342-4d3e-affa-51f328d07b29" alt="">
+        </div>
+        <div class="menu">
+            <div class="title">
+                {{'restaurant.dinner_buffet'|translate}}
+            </div>
+            <div>
+                17:30~20:00
+            </div>
+            <ul>
+                <li>
+                    <div> {{'restaurant.buffet_price'|translate}} </div>
+                    <div> {{'restaurant.location_hotel'|translate}} </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

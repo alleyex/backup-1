@@ -1,0 +1,158 @@
+div.content {
+    text-align: left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #4A4A4A;  
+    background-color: white;    
+}
+
+div.introduction{    
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/restaurant%2Fbackground.jpg?alt=media&token=73399ecd-5f47-40e0-81e0-c423b711fecc);
+    background-repeat: no-repeat;  
+    margin: 0px 35px 0px 35px; 
+    width: auto;
+	height: auto;
+	max-width: 100%;
+    max-height: 100%;
+    min-height: 200px; 
+}
+
+div.contain{
+    display:inline-block;
+    margin: 40px 0px 40px 200px;
+    width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%; 
+    max-width: 600px;   
+}
+
+div.title{
+    color:green;
+    font-size: 16px;
+    font-weight:bold;
+}   
+
+gallery{
+    background-image: linear-gradient( to bottom right, #D3D3D3 30%, #DCDCDC 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 35px 0px 35px;        
+    max-width: 800px;
+    min-height: 350px;    
+}
+
+div.picture{
+    display: inline-block;
+    width: calc((100% /2) - 40px);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/restaurant%2Fframe.jpg?alt=media&token=b30a9d39-2821-43bd-9927-9dc24e34de9c);
+    background-position: center;
+    background-repeat:no-repeat;   
+    margin: 20px 5px 0px 35px;
+    height: 205px;
+    max-width: 285px;  
+}
+
+img.meal{
+    margin: 8px 5px 5px  5px;
+}
+
+div.menu{
+    display: inline-block;
+    width: calc((100% /2) - 50px);    
+    max-width: 505px;     
+    margin: 20px 35px 0px 5px; 
+    vertical-align: top;   
+}
+
+ul{    
+    list-style-type:decimal; 
+    margin: 0px 0px 0px -20px;
+}
+
+div h1{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    line-height: 25px;
+    font-weight: normal;
+    color: #603A0A;
+    background-color: #D5D5D5;
+    display: block;
+    margin: 0px 0px 0px 35px;   
+    max-width: 800px;
+    min-width: 350px;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    position: relative;
+}
+
+@media only screen and (max-width:1200px) {}
+@media screen and (max-width:1023px) {}
+@media only screen and (max-width:768px) {
+  div.menu{   
+    width: calc(100% );       
+    margin: 20px 35px 0px 35px;    
+  }
+  div h1{     
+    margin: 0px 0px 0px 0px;      
+  }
+  div.picture{     
+    width: calc(100% );     
+    margin: 20px 35px 0px 35px; 
+  }
+  div.contain{    
+    margin: 40px 20px 20px 20px;       
+  }
+  div.introduction{    
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.9) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/restaurant%2Fbackground.jpg?alt=media&token=73399ecd-5f47-40e0-81e0-c423b711fecc);
+    background-repeat: no-repeat; 
+  }
+  gallery{    
+    margin: 0px 15px 0px 15px;        
+    max-width: 600px;
+    min-height: 300px;    
+  }
+}
+
+@media only screen and (max-width:480px) {
+  div.contain{    
+    margin: 0px 0px  0px  0px;      
+  }
+  div.introduction{      
+    margin: 0px 5px 0px 5px;   
+  }
+  gallery{        
+    height: 250px;   
+    margin: 0px 5px 0px 5px; 
+  }
+  div h1{     
+    margin: 0px 0px 0px 0px;      
+  }
+  div.menu{       
+    margin: 20px 5px 0px 5px;    
+  }
+  div.picture{  
+         
+    margin: 20px 5px 5px 5px; 
+  }
+  div.contain{    
+    margin: 20px 0px 0px 0px; 
+    line-height: 16px;      
+  }  
+}
+@media only screen and (max-width:319px) {
+  div.picture{             
+   background-image: none;
+}
+  img.meal{
+    margin: 5px 5px 5px  5px; 
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+}

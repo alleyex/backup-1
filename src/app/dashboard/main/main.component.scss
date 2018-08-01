@@ -1,9 +1,8 @@
-.content {
+ .content {
     max-width: 1200px;
     margin: auto;     
     text-align: center;
-    width: auto;
-     
+    width: auto;     
   }
 
   .article {
@@ -13,8 +12,7 @@
    
   .banner {   
     margin: 12px 12px ;    
-    min-height: 400px;
-     
+    min-height: 400px;     
   }
 
   .box {   
@@ -30,197 +28,256 @@
     width: calc((100% /2) - 24px);
     min-height: 75px; 
   }
+
   .weather, .traffic {
-    background-image: linear-gradient( to bottom right, #D3D3D3 0%, #DCDCDC 100%);
+    background-image: linear-gradient( to bottom right, #D3D3D3 0%,  #F0F0F0  100%);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .living {
     width: calc((100% /2) - 24px);
-    min-height: 256px;
-    background-image: linear-gradient( to bottom right, #D3D3D3 0%, #DCDCDC 100%);
+    height: 256px;   
+    background-image: linear-gradient( to bottom right, #D3D3D3 0%,  #F0F0F0  100%);
     background-repeat: no-repeat;
     background-size: cover;    
   }
-  .hotel {
-    min-height: 100%;
+
+  .hotel {  
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.9) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fhotel.jpg?alt=media&token=05b15612-7504-4953-8b5f-85f482d346b5);
     background-size: cover;
     margin: 8px;
-    min-height: 248px;
+    height: 240px;
   }  
-  .camping {
-    min-height: 100%;
+
+  .camping {   
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.9) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fcampsite.jpg?alt=media&token=cd1438b3-9d19-497b-b54b-4ee4b4ba8a88);
     background-size: cover;
     margin: 8px;
-    min-height: 248px;
+    height: 240px;   
   }  
 
   .store {
     width: calc((100% /3) - 24px);
-    min-height: 248px;
-    background-image: linear-gradient( to bottom right, #D3D3D3 30%, #DCDCDC 100%);
+    background-image: linear-gradient( to bottom right, #D3D3D3 30%, #F0F0F0  100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: darksalmon;
+    height: 256px;
   }
-  .restaurant{
-    min-height: 100%;
+
+  .restaurant{    
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.9) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Frestaurant.jpg?alt=media&token=1bbb4959-f186-427d-b3b3-393c5e399cac);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 8px;
-    min-height: 248px;
-    background-color: green;
+    margin: 8px;  
+    height: 240px;
   }
-  .ecotourism {
-    min-height: 100%;
+
+  .ecotourism {   
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.9) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fecotourism.jpg?alt=media&token=6f4c2297-c43d-443b-a6c9-d2649b0a5d0b);
     background-size: cover;
     margin: 8px;
-    min-height: 240px;
+    height: 240px;
   }
-  .product {
-    min-height: 100%;
+
+  .product {   
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3)30%, rgba(255, 255, 255, 0.5) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fproduct.jpg?alt=media&token=bd20b9f0-1e1f-45bc-bda6-cba84b07ce87);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 8px;
-    min-height: 240px;
+    height: 240px;
   }
 
   .offer {
     width: calc((100% /4) - 24px);
-    min-height: 150px;
-    background-image: linear-gradient( to bottom right, #D3D3D3 30%, #DCDCDC 100%);
+    background-image: linear-gradient( to bottom right, #D3D3D3 30%, #F0F0F0  100%);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 158px;
   }
-  .tollbooth {
-    min-height: 100%;
+  
+  .tollbooth {    
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.9) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Ftoll.jpg?alt=media&token=ecf421b3-56e0-433c-854e-33a5409cc313);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 12px;
-    min-height: 140px;
+    margin: 8px;
+    height: 140px;
   }
-  .traffic_guide{
-    min-height: 100%;
+  .traffic_guide{     
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.9) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Ftrafficinfo.jpg?alt=media&token=3d31d2aa-2abe-49f4-affa-5c93621e50f9);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 12px;
-    min-height: 140px;
+    margin: 8px;
+    height: 140px;
   }  
-  .tour-guide{
-    min-height: 100%;
+  .tour-guide{    
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3)30%, rgba(255, 255, 255, 0.5) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Ftourguide.jpg?alt=media&token=6330abb3-166b-40d5-ac69-c7da1fd141d6);
     background-size: cover;
-    margin: 12px;
-    min-height: 140px;
+    margin: 8px;
+    height: 140px;
   }
-  .itinerary{
-    min-height: 100%;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3)30%, rgba(255, 255, 255, 0.5) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Ftourguide.jpg?alt=media&token=6330abb3-166b-40d5-ac69-c7da1fd141d6);
+  .itinerary{    
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3)30%, rgba(255, 255, 255, 0.5) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fitinerary.jpg?alt=media&token=285a1c75-32d7-42da-9484-31dd9bb2f281);
     background-size: cover;
-    margin: 12px;
-    min-height: 140px;
+    margin: 8px;
+    height: 140px;
   }
 
-  .meeting-room {
-    min-height: 100%;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3)30%, rgba(255, 255, 255, 0.5) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Ftourguide.jpg?alt=media&token=6330abb3-166b-40d5-ac69-c7da1fd141d6);
+  .tea {    
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3) 30%, rgba(255, 255, 255, 0.5) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Ftea-shop.jpg?alt=media&token=540b5cf7-8558-4a2d-9325-59d4001165cb);
     background-size: cover;
-    margin: 5px;
-    min-height: 140px;
+    margin: 8px;
+    height: 140px;
   }
   
+  .visitor {    
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3)30%, rgba(255, 255, 255, 0.5) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fvisitor-center.jpg?alt=media&token=cb384dd2-37ac-49a2-986e-eaad901e1180);
+    background-size: cover;
+    margin: 8px;
+    height: 140px;
+  }
+
+  .meeting-room {    
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3)30%, rgba(255, 255, 255, 0.5) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fmeeting-room.jpg?alt=media&token=05c45da0-01cd-4308-9945-6deb5c59e37f);
+    background-size: cover;
+    margin: 8px;
+    height: 140px;
+  }
+
+  .salmon{  
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3)30%, rgba(255, 255, 255, 0.5) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fsalmon.jpg?alt=media&token=32c8a17e-1fb8-4870-b70b-786dc5da6ba4);
+    background-size: cover;
+    margin: 8px;
+    height: 140px;
+  }  
    
   
 @media only screen and (max-width:1200px) {
   .living {
-    min-height: 213px;
+    height: 212px;     
   }
-  .hotel {
-    min-height: 203px;
-  }
-  .camping {
-    min-height: 203px;
-  }
-
-  .store {
-    min-height: 213px;
-  }
-  .restaurant{
-    min-height: 203px;
-  }
-  .ecotourism {
-    min-height: 203px;
+  .hotel {  
+    height: 196px;  
   }  
-  
-  .product {
-    min-height: 203px;
+  .camping {   
+    height: 196px;
   }
+  .store {
+    height: 212px;
+  }
+  .restaurant{    
+    height: 196px;
+  }
+  .ecotourism {   
+    height: 196px;
+  }
+  .product {   
+    height: 196px;
+  }
+  .offer {
+    height: 128px;
+  }
+  .tollbooth {  
+    height: 112px;    
+  }
+  .traffic_guide{
+    height: 112px;  
+  }  
+  .tour-guide{    
+    height: 112px;       
+  }
+  .itinerary{   
+    height: 112px;  
+  }
+  .tea {    
+    height: 112px;  
+  }  
+  .visitor {  
+    height: 112px;   
+  }
+  .meeting-room { 
+    height: 112px;     
+  }
+  .salmon{ 
+    height: 112px;       
+  }  
 }
   
-  @media screen and (max-width:1023px) {
-    .living {
-      min-height: 160px;
-    }
-    .hotel {
-      min-height: 150px;
-    }
-    .camping {
-      min-height: 150px;
-    }
-
-    .store {
-      min-height: 160px;
-    }
-    .restaurant{
-      min-height: 150px;
-    }
-    .ecotourism {
-      min-height: 150px;
-    }  
-    .product {
-      min-height: 150px;
-    }
+@media screen and (max-width:1023px) {
+  .living {
+    height: 160px;     
   }
-  
-   
-  
-  @media only screen and (max-width:768px) {
-
-  } 
-   
-  
-  @media only screen and (max-width:480px) {
-    .content {
-      width: 100%;
-      text-align: center;  
-    }
-    .banner {
-      width: auto;       
-    }  
-
-    .status {
-      width: calc(100% - 24px);
-    }
-
-    .living {
-      width: calc(100% - 24px);
-    }
-
-    .store {
-      width: calc(100% - 24px);   
-    }  
-    .offer {
-      width: calc((100% /2) - 24px);
-      display: inline-block;
-    }    
-    
+  .hotel {  
+    height: 144px;
+  }  
+  .camping {   
+    height: 144px;
+  }  
+  .store {
+    height: 160px;  
   }
+  .restaurant{    
+    height: 144px;
+  }
+  .ecotourism {   
+    height: 144px;
+  }
+  .product {   
+    height: 144px;
+  }
+
+  .offer {
+    height: 96px;
+  }
+  .tollbooth {  
+    height: 80px;    
+  }
+  .traffic_guide{
+    height: 80px; 
+  }  
+  .tour-guide{    
+    height: 80px;      
+  }
+  .itinerary{   
+    height: 80px;     
+  }
+  .tea {    
+    height: 80px;  
+  }  
+  .visitor {  
+    height: 80px; ;     
+  }
+  .meeting-room { 
+    height: 80px;     
+  }
+  .salmon{ 
+    height: 80px;    
+  }  
+}    
+  
+@media only screen and (max-width:768px) {} 
+   
+@media only screen and (max-width:480px) {
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+  .banner {
+    width: auto;
+  }
+  .status {
+    width: calc(100% - 24px);
+  }
+  .living {
+    width: calc(100% - 24px);
+  }
+  .store {
+    width: calc(100% - 24px);
+  }
+  .offer {
+    width: calc((100% /2) - 24px);
+    display: inline-block;
+  }
+}
   

@@ -9,8 +9,8 @@ mat-drawer-content{
   margin-top :  68px;
 }
 
-@media only screen and (max-width:480px) {  
-mat-drawer{
+@media only screen and (max-width:480px) {
+  mat-drawer{
   width:calc(100vw - 48px);
 }
 }

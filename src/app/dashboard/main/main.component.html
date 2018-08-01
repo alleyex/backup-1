@@ -1,179 +1,168 @@
-<main id="main">
-    <div class="content">
-        <div class="banner">
-            <app-announce></app-announce>
+<div class="content">
+    <div class="banner">
+        <app-announce></app-announce>
+    </div>
+</div>
+<div class="content">
+    <div class="box status weather">
+        <app-weather-station></app-weather-station>
+    </div>
+    <div class="box status traffic">
+    </div>
+</div>
+
+<div id="stay" class="content">
+    <h3 class="article">{{'home.attractions'|translate}}</h3>
+    <div id="hotel" class="box living" (click)="onClick('hotel','hotel-contain')">
+        <div class="hotel">
+            <div class="title">{{'home.hotel'|translate}} </div>
         </div>
     </div>
-    <div class="content">
-        <div class="box status weather">
-            <app-weather-station></app-weather-station>
+    <div id="campsite" class="box living" (click)="onClick('campsite','camping-contain')">
+        <div class="camping">
+            <div class="title">{{'home.camp_area'|translate}} </div>
+            <div></div>
+            <div></div>
         </div>
-        <div class="box status traffic">
+    </div>
+    <div id="hotel-contain" class=" content ">
+        <div class="show">
+            <app-hotel [place]="place"></app-hotel>
+        </div>
+    </div>
+    <div id="camping-contain" class="content ">
+        <div class="show">
+            <app-campsite [place]="place"></app-campsite>
+        </div>
+    </div>
+</div>
+
+<div id="store" class="content">
+    <div id="restaurant" class="box store" (click)="onClick('restaurant','restaurant-contain')">
+        <div class="restaurant">
+            <div class="title">{{'home.restaurant'|translate}} </div>
+            <div> </div>
+            <div> </div>
+        </div>
+    </div>
+    <div id="ecotourism" class="box store" (click)="onClick('ecotourism','ecotourism-contain')">
+        <div class="ecotourism">
+            <div class="title">{{'home.ecotourism'|translate}} </div>
+            <div> </div>
+            <div> </div>
+        </div>
+    </div>
+    <div id="product" class="box store" (click)="onClick('product','product-contain')">
+        <div class="product">
+            <div class="title">{{'home.orchard'|translate}} </div>
+            <div> </div>
+            <div> </div>
+        </div>
+    </div>
+    <div id="ecotourism-contain" class="content">
+        <div class="show">
+            <!-- <app-ecotourism [place]="place"></app-ecotourism> -->
+        </div>
+    </div>
+    <div id="restaurant-contain" class="content ">
+        <div class="show">
+           <app-restaurant [place]="place"></app-restaurant>
+        </div>
+    </div>
+    <div id="product-contain" class="content">
+        <div class="show">
+            <!-- <app-farm [place]="place"></app-farm> -->
+        </div>
+    </div>
+</div>
+
+
+<div id="information" class="content">
+    <h3 class="article">{{'home.special_offer'|translate}}</h3>
+    <!-- 收費 -->
+    <div id="tollbooth" class="box offer" (click)="onClick('tollbooth','toll-contain')">
+        <div class="tollbooth">
+            <div class="title">{{'home.ticket_price'|translate}} </div>
+            <div> </div>
+            <div> </div>
+        </div>
+    </div>
+    <!-- 交通 -->
+    <div id="traffic_guide" class="box offer" (click)="onClick('traffic_guide','traffic-contain')">
+        <div class="traffic_guide">
+            <div class="title">{{'home.transportation'|translate}}</div>
+            <div> </div>
+            <div> </div>
+        </div>
+    </div>
+    <!-- 導覽 -->    
+    <div id="tour-guide" class="box offer" (click)="onClick('coffee-bar','tour-content')">
+        <div class="tour-guide">
+            <div class="title">{{'home.tour_guide'|translate}} </div>
+            <div> </div>
+            <div> </div>
+        </div>
+    </div>
+    <!-- 行程 -->
+    <div id="itinerary" class="box offer" (click)="onClick('itinerary','itinerary-content')">
+        <div class="itinerary">
+            <div class="title">{{'home.tour_guide'|translate}} </div>
+            <div> </div>
+            <div> </div>
         </div>
     </div>
 
-    <div id="stay" class="content">
-        <h3 class="article">{{'home.attractions'|translate}}</h3>
-        <div id="hotel" class="box living" (click)="onClick('hotel','hotel-contain')">
-            <div class="hotel">
-                <div class="title">{{'home.hotel'|translate}} </div>
-            </div>
-        </div>
-        <div id="campsite" class="box living" (click)="onClick('campsite','camping-contain')">
-            <div class="camping">
-                <div class="title">{{'home.camp_area'|translate}} </div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div id="hotel-contain" class=" content ">
-            <div class="show">
-                <app-hotel [place]="place"></app-hotel>
-            </div>
-        </div>
-        <div id="camping-contain" class="content ">
-            <div class="show">
-                <app-campsite [place]="place"></app-campsite>
-            </div>
+
+    <div id="toll-contain" class="content ">
+        <div class="show">
+            <!-- <app-tollbooth [place]="place"></app-tollbooth> -->
         </div>
     </div>
-
-    <div id="store" class="content">
-        <div id="restaurant" class="box store" (click)="onClick('restaurant','restaurant-contain')">
-            <div class="restaurant">
-                <div class="title">{{'home.restaurant'|translate}} </div>
-                <div> </div>
-                <div> </div>
-            </div>
+    <div id="traffic-contain" class="content ">
+        <div class="show">
+            <!-- <app-traffic [place]="place"></app-traffic> -->
         </div>
-        <div id="ecotourism" class="box store" (click)="onClick('ecotourism','ecotourism-contain')">
-            <div class="ecotourism">
-                <div class="title">{{'home.ecotourism'|translate}} </div>
-                <div> </div>
-                <div> </div>
-            </div>
+    </div>
+    <div id="tour-contain" class="content">
+        <div class="show">
+            <!-- <app-tea-saloon [place]="place"></app-tea-saloon> -->
         </div>
-        <div id="product" class="box store" (click)="onClick('product','product-contain')">
-            <div class="product">
-                <div class="title">{{'home.orchard'|translate}} </div>
-                <div> </div>
-                <div> </div>
-            </div>
-        </div>
-        <div id="ecotourism-contain" class="content">
-            <div class="show">
-                <!-- <app-ecotourism [place]="place"></app-ecotourism> -->
-            </div>
-        </div>
-        <div id="restaurant-contain" class="content ">
-            <div class="show">
-                <!-- <app-restaurant [place]="place"></app-restaurant> -->
-            </div>
-        </div>
-        <div id="product-contain" class="content">
-            <div class="show">
-                <!-- <app-farm [place]="place"></app-farm> -->
-            </div>
+    </div>
+    <div id="itinerary-contain" class="content">
+        <div class="show">
+            <!-- <app-visitor [place]="place"></app-visitor> -->
         </div>
     </div>
 
 
-    <div id="information" class="content">
-        <h3 class="article">{{'home.special_offer'|translate}}</h3>
-        <div id="tollbooth" class="box offer" (click)="onClick('tollbooth','toll-contain')">
-            <div class="tollbooth">
-                <div class="title">{{'home.ticket_price'|translate}} </div>
-                <div> </div>
-                <div> </div>
-            </div>
-        </div>
-        <div id="traffic_guide" class="box offer" (click)="onClick('traffic_guide','traffic-contain')">
-            <div class="traffic_guide">
-                <div class="title">{{'home.transportation'|translate}}</div>
-                <div> </div>
-                <div> </div>
-            </div>
-        </div>
 
-        <div id="tour-guide" class="box offer" (click)="onClick('coffee-bar','tour-content')">
-            <div class="tour-guide">
-                <div class="title">{{'home.tour_guide'|translate}} </div>
-                <div> </div>
-                <div> </div>
-            </div>
-        </div>
-
-        <div id="itinerary" class="box offer" (click)="onClick('itinerary','itinerary-content')">
-            <div class="itinerary">
-                <div class="title">{{'home.tour_guide'|translate}} </div>
-                <div> </div>
-                <div> </div>
-            </div>
-        </div>
-
-        <!-- <div id="tea-saloon" class="box offer" (click)="onClick('tea-saloon','tea-contain')">
+    <div id="tea" class="box offer" (click)="onClick('tea','tea-content')">
         <div class="tea">
-            <div class="title">{{'home.tea_saloon'|translate}} </div>
+            <div class="title">{{'home.meeting_room'|translate}} </div>
             <div> </div>
             <div> </div>
         </div>
     </div>
-
-
-    <div id="visitor" class="box offer" (click)="onClick('visitor','visitor-contain')">
+    <div id="visitor" class="box offer" (click)="onClick('visitor','visitor-content')">
         <div class="visitor">
-            <div class="title">{{'home.visitor_center'|translate}} </div>
+            <div class="title">{{'home.tour_guide'|translate}} </div>
             <div> </div>
             <div> </div>
-        </div>
-    </div> -->
-        <div id="toll-contain" class="content ">
-            <div class="show">
-                <!-- <app-tollbooth [place]="place"></app-tollbooth> -->
-            </div>
-        </div>
-        <div id="traffic-contain" class="content ">
-            <div class="show">
-                <!-- <app-traffic [place]="place"></app-traffic> -->
-            </div>
-        </div>
-        <div id="tea-contain" class="content">
-            <div class="show">
-                <!-- <app-tea-saloon [place]="place"></app-tea-saloon> -->
-            </div>
-        </div>
-        <div id="visitor-contain" class="content">
-            <div class="show">
-                <!-- <app-visitor [place]="place"></app-visitor> -->
-            </div>
-        </div>
-        <div id="coffee-bar" class="box offer" (click)="onClick('coffee-bar','coffee-content')">
-            <div class="coffee-bar">
-                <div class="title">{{'home.coffee_bar'|translate}} </div>
-                <div> </div>
-                <div> </div>
-            </div>
-        </div>
-        <div id="meeting-room" class="box offer" (click)="onClick('coffee-bar','meeting-content')">
-            <div class="meeting-room">
-                <div class="title">{{'home.meeting_room'|translate}} </div>
-                <div> </div>
-                <div> </div>
-            </div>
-        </div>
-        <div id="tour-guide" class="box offer" (click)="onClick('coffee-bar','tour-content')">
-            <div class="tour-guide">
-                <div class="title">{{'home.tour_guide'|translate}} </div>
-                <div> </div>
-                <div> </div>
-            </div>
-        </div>
-        <div id="salmon" class="box offer" (click)="onClick('coffee-bar','salmon-content')">
-            <div class="salmon">
-                <div class="title">{{'home.salmon'|translate}} </div>
-                <div> </div>
-                <div> </div>
-            </div>
         </div>
     </div>
-</main>
+    <!-- 會議室 -->
+    <div id="meeting-room" class="box offer" (click)="onClick('meeting-room','meeting-content')">
+        <div class="meeting-room">
+            <div class="title">{{'home.meeting-room'|translate}} </div>
+            <div> </div>
+            <div> </div>
+        </div>
+    </div>
+    <div id="salmon" class="box offer" (click)="onClick('coffee-bar','salmon-content')">
+        <div class="salmon">
+            <div class="title">{{'home.salmon'|translate}} </div>
+            <div> </div>
+            <div> </div>
+        </div>
+    </div>
+</div>

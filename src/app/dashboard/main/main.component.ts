@@ -1,16 +1,14 @@
 import { Component, DoCheck } from '@angular/core';
 import { ScrollToConfigOptions, ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
- 
- 
 
 @Component({
     selector: 'app-main',
     templateUrl: './main.component.html',
-    styleUrls: ['./main.component.scss'] 
+    styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements DoCheck {
     place: string;
-    isPhone = true;   
+    isPhone = true;
 
     constructor(private scrollToService: ScrollToService) { }
     ngDoCheck() {
@@ -47,26 +45,30 @@ export class MainComponent implements DoCheck {
         list.insertBefore(node, list.childNodes[position]);
     }
 
-    
     onClick(place: string, target: string) {
-        //console.log('place:' + place + ' && target:' + target);
         if (this.place == place) {
             this.place = 'other';
-            this.setScroll(place, 450);
-        } else {
-            this.setScroll(target, 450);
+            this.setScroll(place, 280);
+        } else {            
+            this.setScroll(target, 480);
             this.place = place;
         }
     }
 
     setScroll(target: string, time: number) {
         let interval = setInterval(() => {
-            let config: ScrollToConfigOptions = {
-                container:'stay',
-                target: target
+            clearInterval(interval);
+            
+            let el = document.getElementById(target);
+            let offset = el.getBoundingClientRect().top - 68;
+            const config: ScrollToConfigOptions = {
+                offset
             };
             this.scrollToService.scrollTo(config);
-            clearInterval(interval);
+
         }, time);
     }
+
+
+
 }

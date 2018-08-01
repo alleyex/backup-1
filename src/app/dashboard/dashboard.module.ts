@@ -13,6 +13,9 @@ import { AnnounceModule } from '../announce/announce.mudule';
 import { HotelComponent } from '../hotel/hotel.component';
 import { CampsiteComponent } from '../campsite/campside.component';  
 import { RestaurantComponent } from '../restaurant/restaurant.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { ScrollToModule } from '../../../node_modules/@nicky-lenaers/ngx-scroll-to';
+import { GalleryModule } from '../../../node_modules/@ngx-gallery/core';
 
 @NgModule({
     declarations: [
@@ -30,7 +33,11 @@ import { RestaurantComponent } from '../restaurant/restaurant.component';
         SharedModule,
         RealTimeModule,
         AnnounceModule,
-        RealTimeModule 
+        RealTimeModule ,
+        AppRoutingModule,
+        ScrollToModule.forRoot(),
+        GalleryModule.forRoot()
+
     ],
     exports: [
         DashboardComponent

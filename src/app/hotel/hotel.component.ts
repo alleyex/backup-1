@@ -18,7 +18,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
                 transform: 'scale(1)'
             })),
             transition('false =>true', animate('480ms 200ms ease-in')),
-            transition('true =>false', animate('450ms  ease-in'))
+            transition('true =>false', animate('450ms  ease-out'))
         ])
     ]
 })
@@ -29,7 +29,6 @@ export class HotelComponent implements OnChanges {
     ngOnChanges() {
         if (this.place == 'hotel') {
             this.isDivVisible = true;
-
         } else {
             this.isDivVisible = false;
         }
