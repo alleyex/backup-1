@@ -4,21 +4,25 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { AppComponent } from './app.component';
-import { RealTimeModule } from './real-time/real-time.module';
-import { DashboardModule } from './dashboard/dashboard.module'; 
-
+import { DashboardModule } from './dashboard/dashboard.module';
+import { ScrollService } from './dashboard/main/scroll.service';
+import { AppRoutingModule } from './app-routing.module';
+ 
+ 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent 
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RealTimeModule,    
-    DashboardModule,    
+    AppRoutingModule,
+    DashboardModule,
+    ScrollToModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -27,7 +31,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
       }
     })
   ],
-  providers: [],
+  providers: [ScrollService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

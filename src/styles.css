@@ -1,6 +1,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 html, body{
+    /* font-family:'cwTeXKai', sans-serif; */
     font-family: Verdana, Arial, Helvetica, sans-serif;
     height: 100%;
 }

@@ -1,0 +1,293 @@
+<div class="content" [@place]="isDivVisible">
+    <div class="introduction">
+        <div class="title">
+            {{'wuling-hotel.title'|translate}}
+        </div>
+        <div>
+            {{'wuling-hotel.introduction'|translate}}
+        </div>
+    </div>
+    <div class="tabs">
+        <mat-tab-group>
+            <mat-tab [label]="'wuling-hotel.wuling_hotel'|translate">
+                <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#DDDDDD" summary="Layout table-Room Price Table">
+                    <tr>
+                        <!-- <th rowspan="2">Photo</th> -->
+                        <th rowspan="2">{{'wuling-hotel.room_type'|translate}}</th>
+                        <th rowspan="2">{{'wuling-hotel.price'|translate}}</th>
+                        <th colspan="2">{{'wuling-hotel.general_people'|translate}}</th>
+                        <th colspan="2">{{'wuling-hotel.special'|translate}}</th>
+                        <th>{{'wuling-hotel.veterans'|translate}}</th>
+                        <th rowspan="2">{{'wuling-hotel.note'|translate}}</th>
+                    </tr>
+                    <tr>
+                        <th>{{'wuling-hotel.holiday'|translate}}</th>
+                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
+                        <th>{{'wuling-hotel.holiday'|translate}}</th>
+                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
+                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-1.jpg" rel="openimg" title="Creek Building. Twin Room"><img src="images/s01-1.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.creek_building'|translate}}</td>
+                        <td>NT$ 3420</td>
+                        <td>NT$ 3420</td>
+                        <td>NT$ 2936</td>
+                        <td>NT$ 3178</td>
+                        <td>NT$ 2694</td>
+                        <td>NT$ 2331</td>
+                        <td class="note">{{'wuling-hotel.two_single'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-2.jpg" rel="openimg" title="Honeymoon Suite"><img src="images/s01-2.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.honeymoon_suite'|translate}}</td>
+                        <td>NT$ 3750</td>
+                        <td>NT$ 3750</td>
+                        <td>NT$ 3200</td>
+                        <td>NT$ 3475</td>
+                        <td>NT$ 2925</td>
+                        <td>NT$ 2513</td>
+                        <td class="note">{{'wuling-hotel.one_king'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-3.jpg" rel="openimg" title="Maple Cottage Double Room Suite"><img src="images/s01-3.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.maple_cottage'|translate}}</td>
+                        <td>NT$ 4300</td>
+                        <td>NT$ 4300</td>
+                        <td>NT$ 3640</td>
+                        <td>NT$ 3970</td>
+                        <td>NT$ 3310</td>
+                        <td>NT$ 2815</td>
+                        <td class="note">{{'wuling-hotel.one_king'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-4.jpg" rel="openimg" title="Family Suite"><img src="images/s01-4.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.family_suite'|translate}}</td>
+                        <td>NT$ 5190</td>
+                        <td>NT$ 5190</td>
+                        <td>NT$ 4552</td>
+                        <td>NT$ 4871</td>
+                        <td>NT$ 4233</td>
+                        <td>NT$ 3755</td>
+                        <td class="note">{{'wuling-hotel.two_double'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-5.jpg" rel="openimg" title="Family Suite"><img src="images/s01-5.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.family_suite'|translate}}</td>
+                        <td>NT$ 5190</td>
+                        <td>NT$ 5190</td>
+                        <td>NT$ 4552</td>
+                        <td>NT$ 4871</td>
+                        <td>NT$ 4233</td>
+                        <td>NT$ 3755</td>
+                        <td class="note">{{'wuling-hotel.one_double_two_single'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-6.jpg" rel="openimg" title="Attic Japanese Style Suite"><img src="images/s01-6.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.japanese_style'|translate}}</td>
+                        <td>NT$ 7500</td>
+                        <td>NT$ 7500</td>
+                        <td>NT$ 6600</td>
+                        <td>NT$ 7050</td>
+                        <td>NT$ 6150</td>
+                        <td>NT$ 5475</td>
+                        <td class="note">-</td>
+                    </tr>
+                </table>
+            </mat-tab>
+            <mat-tab [label]="'wuling-hotel.leisure_farm_villa'|translate">
+                <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#DDDDDD" summary="Layout table-Room Price Table">
+                    <tr>
+                        <!-- <th rowspan="2">Photo</th> -->
+                        <th rowspan="2">{{'wuling-hotel.room_type'|translate}}</th>
+                        <th rowspan="2">{{'wuling-hotel.price'|translate}}</th>
+                        <th colspan="2">{{'wuling-hotel.general_people'|translate}}</th>
+                        <th colspan="2">{{'wuling-hotel.special'|translate}}</th>
+                        <th>{{'wuling-hotel.veterans'|translate}}</th>
+                        <th rowspan="2">{{'wuling-hotel.note'|translate}}</th>
+                    </tr>
+                    <tr>
+                        <th>{{'wuling-hotel.holiday'|translate}}</th>
+                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
+                        <th>{{'wuling-hotel.holiday'|translate}}</th>
+                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
+                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-1.jpg" rel="openimg" title="Creek Building. Twin Room"><img src="images/s01-1.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.peach_double'|translate}}</td>
+                        <td>NT$ 3420</td>
+                        <td>NT$ 3420</td>
+                        <td>NT$ 2936</td>
+                        <td>NT$ 3178</td>
+                        <td>NT$ 2694</td>
+                        <td>NT$ 2331</td>
+                        <td class="note">{{'wuling-hotel.one_king'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-2.jpg" rel="openimg" title="Honeymoon Suite"><img src="images/s01-2.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.peach_quadruple'|translate}}</td>
+                        <td>NT$ 3750</td>
+                        <td>NT$ 3750</td>
+                        <td>NT$ 3200</td>
+                        <td>NT$ 3475</td>
+                        <td>NT$ 2925</td>
+                        <td>NT$ 2513</td>
+                        <td class="note">{{'wuling-hotel.two_double'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-3.jpg" rel="openimg" title="Maple Cottage Double Room Suite"><img src="images/s01-3.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.wunkang_big'|translate}}</td>
+                        <td>NT$ 4300</td>
+                        <td>NT$ 4300</td>
+                        <td>NT$ 3640</td>
+                        <td>NT$ 3970</td>
+                        <td>NT$ 3310</td>
+                        <td>NT$ 2815</td>
+                        <td class="note">{{'wuling-hotel.one_double_one_single'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-4.jpg" rel="openimg" title="Family Suite"><img src="images/s01-4.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.wunkang_small'|translate}}</td>
+                        <td>NT$ 5190</td>
+                        <td>NT$ 5190</td>
+                        <td>NT$ 4552</td>
+                        <td>NT$ 4871</td>
+                        <td>NT$ 4233</td>
+                        <td>NT$ 3755</td>
+                        <td class="note">{{'wuling-hotel.one_double_one_single'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-5.jpg" rel="openimg" title="Family Suite"><img src="images/s01-5.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.wunkang_japenese'|translate}}</td>
+                        <td>NT$ 5190</td>
+                        <td>NT$ 5190</td>
+                        <td>NT$ 4552</td>
+                        <td>NT$ 4871</td>
+                        <td>NT$ 4233</td>
+                        <td>NT$ 3755</td>
+                        <td class="note">{{'wuling-hotel.four_mattresses'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-6.jpg" rel="openimg" title="Attic Japanese Style Suite"><img src="images/s01-6.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.farm_japenese'|translate}}</td>
+                        <td>NT$ 7500</td>
+                        <td>NT$ 7500</td>
+                        <td>NT$ 6600</td>
+                        <td>NT$ 7050</td>
+                        <td>NT$ 6150</td>
+                        <td>NT$ 5475</td>
+                        <td class="note">{{'wuling-hotel.four_mattresses'|translate}}</td>
+                    </tr>
+                </table>
+            </mat-tab>
+            <mat-tab [label]="'wuling-hotel.shanshui_villa'|translate">
+                <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#DDDDDD" summary="Layout table-Room Price Table">
+                    <tr>
+                        <!-- <th rowspan="2">Photo</th> -->
+                        <th rowspan="2">{{'wuling-hotel.room_type'|translate}}</th>
+                        <th rowspan="2">{{'wuling-hotel.price'|translate}}</th>
+                        <th colspan="2">{{'wuling-hotel.general_people'|translate}}</th>
+                        <th colspan="2">{{'wuling-hotel.special'|translate}}</th>
+                        <th>{{'wuling-hotel.veterans'|translate}}</th>
+                        <th rowspan="2">{{'wuling-hotel.note'|translate}}</th>
+                    </tr>
+                    <tr>
+                        <th>{{'wuling-hotel.holiday'|translate}}</th>
+                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
+                        <th>{{'wuling-hotel.holiday'|translate}}</th>
+                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
+                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-1.jpg" rel="openimg" title="Creek Building. Twin Room"><img src="images/s01-1.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.salmon_room'|translate}}</td>
+                        <td>NT$ 3420</td>
+                        <td>NT$ 3420</td>
+                        <td>NT$ 2936</td>
+                        <td>NT$ 3178</td>
+                        <td>NT$ 2694</td>
+                        <td>NT$ 2331</td>
+                        <td class="note">{{'wuling-hotel.two_single'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-2.jpg" rel="openimg" title="Honeymoon Suite"><img src="images/s01-2.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.peach_room'|translate}}</td>
+                        <td>NT$ 3750</td>
+                        <td>NT$ 3750</td>
+                        <td>NT$ 3200</td>
+                        <td>NT$ 3475</td>
+                        <td>NT$ 2925</td>
+                        <td>NT$ 2513</td>
+                        <td class="note">{{'wuling-hotel.one_king'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-3.jpg" rel="openimg" title="Maple Cottage Double Room Suite"><img src="images/s01-3.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.maple_room'|translate}}</td>
+                        <td>NT$ 4300</td>
+                        <td>NT$ 4300</td>
+                        <td>NT$ 3640</td>
+                        <td>NT$ 3970</td>
+                        <td>NT$ 3310</td>
+                        <td>NT$ 2815</td>
+                        <td class="note">{{'wuling-hotel.one_king'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-4.jpg" rel="openimg" title="Family Suite"><img src="images/s01-4.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.apple_Plum'|translate}}</td>
+                        <td>NT$ 5190</td>
+                        <td>NT$ 5190</td>
+                        <td>NT$ 4552</td>
+                        <td>NT$ 4871</td>
+                        <td>NT$ 4233</td>
+                        <td>NT$ 3755</td>
+                        <td class="note">{{'wuling-hotel.two_double'|translate}}</td>
+                    </tr>
+                    <tr>
+                        <!-- <td><a href="images/01-5.jpg" rel="openimg" title="Family Suite"><img src="images/s01-5.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
+                        <td>{{'wuling-hotel.cherry_room'|translate}}</td>
+                        <td>NT$ 5190</td>
+                        <td>NT$ 5190</td>
+                        <td>NT$ 4552</td>
+                        <td>NT$ 4871</td>
+                        <td>NT$ 4233</td>
+                        <td>NT$ 3755</td>
+                        <td class="note">{{'wuling-hotel.two_double'|translate}}</td>
+                    </tr>
+                </table>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+    <div>
+        <ul>
+            <li>
+                {{'wuling-hotel.notice_01'|translate}}
+            </li>
+            <li>
+                {{'wuling-hotel.notice_02'|translate}}
+            </li>
+            <li>
+                <div>
+                    {{'wuling-hotel.notice_03a'|translate}}
+                </div>
+                <div>
+                    {{'wuling-hotel.notice_03b'|translate}}
+                </div>
+            </li>
+            <li>
+                <div>
+                    {{'wuling-hotel.notice_04a'|translate}}
+                </div>
+                <div>
+                    {{'wuling-hotel.notice_04b'|translate}}
+                </div>
+            </li>
+            <li>
+                {{'wuling-hotel.notice_05'|translate}}
+            </li>
+            <li>
+                {{'wuling-hotel.notice_06'|translate}}
+            </li>
+        </ul>
+    </div>
+</div>

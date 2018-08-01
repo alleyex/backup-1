@@ -1,0 +1,87 @@
+div.content {
+    text-align: left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #4A4A4A;
+  }
+  
+  div.title {
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 20px 35px 20px 35px;
+  }
+  
+  div.introduction {
+    Display: inline-block;
+    margin: 20px 35px 20px 35px;
+  }
+  
+  div.notice {
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+    
+  }
+  
+  div.exsampe {
+    font-size: 12px;  
+  }
+  
+  div.telephone {
+    font-size: 12px;   
+  }
+  
+  div.coffee {
+    font-size: 12px;  
+  }
+  
+  div.alert {
+    font-size: 12px;  
+  }
+  
+  div.rule {
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  ul{
+      list-style-type:decimal;
+    font-size: 12px;   
+    margin: 10px 0px 10px -25px;
+    line-height: 24px;
+  }
+  
+  @media only screen and (max-width:1200px) {
+  
+  }
+  
+  @media screen and (max-width:1023px) {  
+  
+  }
+  
+  
+  
+@media only screen and (max-width:768px) { 
+    div.title {
+        margin: 10px 10px 10px 10px;
+    }
+    
+    div.introduction {   
+      margin: 10px 10px 10px 10px;
+    }    
+    
+    ul{    
+      margin: 10px 0px 10px -25px;
+    }  
+}
+  
+@media only screen and (max-width:480px) { 
+}
+  
+@media only screen and (max-width:319px) {  
+}  
+  

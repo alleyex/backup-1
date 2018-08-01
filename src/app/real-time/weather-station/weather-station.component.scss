@@ -1,18 +1,19 @@
 .content {
     margin-top:8px; 
-    width: 100%;
-     
+    width: 100%;       
   }
   span {
       content: "\2103";
     }
   
   .box {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal;
     width: calc((100% /3) - 10px);
     min-width: 140px;
     display: inline-block;
     vertical-align: center;
     text-align: left;
-    font-size: 12px;
+    font-size: 14px;
     line-height:10px;
   }

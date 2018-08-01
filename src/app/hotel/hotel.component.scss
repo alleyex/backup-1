@@ -1,0 +1,90 @@
+div.content {
+    text-align: left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #4A4A4A;
+}
+  
+div.introduction {
+    padding: 20px 35px 15px 35px;
+}
+  
+div.title{
+    color:green;
+    font-size: 16px;
+    font-weight:bold;
+}
+  
+div.tabs{
+    padding: 0px;
+}
+  
+table{
+    border-top-width: 1px;
+      border-top-style: solid;
+      border-top-color:transparent;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color:transparent;
+  }
+   th{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: normal;
+      color: #000000;
+      background-color: #EBEBEB;
+      text-align: center;
+  }
+   td{
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: normal;
+      color: #333333;
+      background-color: #FFFFFF;
+      text-align: center;
+  
+  }
+  ul{
+      list-style-type:decimal;
+      margin:20px 35px 0px 15px;
+  }
+  
+  .mat-tab-label-active {
+      color: #00ADEE !important;
+  } 
+  
+  .mat-tab-label {
+      min-width: 25px !important;
+      padding: 5px;
+      background-color: transparent;
+      color: red;
+      font-weight: 700;
+  }
+  
+  .mat-ink-bar {
+      background-color: green;
+  }
+  
+  @media only screen and (max-width:480px) {  
+      ul{		
+          margin:20px 10px 0px -10px;
+      }	
+      div.introduction {
+          padding: 20px 10px 15px 15px;
+        } 
+    }
+    @media only screen and (max-width:380px) {  	 
+      th{		 
+          font-size: 9px;
+          line-height: 20px;		 
+      }
+       td{		 
+          font-size: 10px;
+          line-height: 20px;	
+      }
+    }
+  
