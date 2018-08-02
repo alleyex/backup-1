@@ -5,7 +5,7 @@ div.content {
     line-height: 24px;
     font-weight: normal;
     color: #4A4A4A;    
-    margin: 0px 30px 0px 30px; 
+    margin: 0px 12px ; 
 }
 
 div h1{
@@ -43,35 +43,33 @@ img.rightside{
   margin: 10px 10px 10px 20px; 
 }
 
- /* Big table to 1200px (widths smaller than the 1140px row */
+//  /* Big table to 1200px (widths smaller than the 1140px row */
 
- @media only screen and (max-width:1200px) {
+//  @media only screen and (max-width:1200px) {
   
-}
+// }
 
-/* Small tablet to big tablet: 768px to 1023  */
+// /* Small tablet to big tablet: 768px to 1023  */
 
-@media screen and (max-width:1023px) {   
-}
+// @media screen and (max-width:1023px) {   
+// }
 
-/* Small phones to small tablets: from 0 to 480px */
+// /* Small phones to small tablets: from 0 to 480px */
 
-@media only screen and (max-width:768px) {
+// @media only screen and (max-width:768px) {
    
-}
+// }
 
-/* Small phone: from 0 to 480px */
+// /* Small phone: from 0 to 480px */
 
 @media only screen and (max-width:480px) {
-  div.content {     
-    border: 10px 10pc 10px 10px;     
-    margin: 0px 0px 0px 0px; 
+  div.content {     margin: 0px 12px ; 
     background-color: white;
 
 }
   img.leftside{
     float:left;
-    margin: 10px 0px 10px 0px;      
+    margin: 8px 0px;      
     width: auto;
 	  height: auto;
 	  max-width: 100%;
@@ -80,7 +78,7 @@ img.rightside{
   
   img.rightside{
     float:right;
-    margin: 10px 0px 10px 0px; 
+    margin: 8px 0px ; 
     width: auto;
 	  height: auto;
 	  max-width: 100%;

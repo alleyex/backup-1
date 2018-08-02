@@ -21,6 +21,10 @@ import { TollboothComponent } from '../tollbooth/tollbooth.component';
 import { DepartureComponent } from '../departure/departure.component';
 import { EcotourismComponent } from '../ecotourism/ecotourism.component';
 import { ProductComponent } from '../product/product.component';
+import { NavigationComponent } from '../navigation/navigation.component';
+import { ItineraryComponent } from '../itinerary/itinerary.component';
+import { MeetingRoomComponent } from '../meeting-room/meeting-room.component';
+import { TeaShopComponent } from '../tea-shop/tea-shop.component';
 
 @NgModule({
     declarations: [
@@ -36,7 +40,11 @@ import { ProductComponent } from '../product/product.component';
         TollboothComponent,
         DepartureComponent,
         EcotourismComponent,
-        ProductComponent
+        ProductComponent,
+        NavigationComponent,
+        ItineraryComponent,
+        MeetingRoomComponent,
+        TeaShopComponent
     ],
     imports: [ 
         SharedModule,

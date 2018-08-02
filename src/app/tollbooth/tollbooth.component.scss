@@ -1,11 +1,20 @@
 div.content {
     text-align: left;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
     font-weight: normal;
     color: #4A4A4A;
   }
+
+  div h1{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: normal;
+  color: #603A0A;
+  background-color: #D5D5D5;    
+}
   
   div.introduction {
     padding: 20px 35px 15px 35px;
@@ -14,17 +23,17 @@ div.content {
   
   caption{
       height: 24px;
-      font-size: 12px;
+      font-size: 14px;
   }
   table {
     max-width: 800px;
-    font-size: 12px;
+    font-size: 14px;
     text-align:center;
   }
   
   th {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size:12px;
+    font-size:14px;
     line-height: 20px;
     font-weight: normal;
     color: #000000;
@@ -38,7 +47,7 @@ div.content {
   
   td {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: normal;
     color: #000000;
@@ -51,7 +60,7 @@ div.content {
   
   ul{
       list-style-type:decimal;
-      margin:25px -25px 0px -25px;
+      border:0px;
   }
   
   @media only screen and (max-width:1200px) {  
@@ -70,20 +79,15 @@ div.content {
   /* Small phone: from 0 to 480px */
   
   @media only screen and (max-width:480px) {   
+    div.content {
+     margin: 0px 12px;
+    }   
     div.introduction {
-      padding: 5px 5px 5px 5px;
-      
+      padding: 8px;      
     }  
-    th {   
-      padding: 0px 0px 0px 0px;
-    }  
-    td {    
-      padding: 0px 0px 0px 0px;  
-    }  
-    
-    ul{    
-      margin:25px  5px 0px  -20px;
-    }
+    th, td ul {   
+      padding: 0;
+    }      
   }
   
   

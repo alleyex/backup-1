@@ -61,17 +61,17 @@
     </div>
     <div id="ecotourism-contain" class="content">
         <div class="show">
-            <app-ecotourism [place]="place"></app-ecotourism>  
+            <app-ecotourism [place]="place"></app-ecotourism>
         </div>
     </div>
     <div id="restaurant-contain" class="content ">
         <div class="show">
-           <app-restaurant [place]="place"></app-restaurant>
+            <app-restaurant [place]="place"></app-restaurant>
         </div>
     </div>
     <div id="product-contain" class="content">
         <div class="show">
-             <app-product [place]="place"></app-product>  
+            <app-product [place]="place"></app-product>
         </div>
     </div>
 </div>
@@ -95,18 +95,18 @@
             <div> </div>
         </div>
     </div>
-    <!-- 導覽 -->    
-    <div id="tour-guide" class="box offer" (click)="onClick('coffee-bar','tour-content')">
-        <div class="tour-guide">
+    <!-- 導覽 -->
+    <div id="navigation" class="box offer" (click)="onClick('navigation','navigation-contain')">
+        <div class="navigation">
             <div class="title">{{'home.tour_guide'|translate}} </div>
             <div> </div>
             <div> </div>
         </div>
     </div>
     <!-- 行程 -->
-    <div id="itinerary" class="box offer" (click)="onClick('itinerary','itinerary-content')">
+    <div id="itinerary" class="box offer" (click)="onClick('itinerary','itinerary-contain')">
         <div class="itinerary">
-            <div class="title">{{'home.tour_guide'|translate}} </div>
+            <div class="title">{{'home.itinerary'|translate}} </div>
             <div> </div>
             <div> </div>
         </div>
@@ -115,35 +115,35 @@
 
     <div id="toll-contain" class="content ">
         <div class="show">
-            <app-tollbooth [place]="place"></app-tollbooth> 
+            <app-tollbooth [place]="place"></app-tollbooth>
         </div>
     </div>
     <div id="departure-contain" class="content ">
         <div class="show">
-            <app-departure [place]="place"></app-departure> 
+            <app-departure [place]="place"></app-departure>
         </div>
     </div>
-    <div id="tour-contain" class="content">
+    <div id="navigation-contain" class="content">
         <div class="show">
-            <!-- <app-tea-saloon [place]="place"></app-tea-saloon> -->
+            <app-navigation [place]="place"></app-navigation>
         </div>
     </div>
     <div id="itinerary-contain" class="content">
         <div class="show">
-            <!-- <app-visitor [place]="place"></app-visitor> -->
+            <app-itinerary [place]="place"></app-itinerary>
         </div>
     </div>
 
     <div id="tea" class="box offer" (click)="onClick('tea','tea-content')">
         <div class="tea">
-            <div class="title">{{'home.meeting_room'|translate}} </div>
+            <div class="title">{{'home.tea_saloon'|translate}} </div>
             <div> </div>
             <div> </div>
         </div>
     </div>
     <div id="visitor" class="box offer" (click)="onClick('visitor','visitor-content')">
         <div class="visitor">
-            <div class="title">{{'home.tour_guide'|translate}} </div>
+            <div class="title">{{'home.visitor_center'|translate}} </div>
             <div> </div>
             <div> </div>
         </div>
@@ -151,7 +151,7 @@
     <!-- 會議室 -->
     <div id="meeting-room" class="box offer" (click)="onClick('meeting-room','meeting-content')">
         <div class="meeting-room">
-            <div class="title">{{'home.meeting-room'|translate}} </div>
+            <div class="title">{{'home.meeting_room'|translate}} </div>
             <div> </div>
             <div> </div>
         </div>
@@ -161,6 +161,17 @@
             <div class="title">{{'home.salmon'|translate}} </div>
             <div> </div>
             <div> </div>
+        </div>
+    </div>
+
+    <div id="meeting-content" class="content ">
+        <div class="show">
+            <app-meeting-room [place]="place"></app-meeting-room>
+        </div>
+    </div>
+    <div id="tea-content" class="content ">
+        <div class="show">
+            <app-tea-shop [place]="place"></app-tea-shop>
         </div>
     </div>
 </div>

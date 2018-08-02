@@ -22,7 +22,8 @@
     "coffee_bar": "森林咖啡吧",
     "meeting_room": "會議中心",
     "tour_guide": "導覽服務",
-    "salmon": "櫻花鉤吻鮭"
+    "salmon": "櫻花鉤吻鮭",
+    "itinerary":"行程建議"
   },
   "translation": {
     "select_language": "請選擇語言",

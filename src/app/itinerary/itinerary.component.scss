@@ -1,11 +1,12 @@
 div.content {
+    max-width: 800px;  
     text-align: left;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
     font-weight: normal;
     color: #4A4A4A;    
-    margin: 0px 30px 0px 30px; 
+    margin: 0px 24px ; 
 }
 
 div h1{
@@ -17,47 +18,62 @@ div h1{
     background-color: #D5D5D5;    
 }
 
+div.title{
+  color:green;
+  font-size: 16px;
+  font-weight:bold;
+  line-height:32px;
+  margin: 20px 0px 0px 0px;  
+} 
+
 hr {  
     border: 0;
     border-bottom: 1px dashed #ccc;
     background: #999;      
   }
 
-div.title{
-  color:green;
-  font-size: 16px;
-  font-weight:bold;
-  line-height:32px;
-  margin: 20px 0px 0px 0px;
-  
-} 
-
-div.contain{
-    min-height: 190px;
-}
-
-img.leftside{
-  float:left;
-  margin: 10px 20px 10px 10px; 
+div.suggest{
+  color:#603A0A;
+  margin: 10px 0px 20px 0px;
+ 
 }
 
 img.rightside{
   float:right;
   margin: 10px 10px 10px 20px; 
 }
- 
 
-@media only screen and (max-width:1200px) {}
-@media only screen and (max-width:1023px) {}
-@media only screen and (max-width:768px) {}
+ /* Big table to 1200px (widths smaller than the 1140px row */
+
+ @media only screen and (max-width:1200px) {
+  
+}
+
+/* Small tablet to big tablet: 768px to 1023  */
+
+@media screen and (max-width:1023px) {   
+}
+
+/* Small phones to small tablets: from 0 to 480px */
+
+@media only screen and (max-width:768px) {   
+}
+
+/* Small phone: from 0 to 480px */
+
 @media only screen and (max-width:480px) {
-    div.content {
-        border: 12px;
-        background-color: white;
-        margin: 0px 12px ;
-    }
+  div.content {  
+    text-align: center;   
+    margin:0px  12px; 
+    background-color: white;
+}
+
+ul{
+  text-align:left; 
+}
+ 
   img.leftside{
-    float: left;
+    float:left;
     margin: 10px 0px 10px 0px;      
     width: auto;
 	  height: auto;
@@ -66,7 +82,7 @@ img.rightside{
   }
   
   img.rightside{
-    float:right;
+    float:unset;
     margin: 10px 0px 10px 0px; 
     width: auto;
 	  height: auto;
@@ -74,3 +90,4 @@ img.rightside{
 	  max-height: 100%;
   }
 }
+
