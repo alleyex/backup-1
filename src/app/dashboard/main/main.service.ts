@@ -3,7 +3,7 @@ import { ScrollToConfigOptions, ScrollToService } from '@nicky-lenaers/ngx-scrol
 
 @Injectable()
 export class MainService {
-    constructor(private scrollToService: ScrollToService) { }   
+    constructor(private scrollToService: ScrollToService) { }
 
     smallScreen() {
         this.setPosition('hotel-contain', 'stay', 2);
@@ -27,12 +27,12 @@ export class MainService {
         list.insertBefore(node, list.childNodes[position]);
     }
 
-    gatPosition(id: string){
+    gatPosition(id: string) {
         let el = document.getElementById(id);
         let offset = el.getBoundingClientRect().top
 
-        if(offset < -200){
-            this.setScroll(id, 200 , 0 , -68);
+        if (offset < -200) {
+            this.setScroll(id, 1000, 0, -68);
         }
     }
 
@@ -46,7 +46,7 @@ export class MainService {
                 offset,
                 duration: duration,
                 easing: 'easeOutQuad',
-                  
+
             };
             this.scrollToService.scrollTo(config);
         }, time);

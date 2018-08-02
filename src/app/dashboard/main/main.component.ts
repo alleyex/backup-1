@@ -26,13 +26,13 @@ export class MainComponent implements DoCheck {
     onClick(place: string, target: string) {
         if (this.place == place) {
             this.place = 'other';
-            this.mainService.setScroll(place, 600, 0 , 68);
+            this.mainService.setScroll(place, 800, 1000 , 68);
         } else {
             if (this.place !='other') {
-                this.mainService.gatPosition(this.place);
+                this.mainService.gatPosition(this.place);                
             }
-            this.mainService.setScroll(target, 600, 1100, 68 );
-            this.place = place;
+             this.mainService.setScroll(target, 800, 1000, 68 );
+             this.place = place;
         }
     }
 

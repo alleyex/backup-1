@@ -19,6 +19,8 @@ import { GalleryModule } from '@ngx-gallery/core';
 import { MainService } from './main/main.service';
 import { TollboothComponent } from '../tollbooth/tollbooth.component';
 import { DepartureComponent } from '../departure/departure.component';
+import { EcotourismComponent } from '../ecotourism/ecotourism.component';
+import { ProductComponent } from '../product/product.component';
 
 @NgModule({
     declarations: [
@@ -32,7 +34,9 @@ import { DepartureComponent } from '../departure/departure.component';
         CampsiteComponent,
         RestaurantComponent,
         TollboothComponent,
-        DepartureComponent
+        DepartureComponent,
+        EcotourismComponent,
+        ProductComponent
     ],
     imports: [ 
         SharedModule,

@@ -12,7 +12,7 @@ export const ExpandModel = [
             height: '*',
             transform: 'scale(1)'
         })),
-        transition('false =>true', animate('750ms 250ms  ease-out')),
-        transition('true =>false', animate('750ms 250ms ease-in'))
+        transition('false =>true', animate('1000ms  ease-out')),
+        transition('true =>false', animate('1000ms  ease-in'))
     ])
   ]
