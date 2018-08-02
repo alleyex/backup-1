@@ -30,8 +30,7 @@ export class MainComponent implements OnInit, DoCheck,OnDestroy {
     }
 
     onClick(place: string, target: string) {
-        console.log('target:'+ target);
-        console.log('place:' + place);
+       
         if (this.place == place) {
             this.place = 'other';
             this.mainService.setScroll(place, 600, 600, 68);

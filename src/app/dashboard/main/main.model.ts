@@ -3,16 +3,18 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 export const ExpandModel = [
     trigger('place', [
         state('false', style({
-            overflow: 'hidden',
+           
+            overflow:'scroll',
             height: '0px',
             transform: 'scale(0)'
         })),
         state('true', style({
-            overflow: 'hidden',
+            
+            overflow:'scroll',
             height: '*',
             transform: 'scale(1)'
         })),
-        transition('false =>true', animate('600ms ease-out')),
-        transition('true =>false', animate('400ms  ease-in'))
+        transition('false =>true', animate('500ms ease-out')),
+        transition('true =>false', animate('500ms  ease-in'))
     ])
   ]

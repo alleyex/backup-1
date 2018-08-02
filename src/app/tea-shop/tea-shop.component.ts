@@ -11,9 +11,7 @@ export class TeaShopComponent implements OnChanges {
     isDivVisible = false;
     @Input() place: string;
 
-    ngOnChanges() {     
-       
-        console.log('tea place:' +this.place); 
+    ngOnChanges() {         
         if (this.place == 'tea') {
             this.isDivVisible = true;
 

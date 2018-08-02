@@ -12,7 +12,7 @@ export class TollboothComponent implements OnChanges{
     @Input() place: string;
 
     ngOnChanges() {     
-        if (this.place == 'tollbooth') {
+        if (this.place == 'toll') {
             this.isDivVisible = true;
         } else {
             this.isDivVisible = false;

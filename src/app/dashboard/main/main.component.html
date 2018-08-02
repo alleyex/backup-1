@@ -1,3 +1,4 @@
+<div id="test11">
 <div class="content">
     <div class="banner">
         <app-announce></app-announce>
@@ -18,7 +19,7 @@
             <div class="title">{{'home.hotel'|translate}} </div>
         </div>
     </div>
-    <div id="campsite" class="box living" (click)="onClick('campsite','camping-contain')">
+    <div id="campsite" class="box living" (click)="onClick('campsite','campsite-contain')">
         <div class="camping">
             <div class="title">{{'home.camp_area'|translate}} </div>
             <div></div>
@@ -30,7 +31,7 @@
             <app-hotel [place]="place"></app-hotel>
         </div>
     </div>
-    <div id="camping-contain" class="content ">
+    <div id="campsite-contain" class="content ">
         <div class="show">
             <app-campsite [place]="place"></app-campsite>
         </div>
@@ -80,7 +81,7 @@
 <div id="information" class="content">
     <h3 class="article">{{'home.special_offer'|translate}}</h3>
     <!-- 收費 -->
-    <div id="tollbooth" class="box offer" (click)="onClick('tollbooth','toll-contain')">
+    <div id="toll" class="box offer" (click)="onClick('toll','toll-contain')">
         <div class="tollbooth">
             <div class="title">{{'home.ticket_price'|translate}} </div>
             <div> </div>
@@ -174,4 +175,5 @@
             <app-tea-shop [place]="place"></app-tea-shop>
         </div>
     </div>
+</div>
 </div>

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ScrollToConfigOptions, ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
-import { Subject } from '../../../../node_modules/rxjs';
+import { Subject } from 'rxjs';
+import { element } from '../../../../node_modules/@angular/core/src/render3/instructions';
 
 @Injectable()
 export class MainService {
@@ -30,24 +31,59 @@ export class MainService {
         list.insertBefore(node, list.childNodes[position]);
     }
 
-    gatPosition(past: string,place: string, target: string) {
+    gatPosition(past: string, place: string, target: string) {
+
         let el = document.getElementById(past);
         let offset = el.getBoundingClientRect().top
-        let abs = Math.abs(offset)/3;
+        if (offset < -100) {
+            this.setScroll(place, 200, 0, 68);
+            setTimeout(() => {
+                this.place$.next(place);
+                let pastEl = document.getElementById(past + '-contain');
+                pastEl.style.display = 'none';
 
-        if (offset < -200) {
-            this.setScroll(past, abs, 0, -100);
-            this.after(abs,place, target);
-        }else{
-            this.after(0,place, target);
+                let placeEl = document.getElementById(place);
+                window.scrollTo(0, placeEl.offsetTop);
+
+                setTimeout(() => {
+                    pastEl.style.display = 'block';
+                }, 900);
+                this.setScroll(target, 600, 800, 68);
+            }, 400);
+          
+        } else {
+            this.place$.next(place);
+            this.setScroll(target, 400, 500, 68);
         }
     }
 
-    private after(time: number, place: string,target: string) {
+    private hied(past: string, place: string) {
+        let placeEl = document.getElementById(place);
+        let pastEl = document.getElementById(past + '-contain');
+        pastEl.style.display = 'none';
+
+        window.scrollTo(0, placeEl.offsetTop);
+        setTimeout(() => {
+            pastEl.style.display = 'block';
+            this.place$.next(place);
+            console.log('pastEl.style.display  : block');
+        }, 900);
+
+    }
+
+    // private before(place: string, target: string ) {
+    //     this.setScroll(target, 200, 0, 68);
+    //     setTimeout(() => {
+    //         this.place$.next(place);  
+    //         this.hied(past,place);  
+    //    }, 220);
+    // }
+
+    private after(time: number, place: string, target: string) {
         let interval = setInterval(() => {
             clearInterval(interval);
-            this.place$.next(place);
-            this.setScroll(target, 600, 600, 68);  
+
+            this.setScroll(target, 600, 900, 68);
         }, time);
     }
 
