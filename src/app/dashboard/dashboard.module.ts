@@ -1,22 +1,26 @@
 import { NgModule } from '@angular/core';
- 
-import { SharedModule } from '../shared/shared.module';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { GalleryModule } from '@ngx-gallery/core';
+
+import { AgmCoreModule } from '@agm/core';
+import { AgmDirectionModule } from 'agm-direction'
 
 import { DashboardComponent } from './dashboard.component';
+import { MainService } from './main/main.service';
 import { MainComponent } from './main/main.component';
-import { RealTimeModule } from '../real-time/real-time.module';
 import { AsideRightComponent } from './aside-right/aside-right.component';
 import { AsideLeftComponent } from './aside-left/aside-left.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component'; 
+import { FooterComponent } from './footer/footer.component';
+
+import { AppRoutingModule } from '../app-routing.module';
+import { SharedModule } from '../shared/shared.module';
+
+import { RealTimeModule } from '../real-time/real-time.module';
 import { AnnounceModule } from '../announce/announce.mudule';
 import { HotelComponent } from '../hotel/hotel.component';
-import { CampsiteComponent } from '../campsite/campsite.component';  
+import { CampsiteComponent } from '../campsite/campsite.component';
 import { RestaurantComponent } from '../restaurant/restaurant.component';
-import { AppRoutingModule } from '../app-routing.module';
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { GalleryModule } from '@ngx-gallery/core';
-import { MainService } from './main/main.service';
 import { TollboothComponent } from '../tollbooth/tollbooth.component';
 import { DepartureComponent } from '../departure/departure.component';
 import { EcotourismComponent } from '../ecotourism/ecotourism.component';
@@ -25,6 +29,13 @@ import { NavigationComponent } from '../navigation/navigation.component';
 import { ItineraryComponent } from '../itinerary/itinerary.component';
 import { MeetingRoomComponent } from '../meeting-room/meeting-room.component';
 import { TeaShopComponent } from '../tea-shop/tea-shop.component';
+import { VisitorCenterComponent } from '../visitor-center/visitor-center.component';
+import { CoffeeBarComponent } from '../coffee-bar/coffee-bar.component';
+import { GoogleMapComponent } from '../google-map/google-map.component';
+import { GoogleMapService } from '../google-map/google-map.service';
+import { DeviceService } from './device.service';
+import { MenuComponent } from '../restaurant/menu/menu.component';
+
 
 @NgModule({
     declarations: [
@@ -44,20 +55,27 @@ import { TeaShopComponent } from '../tea-shop/tea-shop.component';
         NavigationComponent,
         ItineraryComponent,
         MeetingRoomComponent,
-        TeaShopComponent
+        TeaShopComponent,
+        VisitorCenterComponent,
+        CoffeeBarComponent,
+        GoogleMapComponent,
+        MenuComponent
     ],
-    imports: [ 
+    imports: [
         SharedModule,
         RealTimeModule,
         AnnounceModule,
-        RealTimeModule ,
+        RealTimeModule,
         AppRoutingModule,
+        AgmCoreModule,
+        AgmDirectionModule,
         ScrollToModule.forRoot(),
         GalleryModule.forRoot()
     ],
     exports: [
         DashboardComponent
     ],
-    providers: [MainService],
+    providers: [MainService, GoogleMapService, DeviceService],
+    entryComponents: [GoogleMapComponent,MenuComponent]
 })
-export class DashboardModule {}
+export class DashboardModule { }

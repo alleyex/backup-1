@@ -4,13 +4,13 @@ export const ExpandModel = [
     trigger('place', [
         state('false', style({
            
-            overflow:'scroll',
+            overflow: 'hidden',
             height: '0px',
             transform: 'scale(0)'
         })),
         state('true', style({
             
-            overflow:'scroll',
+            overflow: 'hidden',
             height: '*',
             transform: 'scale(1)'
         })),

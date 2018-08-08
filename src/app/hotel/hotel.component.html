@@ -1,293 +1,590 @@
-<div class="content" [@place]="isDivVisible">
-    <div class="introduction">
-        <div class="title">
-            {{'wuling-hotel.title'|translate}}
-        </div>
-        <div>
-            {{'wuling-hotel.introduction'|translate}}
-        </div>
-    </div>
-    <div class="tabs">
-        <mat-tab-group>
-            <mat-tab [label]="'wuling-hotel.wuling_hotel'|translate">
-                <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#DDDDDD" summary="Layout table-Room Price Table">
-                    <tr>
-                        <!-- <th rowspan="2">Photo</th> -->
-                        <th rowspan="2">{{'wuling-hotel.room_type'|translate}}</th>
-                        <th rowspan="2">{{'wuling-hotel.price'|translate}}</th>
-                        <th colspan="2">{{'wuling-hotel.general_people'|translate}}</th>
-                        <th colspan="2">{{'wuling-hotel.special'|translate}}</th>
-                        <th>{{'wuling-hotel.veterans'|translate}}</th>
-                        <th rowspan="2">{{'wuling-hotel.note'|translate}}</th>
-                    </tr>
-                    <tr>
-                        <th>{{'wuling-hotel.holiday'|translate}}</th>
-                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
-                        <th>{{'wuling-hotel.holiday'|translate}}</th>
-                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
-                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-1.jpg" rel="openimg" title="Creek Building. Twin Room"><img src="images/s01-1.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.creek_building'|translate}}</td>
-                        <td>NT$ 3420</td>
-                        <td>NT$ 3420</td>
-                        <td>NT$ 2936</td>
-                        <td>NT$ 3178</td>
-                        <td>NT$ 2694</td>
-                        <td>NT$ 2331</td>
-                        <td class="note">{{'wuling-hotel.two_single'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-2.jpg" rel="openimg" title="Honeymoon Suite"><img src="images/s01-2.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.honeymoon_suite'|translate}}</td>
-                        <td>NT$ 3750</td>
-                        <td>NT$ 3750</td>
-                        <td>NT$ 3200</td>
-                        <td>NT$ 3475</td>
-                        <td>NT$ 2925</td>
-                        <td>NT$ 2513</td>
-                        <td class="note">{{'wuling-hotel.one_king'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-3.jpg" rel="openimg" title="Maple Cottage Double Room Suite"><img src="images/s01-3.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.maple_cottage'|translate}}</td>
-                        <td>NT$ 4300</td>
-                        <td>NT$ 4300</td>
-                        <td>NT$ 3640</td>
-                        <td>NT$ 3970</td>
-                        <td>NT$ 3310</td>
-                        <td>NT$ 2815</td>
-                        <td class="note">{{'wuling-hotel.one_king'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-4.jpg" rel="openimg" title="Family Suite"><img src="images/s01-4.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.family_suite'|translate}}</td>
-                        <td>NT$ 5190</td>
-                        <td>NT$ 5190</td>
-                        <td>NT$ 4552</td>
-                        <td>NT$ 4871</td>
-                        <td>NT$ 4233</td>
-                        <td>NT$ 3755</td>
-                        <td class="note">{{'wuling-hotel.two_double'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-5.jpg" rel="openimg" title="Family Suite"><img src="images/s01-5.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.family_suite'|translate}}</td>
-                        <td>NT$ 5190</td>
-                        <td>NT$ 5190</td>
-                        <td>NT$ 4552</td>
-                        <td>NT$ 4871</td>
-                        <td>NT$ 4233</td>
-                        <td>NT$ 3755</td>
-                        <td class="note">{{'wuling-hotel.one_double_two_single'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-6.jpg" rel="openimg" title="Attic Japanese Style Suite"><img src="images/s01-6.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.japanese_style'|translate}}</td>
-                        <td>NT$ 7500</td>
-                        <td>NT$ 7500</td>
-                        <td>NT$ 6600</td>
-                        <td>NT$ 7050</td>
-                        <td>NT$ 6150</td>
-                        <td>NT$ 5475</td>
-                        <td class="note">-</td>
-                    </tr>
-                </table>
-            </mat-tab>
-            <mat-tab [label]="'wuling-hotel.leisure_farm_villa'|translate">
-                <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#DDDDDD" summary="Layout table-Room Price Table">
-                    <tr>
-                        <!-- <th rowspan="2">Photo</th> -->
-                        <th rowspan="2">{{'wuling-hotel.room_type'|translate}}</th>
-                        <th rowspan="2">{{'wuling-hotel.price'|translate}}</th>
-                        <th colspan="2">{{'wuling-hotel.general_people'|translate}}</th>
-                        <th colspan="2">{{'wuling-hotel.special'|translate}}</th>
-                        <th>{{'wuling-hotel.veterans'|translate}}</th>
-                        <th rowspan="2">{{'wuling-hotel.note'|translate}}</th>
-                    </tr>
-                    <tr>
-                        <th>{{'wuling-hotel.holiday'|translate}}</th>
-                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
-                        <th>{{'wuling-hotel.holiday'|translate}}</th>
-                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
-                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-1.jpg" rel="openimg" title="Creek Building. Twin Room"><img src="images/s01-1.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.peach_double'|translate}}</td>
-                        <td>NT$ 3420</td>
-                        <td>NT$ 3420</td>
-                        <td>NT$ 2936</td>
-                        <td>NT$ 3178</td>
-                        <td>NT$ 2694</td>
-                        <td>NT$ 2331</td>
-                        <td class="note">{{'wuling-hotel.one_king'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-2.jpg" rel="openimg" title="Honeymoon Suite"><img src="images/s01-2.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.peach_quadruple'|translate}}</td>
-                        <td>NT$ 3750</td>
-                        <td>NT$ 3750</td>
-                        <td>NT$ 3200</td>
-                        <td>NT$ 3475</td>
-                        <td>NT$ 2925</td>
-                        <td>NT$ 2513</td>
-                        <td class="note">{{'wuling-hotel.two_double'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-3.jpg" rel="openimg" title="Maple Cottage Double Room Suite"><img src="images/s01-3.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.wunkang_big'|translate}}</td>
-                        <td>NT$ 4300</td>
-                        <td>NT$ 4300</td>
-                        <td>NT$ 3640</td>
-                        <td>NT$ 3970</td>
-                        <td>NT$ 3310</td>
-                        <td>NT$ 2815</td>
-                        <td class="note">{{'wuling-hotel.one_double_one_single'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-4.jpg" rel="openimg" title="Family Suite"><img src="images/s01-4.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.wunkang_small'|translate}}</td>
-                        <td>NT$ 5190</td>
-                        <td>NT$ 5190</td>
-                        <td>NT$ 4552</td>
-                        <td>NT$ 4871</td>
-                        <td>NT$ 4233</td>
-                        <td>NT$ 3755</td>
-                        <td class="note">{{'wuling-hotel.one_double_one_single'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-5.jpg" rel="openimg" title="Family Suite"><img src="images/s01-5.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.wunkang_japenese'|translate}}</td>
-                        <td>NT$ 5190</td>
-                        <td>NT$ 5190</td>
-                        <td>NT$ 4552</td>
-                        <td>NT$ 4871</td>
-                        <td>NT$ 4233</td>
-                        <td>NT$ 3755</td>
-                        <td class="note">{{'wuling-hotel.four_mattresses'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-6.jpg" rel="openimg" title="Attic Japanese Style Suite"><img src="images/s01-6.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.farm_japenese'|translate}}</td>
-                        <td>NT$ 7500</td>
-                        <td>NT$ 7500</td>
-                        <td>NT$ 6600</td>
-                        <td>NT$ 7050</td>
-                        <td>NT$ 6150</td>
-                        <td>NT$ 5475</td>
-                        <td class="note">{{'wuling-hotel.four_mattresses'|translate}}</td>
-                    </tr>
-                </table>
-            </mat-tab>
-            <mat-tab [label]="'wuling-hotel.shanshui_villa'|translate">
-                <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#DDDDDD" summary="Layout table-Room Price Table">
-                    <tr>
-                        <!-- <th rowspan="2">Photo</th> -->
-                        <th rowspan="2">{{'wuling-hotel.room_type'|translate}}</th>
-                        <th rowspan="2">{{'wuling-hotel.price'|translate}}</th>
-                        <th colspan="2">{{'wuling-hotel.general_people'|translate}}</th>
-                        <th colspan="2">{{'wuling-hotel.special'|translate}}</th>
-                        <th>{{'wuling-hotel.veterans'|translate}}</th>
-                        <th rowspan="2">{{'wuling-hotel.note'|translate}}</th>
-                    </tr>
-                    <tr>
-                        <th>{{'wuling-hotel.holiday'|translate}}</th>
-                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
-                        <th>{{'wuling-hotel.holiday'|translate}}</th>
-                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
-                        <th>{{'wuling-hotel.weekdays'|translate}}</th>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-1.jpg" rel="openimg" title="Creek Building. Twin Room"><img src="images/s01-1.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.salmon_room'|translate}}</td>
-                        <td>NT$ 3420</td>
-                        <td>NT$ 3420</td>
-                        <td>NT$ 2936</td>
-                        <td>NT$ 3178</td>
-                        <td>NT$ 2694</td>
-                        <td>NT$ 2331</td>
-                        <td class="note">{{'wuling-hotel.two_single'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-2.jpg" rel="openimg" title="Honeymoon Suite"><img src="images/s01-2.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.peach_room'|translate}}</td>
-                        <td>NT$ 3750</td>
-                        <td>NT$ 3750</td>
-                        <td>NT$ 3200</td>
-                        <td>NT$ 3475</td>
-                        <td>NT$ 2925</td>
-                        <td>NT$ 2513</td>
-                        <td class="note">{{'wuling-hotel.one_king'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-3.jpg" rel="openimg" title="Maple Cottage Double Room Suite"><img src="images/s01-3.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.maple_room'|translate}}</td>
-                        <td>NT$ 4300</td>
-                        <td>NT$ 4300</td>
-                        <td>NT$ 3640</td>
-                        <td>NT$ 3970</td>
-                        <td>NT$ 3310</td>
-                        <td>NT$ 2815</td>
-                        <td class="note">{{'wuling-hotel.one_king'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-4.jpg" rel="openimg" title="Family Suite"><img src="images/s01-4.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.apple_Plum'|translate}}</td>
-                        <td>NT$ 5190</td>
-                        <td>NT$ 5190</td>
-                        <td>NT$ 4552</td>
-                        <td>NT$ 4871</td>
-                        <td>NT$ 4233</td>
-                        <td>NT$ 3755</td>
-                        <td class="note">{{'wuling-hotel.two_double'|translate}}</td>
-                    </tr>
-                    <tr>
-                        <!-- <td><a href="images/01-5.jpg" rel="openimg" title="Family Suite"><img src="images/s01-5.jpg" width="30" height="30" alt="Room Thumbnail"/></a></td> -->
-                        <td>{{'wuling-hotel.cherry_room'|translate}}</td>
-                        <td>NT$ 5190</td>
-                        <td>NT$ 5190</td>
-                        <td>NT$ 4552</td>
-                        <td>NT$ 4871</td>
-                        <td>NT$ 4233</td>
-                        <td>NT$ 3755</td>
-                        <td class="note">{{'wuling-hotel.two_double'|translate}}</td>
-                    </tr>
-                </table>
-            </mat-tab>
-        </mat-tab-group>
-    </div>
-    <div>
-        <ul>
-            <li>
-                {{'wuling-hotel.notice_01'|translate}}
-            </li>
-            <li>
-                {{'wuling-hotel.notice_02'|translate}}
-            </li>
-            <li>
-                <div>
-                    {{'wuling-hotel.notice_03a'|translate}}
-                </div>
-                <div>
-                    {{'wuling-hotel.notice_03b'|translate}}
-                </div>
-            </li>
-            <li>
-                <div>
-                    {{'wuling-hotel.notice_04a'|translate}}
-                </div>
-                <div>
-                    {{'wuling-hotel.notice_04b'|translate}}
-                </div>
-            </li>
-            <li>
-                {{'wuling-hotel.notice_05'|translate}}
-            </li>
-            <li>
-                {{'wuling-hotel.notice_06'|translate}}
-            </li>
-        </ul>
-    </div>
+<div [@place]="isDivVisible">
+  <mat-card>
+    <mat-card-content>
+      <p>
+        {{'wuling-hotel.introduction'|translate}}
+      </p>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>hotel</mat-icon>
+            </mat-panel-title>
+            <mat-panel-description>
+              國民賓館本棟
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <h4>
+            <button mat-raised-button (click)="openMap(24.345592,121.308265)">
+              溪樓.雙人套房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fcreek-double%2Fcreek-duble-01.jpg?alt=media&token=efe9c1ed-dc06-45bf-b6b5-93cbaff0df4c"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 2936</td>
+                <td>NT$ 2694</td>
+                <td>NT$ 2331</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 3420</td>
+                <td>NT$ 3178</td>
+                <td>NT$ 3178</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p> 2小床</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+            <button mat-raised-button (click)="openMap(24.346154, 121.308263)">
+              蜜月套房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fhoneymoon-suite%2Fhoneymoon-suite01.jpg?alt=media&token=edea18b5-fa36-410e-94d4-59968f782ad5"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 3200</td>
+                <td>NT$ 2925</td>
+                <td>NT$ 2513</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 3750</td>
+                <td>NT$ 3475</td>
+                <td>NT$ 3475</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p>1大床</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+            <button  mat-raised-button (click)="openMap(24.346154, 121.308263)">
+              四人套房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Ffamily-suite%2Ffamily-suite-01.jpg?alt=media&token=06cb15d6-5901-4869-9b51-777c6bb156f5"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 4552</td>
+                <td>NT$ 4233</td>
+                <td>NT$ 3755</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 5190</td>
+                <td>NT$ 4871</td>
+                <td>NT$ 4871</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p> 2大床或1大2小床
+            </p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+            <button mat-raised-button (click)="openMap(24.346154, 121.308263)">
+              六人閣樓和室套房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fjapanese-style-suite%2Fjapanese-style-suite-01.jpg?alt=media&token=7177ae7d-a780-4b07-9abe-63278fea2c5f"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 6600</td>
+                <td>NT$ 6150</td>
+                <td>NT$ 5475</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 7500</td>
+                <td>NT$ 7050</td>
+                <td>NT$ 7050</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p>6個單人床墊</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+            <button  mat-raised-button (click)="openMap(24.345069, 121.308203)">
+              楓林木屋
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fmaple-double%2Fmaple-double-01.jpg?alt=media&token=4400b8f9-c45c-4653-9683-dd9df48784f6"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 3640</td>
+                <td>NT$ 3310</td>
+                <td>NT$ 2815</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 4300</td>
+                <td>NT$ 3970</td>
+                <td>NT$ 3970</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p> 1大床 </p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+        </mat-expansion-panel>
+      </mat-accordion>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>hotel</mat-icon>
+            </mat-panel-title>
+            <mat-panel-description>
+              休閒農莊
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <h4>
+              <button  mat-raised-button (click)="openMap(24.350666, 121.310016)">
+              桃花莊.雙人套房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fshanshui-peach-double-room%2Fshanshui-peach-double-room-01.jpg?alt=media&token=fd0f273b-d900-491b-a5b3-97a3ecca9011"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 2936</td>
+                <td>NT$ 2694</td>
+                <td>NT$ 2331</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 3420</td>
+                <td>NT$ 3178</td>
+                <td>NT$ 3178</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p>1大床</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button  mat-raised-button (click)="openMap(24.350666, 121.310016)">
+              桃花莊.四人套房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fpeach-blossom-village-quadruple-room%2Fpeach-blossom-village-double-room-01.jpg?alt=media&token=9d6826c8-6644-4690-97ab-48799586f3e4"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 4200</td>
+                <td>NT$ 3925</td>
+                <td>NT$ 3513</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 4750</td>
+                <td>NT$ 4475</td>
+                <td>NT$ 4475</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p>2大床</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button  mat-raised-button (click)="openMap(24.355179, 121.311531)">
+              文康館.大間3人房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fwunkang-cottage-triple-big%2Fwunkang-cottage-triple-big-01.jpg?alt=media&token=7c0b1b0f-2b38-43bc-b650-22b81d82521d"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 4300</td>
+                <td>NT$ 3950</td>
+                <td>NT$ 3425</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 5000</td>
+                <td>NT$ 4650</td>
+                <td>NT$ 4650</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p>1大床、1小床</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button  mat-raised-button (click)="openMap(24.355179, 121.311531)">
+              文康館.小間三人房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fwunkang-cottage-triple-small%2Fwunkang-cottage-triple-small-01.jpg?alt=media&token=72e7e244-1429-4778-84d9-a1baa85374d3"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 3900</td>
+                <td>NT$ 3600</td>
+                <td>NT$ 3150</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 4500</td>
+                <td>NT$ 4200</td>
+                <td>NT$ 4200</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p>1大床、1小床</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button  mat-raised-button (click)="openMap(24.355179, 121.311531)">
+              文康館和室區.四人套房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fwunkang-cottage-japanese-style-suite%2Fwunkang-cottage-japanese-style-suite-01.jpg?alt=media&token=6eb17b59-5e40-4bc5-aa63-858d081f39ee"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 4464</td>
+                <td>NT$ 4156</td>
+                <td>NT$ 3694</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 5080</td>
+                <td>NT$ 4772</td>
+                <td>NT$ 4772</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p> 4個單人床墊</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button  mat-raised-button (click)="openMap(24.355069, 121.312108)">
+              農莊和室區.四人套房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Ffarm-cottage-japanese-style-suite%2Ffarm-cottage-japanese-style-suite-01.jpg?alt=media&token=93282e0d-7097-4371-a457-8afdcdfbcc5c"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 4464</td>
+                <td>NT$ 4156</td>
+                <td>NT$ 3694</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 5080</td>
+                <td>NT$ 4772</td>
+                <td>NT$ 4772</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p>4個單人床墊</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+        </mat-expansion-panel>
+      </mat-accordion>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>hotel</mat-icon>
+            </mat-panel-title>
+            <mat-panel-description>
+              山水館
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <h4>
+              <button  mat-raised-button (click)="openMap(24.353238, 121.311310)">
+              鮭魚.雙人套房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fshanshui-salmon-double-room%2Fshanshui-salmon-double-room-01.jpg?alt=media&token=86f2f815-212b-4fb4-9254-96b7944d8230"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 4600</td>
+                <td>NT$ 4150</td>
+                <td>NT$ 3475</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 5500</td>
+                <td>NT$ 5050</td>
+                <td>NT$ 5050</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p> 2小床</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button  mat-raised-button (click)="openMap(24.353238, 121.311310)">
+              水蜜桃.雙人房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fshanshui-peach-double-room%2Fshanshui-peach-double-room-01.jpg?alt=media&token=fd0f273b-d900-491b-a5b3-97a3ecca9011"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 3880</td>
+                <td>NT$ 3520</td>
+                <td>NT$ 2980</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 4600</td>
+                <td>NT$ 4240</td>
+                <td>NT$ 4240</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p>1大床</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button  mat-raised-button (click)="openMap(24.353238, 121.311310)">
+              楓葉.雙人房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fshanshui-maple-double-room%2Fshanshui-maple-double-room-01.jpg?alt=media&token=ef19eb5c-3b4c-43dd-b53d-c418cb4805e1"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 3160</td>
+                <td>NT$ 2890</td>
+                <td>NT$ 2485</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 3700</td>
+                <td>NT$ 3430</td>
+                <td>NT$ 3430</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p> 2小床</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button  mat-raised-button (click)="openMap(24.353430, 121.311409)">
+              蘋果、梅花.四人房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fshanshui-apple-plum-quadruple-room%2Fshanshui-apple-plum-quadruple-room-01.jpg?alt=media&token=85a6f8f7-95d4-4a1d-b744-5ca0c4ef6f77"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 5600</td>
+                <td>NT$ 5150</td>
+                <td>NT$ 4475</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 6500</td>
+                <td>NT$ 6050</td>
+                <td>NT$ 6050</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p>2大床</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button  mat-raised-button (click)="openMap(24.353238, 121.311310)">
+              櫻花.四人房
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/hotel%2Fshanshui-cherry-quadruple-room%2Fshanshui-cherry-quadruple%20-room-01.jpg?alt=media&token=f10102f7-c4b2-4266-9410-af276927f6e8"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <table>
+              <tr>
+                <th>類別 </th>
+                <th>{{'wuling-hotel.general_people'|translate}}</th>
+                <th>{{'wuling-hotel.special'|translate}}</th>
+                <th>{{'wuling-hotel.veterans'|translate}}</th>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.weekdays'|translate}}</td>
+                <td>NT$ 3420</td>
+                <td>NT$ 2694</td>
+                <td>NT$ 2331</td>
+              </tr>
+              <tr>
+                <td>{{'wuling-hotel.holiday'|translate}}</td>
+                <td>NT$ 3475</td>
+                <td>NT$ 2925</td>
+                <td>NT$ 2513</td>
+              </tr>
+            </table>
+            <h4>床型</h4>
+            <p>2大床</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-card-content>
+  </mat-card>
 </div>

@@ -5,17 +5,24 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
+import { AgmCoreModule } from '@agm/core';
+
 import { AppComponent } from './app.component';
 import { DashboardModule } from './dashboard/dashboard.module';
+ 
 
 @NgModule({
   declarations: [
-    AppComponent 
+    AppComponent,
+  
   ],
   imports: [
     BrowserModule,
     HttpClientModule,    
-    DashboardModule,        
+    DashboardModule,  
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCA4W15qGAyT7GjJ3F5IEf9MaPRFliNyPs'
+    }),      
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

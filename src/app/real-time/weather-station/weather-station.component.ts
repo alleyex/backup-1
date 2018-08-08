@@ -27,12 +27,12 @@ export class WeatherStationComponent implements OnInit,OnDestroy{
             this.newly = result;
         });
 
-        this.getData();
+        // this.getData();
 
-        //每5分鐘檢查1次
-        this.interval = setInterval(() => {
-            this.getData();
-        }, 300000);
+        // //每5分鐘檢查1次
+        // this.interval = setInterval(() => {
+        //     this.getData();
+        // }, 300000);
     }
 
     getData() {

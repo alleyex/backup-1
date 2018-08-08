@@ -1,0 +1,11 @@
+agm-map{    
+    max-width: 100%; 
+    height: calc(100% - 32px);  
+ }
+ @media only screen and (max-width:480px) {   
+         agm-map{            
+             padding: 0;
+             margin: 0; 
+         }  
+   }
+ 

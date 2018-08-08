@@ -50,7 +50,7 @@ export class MainService {
                 }, 900);
                 this.setScroll(target, 600, 800, 68);
             }, 400);
-          
+
         } else {
             this.place$.next(place);
             this.setScroll(target, 400, 500, 68);
@@ -70,14 +70,6 @@ export class MainService {
         }, 900);
 
     }
-
-    // private before(place: string, target: string ) {
-    //     this.setScroll(target, 200, 0, 68);
-    //     setTimeout(() => {
-    //         this.place$.next(place);  
-    //         this.hied(past,place);  
-    //    }, 220);
-    // }
 
     private after(time: number, place: string, target: string) {
         let interval = setInterval(() => {

@@ -1,5 +1,11 @@
-import { Component, OnChanges, Input } from '@angular/core';
+import { Component, OnChanges, Input, OnInit, OnDestroy } from '@angular/core';
 import { ExpandModel } from '../dashboard/main/main.model';
+import { DeviceService } from '../dashboard/device.service';
+import { Subscription } from 'rxjs';
+import { MatDialog } from '@angular/material';
+
+import { MenuComponent } from '../restaurant/menu/menu.component';
+import { GoogleMapComponent } from '../google-map/google-map.component';
 
 @Component({
     selector: 'app-hotel',
@@ -7,34 +13,45 @@ import { ExpandModel } from '../dashboard/main/main.model';
     styleUrls: ['./hotel.component.scss'],
     animations: [ExpandModel]
 })
-export class HotelComponent implements OnChanges {
-    isDivVisible = false;
+export class HotelComponent implements OnInit, OnChanges, OnDestroy {
+    constructor(private deviceService: DeviceService, private dialog: MatDialog) { }
+
     @Input() place: string;
+    isDivVisible = false;
+    isCellphone$: Subscription;
+
+
+
+    ngOnInit() {
+        this.isCellphone$ = this.deviceService.isCellpone$.subscribe(result => { });
+    }
 
     ngOnChanges() {
-        // let cellphone = window.innerWidth <= 480;
+        if (this.place == 'hotel') {
+            this.isDivVisible = true;
+        } else {
+            this.isDivVisible = false;
+        }
 
-        // console.log('---------------------------');
-        // console.log('this.place = ' + this.place);
-        // console.log('this.isDivVisible = ' + this.isDivVisible);
-
-        // if (cellphone) {
-        //     if (this.place == 'hotel') {
-        //         if (this.isDivVisible) {
-        //             this.isDivVisible = false;
-        //         } else {
-        //             this.isDivVisible = true;
-        //         }
-        //     } else if (this.place == 'hotel-close') {
-        //         this.isDivVisible = false;
-        //     }
-        // }
-        // else {
-            if (this.place == 'hotel') {
-                this.isDivVisible = true;
-            } else {
-                this.isDivVisible = false;
-            }
-        // }
+        this.deviceService.checkScreen();
     }
+
+    ngOnDestroy() {
+        this.isCellphone$.unsubscribe();
+    }
+
+    openMap(lat: number, lng: number) {
+        console.log(lat + ':'+lng);
+        this.dialog.open(GoogleMapComponent, {
+            data: {
+                lat: lat,
+                lng: lng
+            },
+            height: '92vh',
+            width: '100vw',
+        });
+
+    }
+
+     
 }

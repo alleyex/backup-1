@@ -1,90 +1,62 @@
-div.content {
+mat-card{
     text-align: left;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 14px;
+}
+
+img{
+    float: left;
+    margin: 20px 8px;
+    width: calc((100% * 33 / 100 ) - 24px);   
+    max-height: 192px; 
+}
+
+article{
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0px 8px;
+    width: calc((100% * 66 / 100 ) - 44px); 
+}
+
+table{
+    width:100%;
+    border:0;
+    padding:0;
+    border-spacing: 1px;
+    background-color: #DDDDDD;
+    max-width: 600px;
+  }
+
+th,td{
     line-height: 24px;
     font-weight: normal;
-    color: #4A4A4A;
+    text-align: center;
+
 }
-  
-div.introduction {
-    padding: 20px 35px 15px 35px;
+th{     
+    color: #000000;
+    background-color: #EBEBEB;
+  }
+td{
+    color: #333333;
+    background-color: #FFFFFF;     
+  }
+
+
+@media only screen and (max-width:768px) {  
+    img{     
+        width:calc(100% / 2);
+        display:block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }  
+    article{
+        width: 100% ;
+    }   
+} 
+
+@media only screen and (max-width:480px) {  
+    img{     
+        width:100%;         
+    } 
+ 
 }
-  
-div.title{
-    color:green;
-    font-size: 16px;
-    font-weight:bold;
-}
-  
-div.tabs{
-    padding: 0px;
-}
-  
-table{
-    border-top-width: 1px;
-      border-top-style: solid;
-      border-top-color:transparent;
-      border-bottom-width: 1px;
-      border-bottom-style: solid;
-      border-bottom-color:transparent;
-  }
-   th{
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 24px;
-      font-weight: normal;
-      color: #000000;
-      background-color: #EBEBEB;
-      text-align: center;
-  }
-   td{
-      font-family: Verdana, Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 26px;
-      font-weight: normal;
-      color: #333333;
-      background-color: #FFFFFF;
-      text-align: center;
-  
-  }
-  ul{
-      list-style-type:decimal;
-      margin:20px 35px 0px 15px;
-  }
-  
-  .mat-tab-label-active {
-      color: #00ADEE !important;
-  } 
-  
-  .mat-tab-label {
-      min-width: 25px !important;
-      padding: 5px;
-      background-color: transparent;
-      color: red;
-      font-weight: 700;
-  }
-  
-  .mat-ink-bar {
-      background-color: green;
-  }
-  
-  @media only screen and (max-width:480px) {  
-      ul{		
-          margin:20px 10px 0px -10px;
-      }	
-      div.introduction {
-          padding: 20px 10px 15px 15px;
-        } 
-    }
-    @media only screen and (max-width:380px) {  	 
-      th{		 
-          font-size: 9px;
-          line-height: 20px;		 
-      }
-       td{		 
-          font-size: 10px;
-          line-height: 20px;	
-      }
-    }
-  

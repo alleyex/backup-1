@@ -1,87 +1,169 @@
-div.content {
-    text-align: left;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: normal;
-    color: #4A4A4A;
-  }
-  
-  div.title {
-    color: green;
-    font-size: 12px;
-    font-weight: bold;
-    margin: 20px 35px 20px 35px;
-  }
-  
-  div.introduction {
-    Display: inline-block;
-    margin: 20px 35px 20px 35px;
-  }
-  
-  div.notice {
-    color: green;
-    font-size: 12px;
-    font-weight: bold;
-    
-  }
-  
-  div.exsampe {
-    font-size: 12px;  
-  }
-  
-  div.telephone {
-    font-size: 12px;   
-  }
-  
-  div.coffee {
-    font-size: 12px;  
-  }
-  
-  div.alert {
-    font-size: 12px;  
-  }
-  
-  div.rule {
-    color: green;
-    font-size: 12px;
-    font-weight: bold;
-  }
-  
-  ul{
-      list-style-type:decimal;
-    font-size: 12px;   
-    margin: 10px 0px 10px -25px;
-    line-height: 24px;
-  }
-  
-  @media only screen and (max-width:1200px) {
-  
-  }
-  
-  @media screen and (max-width:1023px) {  
-  
-  }
-  
-  
-  
-@media only screen and (max-width:768px) { 
-    div.title {
-        margin: 10px 10px 10px 10px;
-    }
-    
-    div.introduction {   
-      margin: 10px 10px 10px 10px;
-    }    
-    
-    ul{    
-      margin: 10px 0px 10px -25px;
-    }  
+mat-card{
+  text-align: left;
 }
-  
-@media only screen and (max-width:480px) { 
+
+gallery, img{
+  display: inline-block;
+  margin:   8px;
+  width: calc((100%  / 3 ) - 16px);   
+  max-height: 250px; 
 }
-  
-@media only screen and (max-width:319px) {  
+
+img{
+  margin-top:20px;
+}
+
+ 
+
+article{
+  display: inline-block;   
+  vertical-align: top;
+  width: calc((100% / 3 * 2) - 16px);
+  margin:   8px;   
+}
+
+table{
+  width:100%;
+  border:0;
+  padding:0;
+  border-spacing: 1px;
+  background-color: #DDDDDD;
+  max-width: 600px;
+}
+
+th,td{
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+
+}
+th{     
+  color: #000000;
+  background-color: #EBEBEB;
+}
+td{
+  color: #333333;
+  background-color: #FFFFFF;     
+}
+
+@media screen and (max-width:1023px) {
+  gallery, img{     
+    max-height: 200px;
 }  
+}
+
+@media only screen and (max-width:768px) {  
+  gallery, img{     
+      width: 60%;
+      display:block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+  }  
+
+  
+  article{
+      width: 100% ;
+  }   
+} 
+
+@media only screen and (max-width:480px) {  
+  gallery, img{     
+    width:100%;  
+}  
+  
+
+}
+
+
+
+
+
+// div.content {
+//     text-align: left;
+//     font-family: Verdana, Arial, Helvetica, sans-serif;
+//     font-size: 12px;
+//     line-height: 24px;
+//     font-weight: normal;
+//     color: #4A4A4A;
+//   }
+  
+//   div.title {
+//     color: green;
+//     font-size: 12px;
+//     font-weight: bold;
+//     margin: 20px 35px 20px 35px;
+//   }
+  
+//   div.introduction {
+//     Display: inline-block;
+//     margin: 20px 35px 20px 35px;
+//   }
+  
+//   div.notice {
+//     color: green;
+//     font-size: 12px;
+//     font-weight: bold;
+    
+//   }
+  
+//   div.exsampe {
+//     font-size: 12px;  
+//   }
+  
+//   div.telephone {
+//     font-size: 12px;   
+//   }
+  
+//   div.coffee {
+//     font-size: 12px;  
+//   }
+  
+//   div.alert {
+//     font-size: 12px;  
+//   }
+  
+//   div.rule {
+//     color: green;
+//     font-size: 12px;
+//     font-weight: bold;
+//   }
+  
+//   ul{
+//       list-style-type:decimal;
+//     font-size: 12px;   
+//     margin: 10px 0px 10px -25px;
+//     line-height: 24px;
+//   }
+  
+//   @media only screen and (max-width:1200px) {
+  
+//   }
+  
+//   @media screen and (max-width:1023px) {  
+  
+//   }
+  
+  
+  
+// @media only screen and (max-width:768px) { 
+//     div.title {
+//         margin: 10px 10px 10px 10px;
+//     }
+    
+//     div.introduction {   
+//       margin: 10px 10px 10px 10px;
+//     }    
+    
+//     ul{    
+//       margin: 10px 0px 10px -25px;
+//     }  
+// }
+  
+// @media only screen and (max-width:480px) { 
+// }
+  
+// @media only screen and (max-width:319px) {  
+// }  
   

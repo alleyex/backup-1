@@ -1,4 +1,214 @@
-<div class="content" [@place]="isDivVisible">
+<div [@place]="isDivVisible">
+  <mat-card>
+    <mat-card-content>
+      <gallery id="camping" thumbWidth="0" thumbHeight="0" [items]="items" panSensitivity="400"></gallery>
+      <article>
+        {{'campsite.about'|translate}}
+      </article>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>hotel</mat-icon>
+            </mat-panel-title>
+            <mat-panel-description>
+              露營位
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <h4>
+              <button mat-raised-button (click)="openMap(24.381817, 121.303908)">
+              A區、A1區汽車棧板
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/camping%2Falbum%2Fpic1-1-10.jpg?alt=media&token=f2ed8493-96b4-4e70-8ea2-95d215264604"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <p>NT$ 1000</p>
+            <h4>備註</h4>
+            <p> 須自搭營帳，木棧板營位 。(A1區為300cm*300cm，A區為320cm*300cm)。</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button mat-raised-button (click)="openMap(24.380047, 121.305344)">
+              D1區汽車棧板
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/camping%2Falbum%2Fpic1-1-6.jpg?alt=media&token=4c16f03a-2d95-453f-aa06-0e4cc014e75f"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <p>NT$ 1000</p>
+            <h4>備註</h4>
+            <p> 須自搭營帳，木棧板營位 。(300cm*320cm)。
+              <br/>有電源插座、專屬餐桌、使用D區公共浴廁、專屬車位。
+            </p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button mat-raised-button (click)="openMap(24.380047, 121.305344)">
+              D、E區汽車棧板
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/camping%2Falbum%2Fpic1-2-2.jpg?alt=media&token=594fb312-3724-42ef-8eeb-d1c537550282"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <p>NT$ 1000</p>
+            <h4>備註</h4>
+            <p> 須自搭營帳，木棧板營位 (D1~D12為300cm*320cm，其餘為220cm*320cm)。
+              <br/>有電源插座、專屬餐桌、使用D區/E區公共浴廁、專屬車位。
+            </p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button mat-raised-button (click)="openMap(24.381229, 121.304813)">
+              B區露營屋
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/camping%2Falbum%2Fpic1-1-5.jpg?alt=media&token=9ceafcfc-4af5-472a-a8b5-ee18ee2b1732"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <p>NT$ 1500</p>
+            <h4>備註</h4>
+            <p> 睡墊 (187cm*220cm)、高100cm(BH)。
+              <br/>有電源插座、專屬餐桌、使用管理中心兩側公共浴廁、使用公共停車場、『寵物禁止入內』。
+            </p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button mat-raised-button (click)="openMap(24.381229, 121.304813)">
+              B區空中帳篷
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/camping%2Falbum%2Fpic1-1-7.jpg?alt=media&token=ee01b074-186a-4434-9ddf-bcf75fe877b0"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <p>NT$ 1300</p>
+            <h4>備註</h4>
+            <p> 已搭有營帳，睡墊 (210cm*240cm)。架高50cm(B)或80cm(BA)
+              <br/>有電源插座、專屬餐桌、使用管理中心兩側公共浴廁、使用公共停車場、『寵物禁止入內』。
+            </p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button mat-raised-button (click)="openMap(24.381501, 121.305144)">
+              C區離地空帳
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/camping%2Falbum%2Fpic1-2-3.jpg?alt=media&token=ea072e17-cf2f-4604-b3d6-6a2edb93a5ef"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <p>NT$ 1800</p>
+            <h4>備註</h4>
+            <p> 已搭有營帳、睡墊(240cm*240cm)。
+              <br/>電源插座乙座、專屬餐桌、使用管理中心浴廁、專屬車位。</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+              <button mat-raised-button (click)="openMap(24.381501, 121.305144)">
+              C區汽車棧板營位
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/camping%2Falbum%2Fpic1-1-2.jpg?alt=media&token=c6a8689e-0261-4c8f-8a66-e3d7cd23750f"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <p>NT$ 1500</p>
+            <h4>備註</h4>
+            <p> 須自搭營帳、木棧板營位。(420cm*420cm)。
+              <br/>電源插座乙座、專屬餐桌、使用管理中心浴廁、專屬車位。</p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+
+        </mat-expansion-panel>
+      </mat-accordion>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>hotel</mat-icon>
+            </mat-panel-title>
+            <mat-panel-description>
+              露營屋
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <h4>
+            <button mat-button>
+              A、D區可愛露營屋
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/camping%2Falbum%2Fpic1-1-9.jpg?alt=media&token=99c06633-e6c4-465a-add4-3115acafde39"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <p>平日:NT$ 1600 假日:NT$1800</p>
+            <h4>備註</h4>
+            <p> 有照明燈，軟墊 (195cm*195cm)，可睡3人，寢具須自備。
+              <br/>有電源插座(僅供手機充電)、專屬餐桌、使用A1區/D區公共浴廁、專屬車位、
+              <br/>『寵物禁止入內』。
+            </p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+            <button mat-button>
+              A1區景觀屋
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/camping%2Falbum%2Fpic1-1-4.jpg?alt=media&token=0ea2ac82-56a4-4910-b30d-922764b6886f"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <p>平日:NT$ 1800 假日:NT$ 2200</p>
+            <h4>備註</h4>
+            <p> 有照明燈，軟墊 (240cm*240cm)，寢具須自備，可睡4~5人。
+              <br/>有電源插座(僅供手機充電)、專屬餐桌、使用A1區公共浴廁、專屬車位、
+              <br/>『寵物禁止入內』
+            </p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+          <h4>
+            <button mat-button>
+              D1區築夢屋
+              <mat-icon>location_on</mat-icon>
+            </button>
+          </h4>
+          <img src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fcampsite.jpg?alt=media&token=cd1438b3-9d19-497b-b54b-4ee4b4ba8a88"
+            alt="">
+          <article>
+            <h4>定價</h4>
+            <p>平日:NT$ 1600 假日:NT$1800</p>
+            <h4>備註</h4>
+            <p> 位於D1區露營區新式小木屋，可睡2+1人。
+              <br/>位於D1區露營區新式小木屋。
+              <br/>有電源插座(僅供手機充電)、專屬餐桌、使用D區公共浴廁、專屬車位 。
+              <br/>『寵物禁止入內』
+            </p>
+          </article>
+          <mat-divider [inset]="true"></mat-divider>
+        </mat-expansion-panel>
+      </mat-accordion>
+      
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+
+
+<!-- <div class="content" [@place]="isDivVisible">
     <div class="title">{{'campsite.title'|translate}}</div>
     <div class="introduction">
      
@@ -86,4 +296,4 @@
         </ul>
       </div>
     </div> 
-  </div>
+  </div>  -->
