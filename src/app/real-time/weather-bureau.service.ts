@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Subject, Observable } from 'rxjs';
+import { AngularFireDatabase } from 'Angularfire2/database';
 
 
 @Injectable()
 export class WeatherBureauService {
-    constructor(private httpCliend: HttpClient) { }
+    weather$: Observable<any>;
 
-    weatherChanged = new Subject<WeatherStation>();
-
-    getData() {
+    constructor(private httpCliend: HttpClient, private db: AngularFireDatabase) {
+        this.weather$ = this.db.object('weather-station').valueChanges();
+    }
+    check() {
         const url = '/api/v1/rest/datastore/O-A0003-001';
         this.httpCliend.get<any>(url, {
             observe: 'body',
@@ -19,17 +21,18 @@ export class WeatherBureauService {
                 .append('stationId', 'D2F230')
         }).subscribe(result => {
             let query = result.records.location[0];
-            let data = {
-                date: query.time.obsTime.substr(0, 10),
-                time: query.time.obsTime.substr(11, 10),
+            console.log(query);
+            let itemRef = this.db.object('weather-station');
+            itemRef.update({
                 altitude: query.weatherElement[0].elementValue,
-                currentTemp: query.weatherElement[3].elementValue + ' \xB0C',
-                lowTemp: query.weatherElement[16].elementValue + ' \xB0C',
+                date: query.time.obsTime.substr(0, 10),
+                highest: query.weatherElement[14].elementValue + ' \xB0C',
                 humidity: Math.round(query.weatherElement[4].elementValue * 100) + ' %',
-                rainfall: query.weatherElement[6].elementValue + ' mm'
-            };
-
-            this.weatherChanged.next(data);
+                lowest: query.weatherElement[16].elementValue + ' \xB0C',
+                rain: query.weatherElement[6].elementValue + ' mm',
+                temperature: query.weatherElement[3].elementValue + ' \xB0C',
+                time: query.time.obsTime.substr(11, 10)
+            });
         });
     }
 }

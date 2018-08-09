@@ -29,7 +29,7 @@ export class RestaurantComponent implements OnInit, OnChanges {
         this.items = this.imageData.map(item => {
             return new ImageItem({ src: item.srcUrl, thumb: item.previewUrl });
         });
-        this.gallery.ref('lightbox').load(this.items);
+        this.gallery.ref('restaurant').load(this.items);
     }
 }
 

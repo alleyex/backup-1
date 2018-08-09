@@ -1,9 +1,8 @@
 import { Component, Input, OnChanges } from "@angular/core";
-import { Gallery, GalleryItem, ImageItem } from '@ngx-gallery/core';
+import { Gallery, GalleryItem, ImageItem, GalleryConfig, GalleryRef } from '@ngx-gallery/core';
 import { ExpandModel } from "../dashboard/main/main.model";
 import { MatDialog } from "@angular/material";
 import { GoogleMapComponent } from "../google-map/google-map.component";
-
 
 @Component({
     selector: 'app-campsite',
@@ -17,6 +16,10 @@ export class CampsiteComponent implements OnChanges {
     isDivVisible = false;
     @Input() place: string;
 
+    ngOnInit() {
+        this.album();
+    }
+
     ngOnChanges() {
         if (this.place == 'campsite') {
             this.isDivVisible = true;
@@ -24,17 +27,19 @@ export class CampsiteComponent implements OnChanges {
             this.isDivVisible = false;
         }
     }
+
     items: GalleryItem[];
     imageData = data;
-    ngOnInit() {
-        this.items = this.imageData.map(item => {
+
+    album() {
+        let items = this.imageData.map(item => {
             return new ImageItem({ src: item.srcUrl, thumb: item.previewUrl });
         });
-        this.gallery.ref('camping').load(this.items);
+        let album = this.gallery.ref('camping')
+        album.load(items);
     }
 
     openMap(lat: number, lng: number) {
-        console.log(lat + ':'+lng);
         this.dialog.open(GoogleMapComponent, {
             data: {
                 lat: lat,
@@ -43,11 +48,7 @@ export class CampsiteComponent implements OnChanges {
             height: '92vh',
             width: '100vw',
         });
-
     }
-
-
-
 }
 
 const data = [
@@ -65,5 +66,4 @@ const data = [
         srcUrl: 'https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/camping%2Falbum%2Fpic1-1-13.jpg?alt=media&token=825ba80f-f224-4df7-ae91-2897f4e99ffe',
         previewUrl: 'https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/camping%2Falbum%2Fpic1-1-13.jpg?alt=media&token=825ba80f-f224-4df7-ae91-2897f4e99ffe'
     }
-
 ];

@@ -1,8 +1,8 @@
 <div class="content">
-  <div class="box">{{'weather.date'|translate}}:{{newly.date}}</div>
-  <div class="box">{{'weather.nowTemp'|translate}}:{{newly.currentTemp}} </div>
-  <div class="box">{{'weather.rainpassible'|translate}}:{{newly.humidity}}</div>
-  <div class="box">{{'weather.time'|translate}}:{{newly.time}}</div>
-  <div class="box">{{'weather.minTemp'|translate}}:{{newly.lowTemp}} </div>
-  <div class="box">{{'weather.rainfall'|translate}}:{{newly.rainfall}}</div>
+  <div class="box">{{'weather.date'|translate}}:{{(data$ | async)?.date}}</div>
+  <div class="box">{{'weather.nowTemp'|translate}}:{{(data$ | async)?.temperature}} </div>
+  <div class="box">{{'weather.rainpassible'|translate}}:{{(data$ | async)?.humidity}}</div>
+  <div class="box">{{'weather.time'|translate}}:{{(data$ | async)?.time}}</div>
+  <div class="box">{{'weather.minTemp'|translate}}:{{(data$ | async)?.lowest}} </div>
+  <div class="box">{{'weather.rainfall'|translate}}:{{(data$ | async)?.rain}}</div>
 </div>

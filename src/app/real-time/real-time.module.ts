@@ -4,6 +4,7 @@ import { WeatherStationComponent } from './weather-station/weather-station.compo
 import { WeatherBureauService } from './weather-bureau.service';
 import { SharedModule } from '../shared/shared.module';
 import { TrafficStatusComponent } from './traffic-status/traffic-status.component';
+import { TrafficStatusService } from './traffic-status.service';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { TrafficStatusComponent } from './traffic-status/traffic-status.componen
         TrafficStatusComponent
     ],
     providers:[
-        WeatherBureauService
+        WeatherBureauService,
+        TrafficStatusService
     ]
 })
 export class RealTimeModule {}

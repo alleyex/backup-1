@@ -14,26 +14,25 @@ hr {
   background: #999;      
 }
 
-
-div.introduction{    
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/restaurant%2Fbackground.jpg?alt=media&token=73399ecd-5f47-40e0-81e0-c423b711fecc);
-    background-repeat: no-repeat;  
-    margin: 0px 12px ; 
-    width: auto;
-	height: auto;
-	max-width: 100%;
-    max-height: 100%;
-    min-height: 200px; 
+div.introduction{
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/restaurant%2Fbackground.jpg?alt=media&token=73399ecd-5f47-40e0-81e0-c423b711fecc);
+  background-repeat: no-repeat;
+  margin: 0px 12px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 200px; 
 }
 
 div.contain{
-    display:inline-block;
-    margin: 40px 0px ;
-    width: auto;
-	height: auto;
-	max-width: 100%;
-	max-height: 100%; 
-    max-width: 600px;   
+  display:inline-block;
+  margin: 40px 0px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  max-width: 600px;
 }
 
 div.title{
@@ -48,7 +47,7 @@ gallery{
     background-size: cover;
     margin: 0px 35px 0px 35px;        
     max-width: 800px;
-    min-height: 350px;    
+    height: 350px;    
 }
 
 div.picture{
@@ -91,30 +90,36 @@ div h1{
 @media only screen and (max-width:1200px) {}
 @media screen and (max-width:1023px) {}
 @media only screen and (max-width:768px) {
-  div.menu{   
-    width: calc(100% );       
-    margin: 20px 35px 0px 35px;    
+  div.menu{
+    width: calc(100% );
+    margin: 20px 35px 0px 35px;
   }
+  
   div h1{   
     width: calc(100%-24px);  
     margin: 12px;      
   }
+
   div.picture{     
     width: calc(100% );     
     margin: 20px 35px 0px 35px; 
   }
+
   div.contain{    
     margin: 40px 20px 20px 20px;       
   }
+
   div.introduction{    
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.9) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/restaurant%2Fbackground.jpg?alt=media&token=73399ecd-5f47-40e0-81e0-c423b711fecc);
     background-repeat: no-repeat; 
   }
+
   gallery{    
     margin: 0px 15px 0px 15px;        
     max-width: 600px;
-    min-height: 300px;    
+    height: 300px;    
   }
+  
 }
 
 @media only screen and (max-width:480px) {
@@ -124,30 +129,33 @@ div h1{
   }  
    
   gallery{        
-    height: 250px;   
+    height: 180px;   
     margin: 0px 12px; 
   }
+
   div h1{   
     width: calc(100% - 24px);  
     margin: 12px;      
   }
+
   div.menu{       
     margin: 20px 12px 4px 12px;    
   }
-  div.picture{  
-         
+
+  div.picture{           
     margin: 20px 12px 4px 12px; 
   }
 }
 @media only screen and (max-width:319px) {
-  div.picture{             
-   background-image: none;
-}
+  div.picture{
+    background-image: none;
+  }
+
   img.meal{
     margin: 12px; 
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
-}
+  }
 }

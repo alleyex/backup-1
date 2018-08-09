@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
-@NgModule({   
+import { AngularFireDatabaseModule } from 'Angularfire2/database';
+
+@NgModule({
     exports: [
-        CommonModule,       
+        CommonModule,
         TranslateModule,
         MaterialModule,
         BrowserAnimationsModule,
-        BrowserAnimationsModule 
+        BrowserAnimationsModule,
+        AngularFireDatabaseModule
     ]
 })
 export class SharedModule { }

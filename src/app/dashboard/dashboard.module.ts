@@ -1,9 +1,16 @@
 import { NgModule } from '@angular/core';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { GalleryModule } from '@ngx-gallery/core';
+import { GalleryModule, GalleryConfig } from '@ngx-gallery/core';
+import { LightboxModule } from '@ngx-gallery/lightbox';
+import { GallerizeModule } from '@ngx-gallery/gallerize';
 
 import { AgmCoreModule } from '@agm/core';
 import { AgmDirectionModule } from 'agm-direction'
+
+import { AngularFireModule } from 'angularfire2';
+
+
+
 
 import { DashboardComponent } from './dashboard.component';
 import { MainService } from './main/main.service';
@@ -35,6 +42,8 @@ import { GoogleMapComponent } from '../google-map/google-map.component';
 import { GoogleMapService } from '../google-map/google-map.service';
 import { DeviceService } from './device.service';
 import { MenuComponent } from '../restaurant/menu/menu.component';
+import { firebase_config } from 'src/environments/environment';
+
 
 
 @NgModule({
@@ -70,12 +79,21 @@ import { MenuComponent } from '../restaurant/menu/menu.component';
         AgmCoreModule,
         AgmDirectionModule,
         ScrollToModule.forRoot(),
-        GalleryModule.forRoot()
+        GalleryModule.forRoot({
+            thumb: false,
+            panSensitivity: 2000,
+            nav: false,
+            loop: true
+        }),
+        LightboxModule.forRoot(),
+        GallerizeModule,
+        AngularFireModule.initializeApp(firebase_config)
+
     ],
     exports: [
         DashboardComponent
     ],
     providers: [MainService, GoogleMapService, DeviceService],
-    entryComponents: [GoogleMapComponent,MenuComponent]
+    entryComponents: [GoogleMapComponent, MenuComponent]
 })
 export class DashboardModule { }

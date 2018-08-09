@@ -39,12 +39,12 @@
     "your_password": "密碼"
   },
   "weather": {
-    "date": "資料日期",
-    "time": "資料時間",
-    "nowTemp": "現在溫度",
-    "minTemp": "最低溫度",
-    "rainpassible": "降雨機率",
-    "rainfall": "累積雨量"
+    "date": "日期",
+    "time": "時間",
+    "nowTemp": "溫度",
+    "minTemp": "低溫",
+    "rainpassible": "濕度",
+    "rainfall": "雨量"
   },
   "map": {
     "location": "目前位置",
