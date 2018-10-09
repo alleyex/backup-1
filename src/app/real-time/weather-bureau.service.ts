@@ -1,29 +1,21 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
-import { Subject, Observable } from 'rxjs';
-import { AngularFireDatabase } from 'Angularfire2/database';
-
+import { HttpClient } from '@angular/common/http';
+import { Subject } from 'rxjs';
 
 @Injectable()
 export class WeatherBureauService {
-    weather$: Observable<any>;
-
-    constructor(private httpCliend: HttpClient, private db: AngularFireDatabase) {
-        this.weather$ = this.db.object('weather-station').valueChanges();
-    }
+    weather$= new Subject<WeatherStation>();
+    constructor(private httpCliend: HttpClient) { }
+    
     check() {
-        const url = '/api/v1/rest/datastore/O-A0003-001';
+        let data: WeatherStation;
+        const url = 'https://us-central1-mercury-object.cloudfunctions.net/weather';
         this.httpCliend.get<any>(url, {
             observe: 'body',
-            responseType: 'json',
-            params: new HttpParams()
-                .append('Authorization', 'CWB-394C0928-C7D7-4F09-B453-4B60B146947D')
-                .append('stationId', 'D2F230')
+            responseType: 'json'
         }).subscribe(result => {
             let query = result.records.location[0];
-            console.log(query);
-            let itemRef = this.db.object('weather-station');
-            itemRef.update({
+            data = {
                 altitude: query.weatherElement[0].elementValue,
                 date: query.time.obsTime.substr(0, 10),
                 highest: query.weatherElement[14].elementValue + ' \xB0C',
@@ -32,17 +24,21 @@ export class WeatherBureauService {
                 rain: query.weatherElement[6].elementValue + ' mm',
                 temperature: query.weatherElement[3].elementValue + ' \xB0C',
                 time: query.time.obsTime.substr(11, 10)
-            });
+            };
+
+            this.weather$.next(data);
         });
+       
     }
 }
 
 export interface WeatherStation {
+    altitude: string ,
     date: string,
-    time: string,
-    altitude: string,
-    currentTemp: string,
-    lowTemp: string,
+    highest: string,
     humidity: string,
-    rainfall: string
+    lowest: string,
+    rain: string,
+    temperature: string,
+    time: string
 }

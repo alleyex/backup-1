@@ -1,26 +1,19 @@
 div.content {
-    text-align: left;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: normal;
+    text-align: left;  
     color: #4A4A4A;    
     margin: 0px 12px ; 
 }
 
-div h1{
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+div h1{   
     font-size: 20px;
-    line-height: 25px;
-    font-weight: normal;
+    line-height: 26px;    
     color: #603A0A;
-    background-color: #D5D5D5;
-    
+    background-color: #D5D5D5;    
 }
 
 div.title{
   color:green;
-  font-size: 16px;
+  font-size: 18px;
   font-weight:bold;
   line-height:32px;
   margin: 20px 0px 0px 0px;
@@ -42,31 +35,12 @@ img.rightside{
   float:right;
   margin: 10px 10px 10px 20px; 
 }
-
-//  /* Big table to 1200px (widths smaller than the 1140px row */
-
-//  @media only screen and (max-width:1200px) {
-  
-// }
-
-// /* Small tablet to big tablet: 768px to 1023  */
-
-// @media screen and (max-width:1023px) {   
-// }
-
-// /* Small phones to small tablets: from 0 to 480px */
-
-// @media only screen and (max-width:768px) {
-   
-// }
-
-// /* Small phone: from 0 to 480px */
-
 @media only screen and (max-width:480px) {
-  div.content {     margin: 0px 12px ; 
+  div.content {     
+    margin: 0px 12px ; 
     background-color: white;
-
-}
+  }
+  
   img.leftside{
     float:left;
     margin: 8px 0px;      

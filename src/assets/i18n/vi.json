@@ -19,10 +19,11 @@
         "transportation": "Vận chuyển",
         "restaurant": "Nhà hàng",
         "ecotourism": "Du lịch sinh thái",
-        "coffee_bar":"Quán cà phê rừng",
-        "meeting_room":"Phòng họp",
-        "tour_guide":"Hướng dẫn viên du lịch",
-        "salmon":"Cá hồi Đài Loan"
+        "coffee_bar": "Quán cà phê rừng",
+        "meeting_room": "Phòng họp",
+        "tour_guide": "Hướng dẫn viên du lịch",
+        "salmon": "Cá hồi Đài Loan",
+        "itinerary": "Itinerary"
     },
     "translation": {
         "select_language": "chọn ngôn ngữ",
@@ -31,7 +32,8 @@
     "long_stay": {
         "slogan": "Lưu trú lâu dài tại cuộc sống giải trí bạn muốn trải nghiệm",
         "contain1": "Wuling Farm nghĩ cho bạn và sẽ sớm ra mắt chương trình giảm giá này.",
-        "contain2": "Mọi người đều có thể lên kế hoạch cho một hành trình giảm giá ~~~ siêu!"
+        "contain2": "Mọi người đều có thể lên kế hoạch cho một hành trình giảm giá ~~~ siêu!",
+        "more_information": "More information..."
     },
     "auth": {
         "your_email": "Email của bạn",
@@ -181,6 +183,7 @@
         "notice": "để ý",
         "notice_01": "Hành khách, kể cả chỗ ở của khách, cần phải trả tại trạm thu phí để trả lệ phí vào cửa (chỉ tiền mặt). Sau đó đón xe buýt vào Wuling Farm. Trạm xe buýt nằm gần Trung tâm du khách Wuling. Nếu bạn sống ở Wuling Hotel, hãy chủ động thông báo cho tài xế trước đó để tiễn bạn tại Welcome Bridge of Wuling Hotel.",
         "notice_02": "Thông tin có thể thay đổi dựa trên từng công ty vận tải.",
+        "by_van": "By van",
         "ego_bus": "Xe buýt du lịch Đài Loan e-go (Thời gian dự kiến của chuyến đi: 4 giờ, khởi hành hàng ngày và cần đặt trước 5 ngày trước khi khởi hành. Điện thoại: + 886-2-27965696)",
         "ego_taipei_wuling": "Cổng phía đông số 3 của ga đường sắt Đài Bắc → Cầu chào đón khách sạn Wuling 07:30",
         "ego_wuling_taipei": "Chào mừng Bridge of Wuling Hotel → Ga xe lửa Đài Bắc 13:30 ",
@@ -188,6 +191,8 @@
         "bear_taipei_wuling": "Cổng phía Đông số 3 của ga đường sắt Đài Bắc → Trung tâm du khách Wuling 07:50 ",
         "bear_wuling_taipei": "Trung tâm du khách Wuling → Ga tàu Đài Bắc 14:10",
         "lion_bus": "Lion Express (Taipei → Wuling Farm ， Điện thoại: + 886-2-87939611)",
+        "lion_taipei_wuling": "East gate 3 of Taipei railway station →  Wuling visitor center  07:50",
+        "lion_wuling_taipei": "Wuling visitor center → Taipei railway station 14:10 ",
         "lion_website": "Trang web Lion Express"
     },
     "restaurant": {
@@ -195,6 +200,8 @@
         "introduction": "Các đầu bếp của Wuling Hotel Restaurant đặt trái tim của họ vào việc thiết kế thực đơn đặc sản theo mùa, trình bày một bữa tiệc bắp cải, một bữa tiệc táo, một bữa tiệc trà vv để thăm khách du lịch mỗi mùa. Khách du lịch thích thử hương vị mới có thể chọn từ nhiều loại trái cây và rau hữu cơ không phổ biến trong thành phố. Chẳng hạn như cải xoong cải xoong, Ipomoea aquatica và mù tạt ngâm cũng như những người khác để bổ sung cho kinh nghiệm vùng cao của họ.",
         "fare": "Giá vé",
         "breakfast": "Bữa ăn sáng",
+        "lunch": "Lunch",
+        "dinner": "Dinner",
         "breakfast_family": "Bữa sáng kiểu Trung Hoa (Cho 10 người) NT$ 1500/Bảng.",
         "location_Plum": "Địa điểm: Nhà hàng Plum, Nhà hàng Maple",
         "breakfast_buffet": "Trung Quốc kiêm kiểu Phương Tây Buffet NT$ 150/khách.",
@@ -207,7 +214,8 @@
         "lunch_set": "Bữa trưa",
         "private_set": "Cá nhân đặt NT$300 cho mỗi bộ, ăn chay có sẵn.",
         "dinner_buffet": "Tiệc đứng",
-        "buffet_price": "Trung Quốc buffet kiểu Phương Tây kiêm, NT$ 350/khách."
+        "buffet_price": "Trung Quốc buffet kiểu Phương Tây kiêm, NT$ 350/khách.",
+        "buffet_note": "When there are many guests, the dinner is divided into two periods: 17:30~18:50 and 19:00~20:20, which are distributed by the counter."
     },
     "ecotourism": {
         "ecology": "Sinh thái học",
@@ -226,16 +234,17 @@
         "cultural_suggest": "Vành đai rừng Nam Valley (bao gồm cả di tích lịch sử sông Qijiawan)."
     },
     "peach": {
-        "slogan":"2018 đào được liệt kê",
-        "contain": "Đó là mùa thu hoạch đào. Dưới sự canh tác của môi trường tự nhiên, cho phép bạn mua yên tâm, ăn an tâm. Trang trại mời bạn chia sẻ những điều tuyệt vời nhất của thế giới và tận hưởng khung cảnh tuyệt đẹp của Wuling."   
+        "slogan": "2018 đào được liệt kê",
+        "contain": "Đó là mùa thu hoạch đào. Dưới sự canh tác của môi trường tự nhiên, cho phép bạn mua yên tâm, ăn an tâm. Trang trại mời bạn chia sẻ những điều tuyệt vời nhất của thế giới và tận hưởng khung cảnh tuyệt đẹp của Wuling.",
+        "price": "price list..."
     },
-    "agricultural":{
-      "products":"Sản phẩm",
-      "wuling_tea":"Trà",
-      "tea_introduction":"Là quốc gia đồng tồn tại trong các khu bảo tồn sinh thái của Vườn Quốc gia Shei-Pa, Wuling Farm nên được ưu tiên hơn đất công trong bộ, vì vậy trại Wuling cũng tuân theo Đạo luật Bảo vệ Động vật hoang dã và Đạo luật Công viên Quốc gia, Cộng hòa đã dần dần Dư lượng thuốc trừ sâu thử nghiệm giá trị của trà trong những năm qua là dưới mức quốc gia khoan dung, 100 hàng năm trà và trà tươi trà lá khô dư lượng thuốc trừ sâu kết quả kiểm tra và đạt được một 'không phát hiện' cấp, bằng cách chia Hương vị độc đáo của trà đen Wuling dài được biết đến, nhưng nó vừa là 'an toàn sức khỏe' của trà núi hiếm.",
-      "fruit":"Đào, lê và táo",
-      "fruit_introduction":"Chúng tôi có trái cây miền núi ôn đới cao, chín vào những tháng mùa hè / mùa thu (tháng 7 đến tháng 10 là mùa trái cây), đào và táo là món quà hàng đầu dành cho khách quốc gia, được coi là kho báu quốc gia cho những người nổi tiếng của chính phủ nước ngoài. Với canh tác hữu cơ, trái cây không có thuốc trừ sâu và được 100% kiểm tra bởi Ủy ban An toàn Sản xuất Nông nghiệp của Chính quyền Thành phố Đài Trung và được cấp logo cũng như an toàn cho việc mua và tiêu thụ.",
-      "souvenirs":"Đồ lưu niệm",
-      "souvenirs_introduction":"Mũ, quần áo, đồ trang trí, khung ảnh, bát trái cây, gậy, dù che và bật lửa đều được bán. Tất cả đều mang dấu ấn Wuling và hữu ích và có giá trị tưởng niệm cao. Các hạt thông cao núi, cũng có sẵn cho những người đang tìm kiếm một loại kho báu khác nhau."    
+    "agricultural": {
+        "products": "Sản phẩm",
+        "wuling_tea": "Trà",
+        "tea_introduction": "Là quốc gia đồng tồn tại trong các khu bảo tồn sinh thái của Vườn Quốc gia Shei-Pa, Wuling Farm nên được ưu tiên hơn đất công trong bộ, vì vậy trại Wuling cũng tuân theo Đạo luật Bảo vệ Động vật hoang dã và Đạo luật Công viên Quốc gia, Cộng hòa đã dần dần Dư lượng thuốc trừ sâu thử nghiệm giá trị của trà trong những năm qua là dưới mức quốc gia khoan dung, 100 hàng năm trà và trà tươi trà lá khô dư lượng thuốc trừ sâu kết quả kiểm tra và đạt được một 'không phát hiện' cấp, bằng cách chia Hương vị độc đáo của trà đen Wuling dài được biết đến, nhưng nó vừa là 'an toàn sức khỏe' của trà núi hiếm.",
+        "fruit": "Đào, lê và táo",
+        "fruit_introduction": "Chúng tôi có trái cây miền núi ôn đới cao, chín vào những tháng mùa hè / mùa thu (tháng 7 đến tháng 10 là mùa trái cây), đào và táo là món quà hàng đầu dành cho khách quốc gia, được coi là kho báu quốc gia cho những người nổi tiếng của chính phủ nước ngoài. Với canh tác hữu cơ, trái cây không có thuốc trừ sâu và được 100% kiểm tra bởi Ủy ban An toàn Sản xuất Nông nghiệp của Chính quyền Thành phố Đài Trung và được cấp logo cũng như an toàn cho việc mua và tiêu thụ.",
+        "souvenirs": "Đồ lưu niệm",
+        "souvenirs_introduction": "Mũ, quần áo, đồ trang trí, khung ảnh, bát trái cây, gậy, dù che và bật lửa đều được bán. Tất cả đều mang dấu ấn Wuling và hữu ích và có giá trị tưởng niệm cao. Các hạt thông cao núi, cũng có sẵn cho những người đang tìm kiếm một loại kho báu khác nhau."
     }
 }

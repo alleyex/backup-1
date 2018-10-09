@@ -1,9 +1,5 @@
 div.content {
-  text-align: left;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: normal;
+  text-align: left;  
   color: #4A4A4A;    
   margin: 0px 12px; 
 }
@@ -27,7 +23,7 @@ div.introduction{
 
 div.contain{
   display:inline-block;
-  margin: 40px 0px;
+  margin: 10px 200px;
   width: auto;
   height: auto;
   max-width: 100%;
@@ -79,7 +75,7 @@ ul{
 }
 
 div h1{
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+ // font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 25px;
   font-weight: normal;

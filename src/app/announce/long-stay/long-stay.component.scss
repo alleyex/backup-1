@@ -11,7 +11,7 @@
     width: calc(100% - 16px);
     height: 376px;
     margin: 8px;
-    background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.9) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Flong-stay%2Flong-stay.jpg?alt=media&token=09ac55a1-5fc1-4b12-95c0-d348ce26973b);    
+    background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.9) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Flong-stay%2Flong-stay-big.jpg?alt=media&token=c4b60ab6-5343-41c4-9bc5-fd809ae42801);    
     background-size: cover;
   }
   
@@ -55,6 +55,10 @@
   /* Small phone: from 0 to 480px */
   
   @media only screen and (max-width:480px) {
+    .content {      
+      background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Flong-stay%2Flong-stay-small.jpg?alt=media&token=ee62576e-f2c5-4d90-a326-209740bd3485);
+      background-size: cover;
+    }
     .slogan {
       width:calc(100%-20px);
       bottom: 40px;

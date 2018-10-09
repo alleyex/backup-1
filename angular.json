@@ -50,9 +50,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "andromeda:build",            
-            "proxyConfig": "src/proxy.config.json"
-          },
+            "browserTarget": "andromeda:build"          },
           "configurations": {
             "production": {
               "browserTarget": "andromeda:build:production"

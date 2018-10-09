@@ -15,6 +15,8 @@ export class MainService {
         this.setPosition('ecotourism-contain', 'store', 3);
         this.setPosition('toll-contain', 'information', 3);
         this.setPosition('departure-contain', 'information', 3);
+        this.setPosition('tea-content', 'information', 11);
+        this.setPosition('visitor-content', 'information', 11);
     }
 
     bigScreen() {
@@ -23,6 +25,8 @@ export class MainService {
         this.setPosition('ecotourism-contain', 'store', 5);
         this.setPosition('toll-contain', 'information', 7);
         this.setPosition('departure-contain', 'information', 7);
+        this.setPosition('tea-content', 'information', 13);
+        this.setPosition('visitor-content', 'information', 13);
     }
 
     setPosition(nodeId: string, listId: string, position: number) {

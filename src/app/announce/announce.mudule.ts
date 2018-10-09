@@ -6,6 +6,8 @@ import { AnnounceService } from "./announce.service";
 import { KanbanComponent } from "./kanban/kanban.component"; 
 import { KanbanDirective } from "./kanban/kanban.directive";
 import { PeachComponent } from "./peach/peach.component";
+import { PosterComponent } from "./long-stay/poster.component";
+import { PriceComponent } from "./peach/price.component";
 
 @NgModule({
     declarations: [
@@ -13,7 +15,9 @@ import { PeachComponent } from "./peach/peach.component";
        LongStayComponent,
        PeachComponent,
        KanbanComponent,
-       KanbanDirective       
+       KanbanDirective,
+       PosterComponent,
+       PriceComponent       
     ],
     imports:[         
          SharedModule
@@ -22,6 +26,6 @@ import { PeachComponent } from "./peach/peach.component";
         AnnounceComponent      
     ],
     providers:[AnnounceService],
-    entryComponents: [LongStayComponent ,PeachComponent]
+    entryComponents: [LongStayComponent ,PeachComponent,PosterComponent,PriceComponent]
 })
 export class AnnounceModule { }

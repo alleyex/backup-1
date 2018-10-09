@@ -11,7 +11,7 @@
     width: calc(100% - 16px);
     height: 376px;
     margin: 8px;
-    background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fpeach-01.jpg?alt=media&token=09822f61-0cdc-40b7-85c8-add06ce35d5d);    
+    background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fpeach-big.jpg?alt=media&token=d5e70f9a-71e5-401e-af95-8cfa8bb605ac);    
     background-size: cover;
   }
   
@@ -55,6 +55,10 @@
   /* Small phone: from 0 to 480px */
   
   @media only screen and (max-width:480px) {
+    .content {      
+        background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fpeach-small.jpg?alt=media&token=1741e05c-509b-4a43-9664-0f6c2641f6ae);
+        background-size: cover;
+      }
     .slogan {
       width:calc(100%-20px);
       bottom: 40px;

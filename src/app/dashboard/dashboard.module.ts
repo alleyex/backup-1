@@ -43,6 +43,7 @@ import { GoogleMapService } from '../google-map/google-map.service';
 import { DeviceService } from './device.service';
 import { MenuComponent } from '../restaurant/menu/menu.component';
 import { firebase_config } from 'src/environments/environment';
+import { AlbumService } from './album.service';
 
 
 
@@ -93,7 +94,7 @@ import { firebase_config } from 'src/environments/environment';
     exports: [
         DashboardComponent
     ],
-    providers: [MainService, GoogleMapService, DeviceService],
+    providers: [MainService, GoogleMapService, DeviceService, AlbumService],
     entryComponents: [GoogleMapComponent, MenuComponent]
 })
 export class DashboardModule { }

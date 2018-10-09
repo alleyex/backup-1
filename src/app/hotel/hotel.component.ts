@@ -6,6 +6,7 @@ import { MatDialog } from '@angular/material';
 
 import { MenuComponent } from '../restaurant/menu/menu.component';
 import { GoogleMapComponent } from '../google-map/google-map.component';
+import { AlbumService } from '../dashboard/album.service';
 
 @Component({
     selector: 'app-hotel',
@@ -14,16 +15,15 @@ import { GoogleMapComponent } from '../google-map/google-map.component';
     animations: [ExpandModel]
 })
 export class HotelComponent implements OnInit, OnChanges, OnDestroy {
-    constructor(private deviceService: DeviceService, private dialog: MatDialog) { }
+    constructor(private deviceService: DeviceService,private albumService: AlbumService, private dialog: MatDialog) { }
 
     @Input() place: string;
     isDivVisible = false;
     isCellphone$: Subscription;
-
-
-
+    
     ngOnInit() {
         this.isCellphone$ = this.deviceService.isCellpone$.subscribe(result => { });
+        this.albumService.getPictures();
     }
 
     ngOnChanges() {

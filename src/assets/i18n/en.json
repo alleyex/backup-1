@@ -22,7 +22,8 @@
     "coffee_bar": "Forest coffee bar",
     "meeting_room": "Meeting room",
     "tour_guide": "Tour guide",
-    "salmon": "Taiwan salmon"
+    "salmon": "Taiwan salmon",
+    "itinerary": "Itinerary"
   },
   "translation": {
     "select_language": "select language",
@@ -31,7 +32,8 @@
   "long_stay": {
     "slogan": "Long-stay at the leisure life you want to experience",
     "contain1": "Wuling Farm thinks for you and will launch this discount program soon.",
-    "contain2": "Everyone can plan an itinerary ~~~ super discount!"
+    "contain2": "Everyone can plan an itinerary ~~~ super discount!",
+    "more_information": "More information..."
   },
   "auth": {
     "your_email": "Your email",
@@ -44,6 +46,12 @@
     "minTemp": "Min temp.",
     "rainpassible": "Rain probability",
     "rainfall": "rainfall"
+  },  
+  "traffic":{
+    "road_status":"Traffic status",
+    "notice_date":"date",
+    "notice_section":"section",
+    "notice_contect":"contect"
   },
   "map": {
     "location": "Current location",
@@ -73,7 +81,7 @@
     "two_double": "2 double size beds",
     "one_double_two_single": "1 double size bed, 2 single size beds",
     "one_double_one_single": "1 double size bed, 1 single size beds",
-    "four_mattresses": "4 single mattresses",
+    "four_mattresses": " single mattresses",
     "notice_01": "This price list includes breakfast and dinner (one per day and two meals), excluding admission tickets and parking fees.",
     "notice_02": "Booking rate discount (booking price = pricing - meals; meals are not discounted)",
     "notice_03a": "Weekdays: 20% off for the general public and 25% off the Internet booking. Army, public, education, the first special forces of the army with the honorary certificate, the aboriginal people, physical and mental disabilities, volunteers, the elderly over 65, low income Households, permanent residence permit notes, public recreation places, preferential treatment for foreigners, 30% off, Rongmin is 55% off.",
@@ -94,33 +102,43 @@
     "apple_Plum": "Quadruple Room (Apple, Plum Blossom room)",
     "cherry_room": "Quadruple Room (Cherry room)"
   },
-  "campsite": {
-    "title": "Introduction",
+  "campsite": {    
     "about": "The Wuling Farm Camping Area is located in the Alpine Botanical Garden. The park has an ecological pool, a water plant pool, a Chinese medicine park, a grass garden, a flower sea area, etc. Surrounded by mountains, from the Snow Mountain Control Station to the Sevenka Mountain Villa, you can clearly see the unknown peak. It is a rare natural summer paradise in China. It is a rare natural summer paradise in China. It is a natural summer resort in the country.",
-    "order_notice": "The camping area will open the system reservation at 8:00 am on the 1st of the month (including 3 months of the month).",
-    "order_example": "For example: May 1st at 8:00 am open to July 31st, February 1st at 8:00 am, open to the end of February of the following year.",
-    "telephone": "TelePhone 04-25901470 / 04-25901265  Fax Phone 04-25901088",
-    "coffee_bar": "Next to the camping management center, there is a forest coffee bar. 30-year-old cedar stands next to it, drinks a special lavender milk tea from Wuling Farm, and dates to Fendojing Forest!",
-    "alert": "In order to ensure the safety of the forest, it is strictly forbidden to contact the ground with the fire, and it can only be cooked by gasifier or barbecue. The camping area offers full baths and hot water 24 hours a day.",
-    "rule": "This camping area is located within the Shei-Pa National Park. Campers are advised to observe the following rules:",
-    "rule_01": " Campfires, ignition handles, firecrackers are strictly prohibited in the camping area, barbecue grills are used for barbecues, and carbon fires are not allowed to directly touch the ground.",
-    "rule_02": "Pets are not allowed in the camping area, and the relevant regulations are announced by the Forest Service Bureau.",
-    "rule_03": "Do not arbitrarily climb flowers, trees and pickled fruits.",
-    "rule_04": "There are two types of garbage in the camping area: kitchen waste recycling and general garbage (including resource recycling items).",
-    "rule_05": "Generators and high-decibel audio equipment must not be used in the camp.",
-    "rule_06": "Tourists in the camp are forbidden after 10 pm in the evening, and please stop your activities and put down the volume so as not to affect the peace of others.",
-    "rule_07": "Visitors who enter the empty account should not eat snacks such as candy biscuits in the empty account to avoid insects entering.",
-    "rule_08": "The camping time is 12:00 noon and the camping time is 12:00 noon the next day.",
-    "rule_09": "2 people in a lovely house, 4 people in a landscape house, and room room at 14:00 pm, check out time at 11:00 am the next day.",
-    "rule_10": "The camping area forest coffee bar offers breakfast, drinks, sandwiches, quiche, chicken noodles and more.",
-    "rule_11": "The camp management center is open from 7:00 to 21:30.",
-    "rule_12": "Non-camping area residents cook in the camping area for every 6 people to charge the cooking venue fee of NT$ 200, 12 people NT$ 400 and so on.",
-    "rule_13": "When passengers enter the camping area, they must report to the management center and request a uniform invoice as proof of using the camping area.",
-    "rule_15": "All areas of the camping area have lighting at night.",
-    "rule_16": "Hot water supply time: Public baths in areas A1, D, E: 24hr hot water (daily), with hair dryer. Public toilets on both sides of the management center: The boiler is supplied with hot water from 17:00 to 22:00 (only available on holidays), and there is only one 24hr hot water (the last one for men and women) with a hair dryer.",
-    "rule_17": "There is a public outlet and a refrigerator in front of the management center for visitors.",
-    "rule_18": "All reservations in the camping area, including camps and wooden houses, if the remittance procedure is not completed on the day, the camping area reserves the right to delete."
-  },
+    "camp_pallet": "camp pallet",
+    "price":"price",
+    "remark":"remark",
+    "a1_car_pallet":"A區、A1區汽車棧板",
+    "a1_car_pallet_type":"須自搭營帳，木棧板營位 。(A1區為300cm*300cm，A區為320cm*300cm)。",
+    "a1_car_pallet_remark":"電源插座乙座、專屬餐桌、使用A1區公共浴廁、專屬車位。",
+    "b_tent":"B區空中帳篷",
+    "b_tent_type":"已搭有營帳，睡墊 (210cm*240cm)。架高50cm(B)或80cm(BA)。",
+    "b_tent_remark":"有電源插座、專屬餐桌、使用管理中心兩側公共浴廁、使用公共停車場、『寵物禁止入內』。",
+    "c_tent":"C區離地空帳",
+    "c_tent_type":"已搭有營帳、睡墊(240cm*240cm)。",
+    "c_tent_remark":"電源插座乙座、專屬餐桌、使用管理中心浴廁、專屬車位。",
+    "c_car_pallet":"C區汽車棧板營位",
+    "c_car_pallet_type":"須自搭營帳、木棧板營位。(420cm*420cm)。",
+    "c-car_pallet_remark":"電源插座乙座、專屬餐桌、使用管理中心浴廁、專屬車位。",
+    "d_car_pallet":"D1區汽車棧板營位",
+    "d_car_pallet_type":"須自搭營帳，木棧板營位 。(300cm*320cm)。",
+    "d-car_pallet_remark":"有電源插座、專屬餐桌、使用D區公共浴廁、專屬車位。",
+    "e_car_pallet":"D、E區汽車棧板",
+    "e_car_pallet_type":"須自搭營帳，木棧板營位 (D1~D12為300cm*320cm，其餘為220cm*320cm)。",
+    "e-car_pallet_remark":"有電源插座、專屬餐桌、使用D區/E區公共浴廁、專屬車位。",
+    "camp_cottage":"露營屋",
+    "a1_cottage":"A1.區景觀屋",
+    "a1_cottage_type":"有照明燈，軟墊 (240cm*240cm)，寢具須自備，可睡4~5人。",
+    "al_cottage_remark":"有電源插座(僅供手機充電)、專屬餐桌、使用A1區公共浴廁、專屬車位、寵物禁止入內』",
+    "a_cottage":"A、D區.可愛露營屋",
+    "a_cottage_type":"有照明燈，軟墊 (195cm*195cm)，可睡3人，寢具須自備。",
+    "a_cottage_remark":"有電源插座(僅供手機充電)、專屬餐桌、使用A1區/D區公共浴廁、專屬車位、『寵物禁止入內』。",
+    "b_cottage":"B區.彩繪屋",
+    "b_cottage_type":"睡墊 (187cm*220cm)、高100cm(BH)。",
+    "b_cottage_remark":"有電源插座、專屬餐桌、使用管理中心兩側公共浴廁、使用公共停車場、『寵物禁止入內』。",
+    "d_cottage":"D1區.築夢屋",
+    "d_cottage_type":"位於D1區露營區新式小木屋，可睡2+1人。",
+    "d_cottage_remark":"有電源插座(僅供手機充電)、專屬餐桌、使用D區公共浴廁、專屬車位、『寵物禁止入內』。" 
+  },  
   "tea_saloon": {
     "name": "Wuling Farm Tea Saloon",
     "tel": "Phone: 04-25901268",
@@ -181,6 +199,7 @@
     "notice": "notice",
     "notice_01": "Passengers, including visitor accommodation, need to drop off at toll station to pay entrance fees (cash only). Then pick up the bus to enter Wuling Farm. The bus stop is near Wuling visitor Center. If you live in Wuling Hotel, please actively inform the driver earlier to drop you off in Welcome Bridge of Wuling Hotel.",
     "notice_02": "Information is subject to change which based on each transport company.",
+    "by_van": "By van",
     "ego_bus": "Taiwan Tour Bus e-go(Estimated time of travel: 4hrs, daily departure and need reservation 5 days before departure. Tel: +886-2-27965696)",
     "ego_taipei_wuling": "East gate 3 of Taipei railway station →  Welcome Bridge of Wuling Hotel  07:30  ",
     "ego_wuling_taipei": "Welcome Bridge of Wuling Hotel → Taipei railway station  13:30  ",
@@ -188,6 +207,8 @@
     "bear_taipei_wuling": "East gate 3 of Taipei railway station →  Wuling visitor center  07:50 ",
     "bear_wuling_taipei": "Wuling visitor center → Taipei railway station 14:10 ",
     "lion_bus": "Lion Express(Taipei → Wuling Farm，Tel: +886-2-87939611)",
+    "lion_taipei_wuling": "East gate 3 of Taipei railway station →  Wuling visitor center  07:50",
+    "lion_wuling_taipei": "Wuling visitor center → Taipei railway station 14:10 ",
     "lion_website": "Lion Express website"
   },
   "restaurant": {
@@ -195,6 +216,8 @@
     "introduction": "The chefs of Wuling Hotel Restaurant put their heart into designing specialty menus according to the seasons, presenting a cabbage feast, an apple feast, a tea leave feast etc. to visiting tourists every season. Tourists who love to try new flavors can choose from a variety of organic fruits and vegetables uncommon in the city. Such as freshly harvested watercress, Ipomoea aquatica and pickled potherb mustard as well as others to complement their highland experience.",
     "fare": "Food fare",
     "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
     "breakfast_family": "Chinese Style Breakfast (For 10 pax) NT$1,500/Table. ",
     "location_Plum": "Location:Plum Restaurant, Maple Restaurant",
     "breakfast_buffet": "Chinese cum Western Style Buffet NT$150/pax.",
@@ -207,7 +230,8 @@
     "lunch_set": "Lunch",
     "private_set": " Personal set NT$300 per set, vegetarian meal available.",
     "dinner_buffet": "Buffet",
-    "buffet_price": "Chinese cum Western Style Buffet, NT$350/ pax."
+    "buffet_price": "Chinese cum Western Style Buffet, NT$350/ pax.",
+    "buffet_note": "When there are many guests, the dinner is divided into two periods: 17:30~18:50 and 19:00~20:20, which are distributed by the counter."
   },
   "ecotourism": {
     "ecology": "Ecology",
@@ -227,7 +251,8 @@
   },
   "peach": {
     "slogan": "2018 peaches listed",
-    "contain": "It is the season of peach harvesting. Under the cultivation of the natural environment, let you buy the rest assured, eat peace of mind. The farm invites you to share the best of the world and enjoy the beautiful scenery of Wuling."
+    "contain": "It is the season of peach harvesting. Under the cultivation of the natural environment, let you buy the rest assured, eat peace of mind. The farm invites you to share the best of the world and enjoy the beautiful scenery of Wuling.",
+    "price": "price list..."
   },
   "agricultural": {
     "products": "Wuling Products",

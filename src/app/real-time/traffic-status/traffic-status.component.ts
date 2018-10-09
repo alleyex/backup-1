@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { TrafficStatusService, RoadStatus } from '../traffic-status.service';
+import { TrafficStatusService} from '../traffic-status.service';
 
 @Component({
     selector: 'app-traffic-status',
@@ -16,29 +16,23 @@ export class TrafficStatusComponent implements OnInit, OnDestroy {
     count = 0;
 
     ngOnInit() {
-        this.trafficService.triffic$.subscribe(val => {
-            this.status = val;
-            console.log(this.status);
-
-        });
-
         this.interval = setInterval(() => {
             this.getMarquee();
         }, 5000);
-         this.trafficService.check();
+        this.status = this.trafficService.check();
     }
 
     getMarquee() {
        this.count++;
        if (this.count > 1000) {
            this.count = 0;
-           this.trafficService.check();
+           this.status = this.trafficService.check();
        }
 
         this.index++;
     
         let text = this.status[this.index % this.status.length].comment;
-        this.marquee = text.substr(0,280);
+        this.marquee = text.substr(0,260);
     }
 
     ngOnDestroy() {

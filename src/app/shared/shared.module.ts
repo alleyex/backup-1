@@ -4,6 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { AngularFireDatabaseModule } from 'Angularfire2/database';
+import { AngularFireStorageModule } from 'angularfire2/storage';
 
 @NgModule({
     exports: [
@@ -12,7 +13,8 @@ import { AngularFireDatabaseModule } from 'Angularfire2/database';
         MaterialModule,
         BrowserAnimationsModule,
         BrowserAnimationsModule,
-        AngularFireDatabaseModule
+        AngularFireDatabaseModule,
+        AngularFireStorageModule
     ]
 })
 export class SharedModule { }
