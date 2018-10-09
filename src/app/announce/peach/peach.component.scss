@@ -11,7 +11,7 @@
     width: calc(100% - 16px);
     height: 376px;
     margin: 8px;
-    background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fpeach-big.jpg?alt=media&token=d5e70f9a-71e5-401e-af95-8cfa8bb605ac);    
+    background : linear-gradient(to bottom right, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fpeach-big.jpg?alt=media&token=d5e70f9a-71e5-401e-af95-8cfa8bb605ac);    
     background-size: cover;
   }
   
@@ -19,7 +19,7 @@
     max-width: 460px;
     bottom: 40px;
     right: 60px;
-    position: absolute;
+    position: absolute;    
     z-index: 40;
   }
   

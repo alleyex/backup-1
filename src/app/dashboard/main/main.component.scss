@@ -12,7 +12,8 @@
    
   .banner {   
     margin: 12px 12px ;    
-    min-height: 400px;     
+    height: 392px;  
+    box-shadow: 8px 8px 8px #ccc;   
   }
 
   .box {   
@@ -22,6 +23,9 @@
     text-align: center;
     line-height: 32px;
     cursor: pointer;
+    box-shadow: 8px 8px 8px #ccc;
+    font-size:large;
+    text-shadow: 2px 2px 1px white ,-2px -2px 1px white ,-2px 2px 1px white  ,2px -2px 1px white;;
   }
 
   .status {
@@ -44,14 +48,15 @@
   }
 
   .hotel {  
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fhotel.jpg?alt=media&token=b99579ad-2881-4614-b11a-4e17ae222725);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fhotel.jpg?alt=media&token=b99579ad-2881-4614-b11a-4e17ae222725);
     background-size: cover;
     margin: 8px;
     height: 240px;
+   
   }  
 
   .camping {   
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fcamping.jpg?alt=media&token=dd2969ca-9c4e-48cb-8708-2de8dfb6cac9 );
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fcamping.jpg?alt=media&token=dd2969ca-9c4e-48cb-8708-2de8dfb6cac9 );
     background-size: cover;
     margin: 8px;
     height: 240px;   
@@ -67,7 +72,7 @@
   }
 
   .restaurant{    
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Frestaurant.jpg?alt=media&token=1bbb4959-f186-427d-b3b3-393c5e399cac);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Frestaurant.jpg?alt=media&token=1bbb4959-f186-427d-b3b3-393c5e399cac);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 8px;  
@@ -75,14 +80,14 @@
   }
 
   .ecotourism {   
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fecotourism.jpg?alt=media&token=6f4c2297-c43d-443b-a6c9-d2649b0a5d0b);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fecotourism.jpg?alt=media&token=6f4c2297-c43d-443b-a6c9-d2649b0a5d0b);
     background-size: cover;
     margin: 8px;
     height: 240px;
   }
 
   .product {   
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3)30%, rgba(255, 255, 255, 0.5) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fproduct.jpg?alt=media&token=bd20b9f0-1e1f-45bc-bda6-cba84b07ce87);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2)30%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fproduct.jpg?alt=media&token=bd20b9f0-1e1f-45bc-bda6-cba84b07ce87);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 8px;
@@ -98,48 +103,48 @@
   }
   
   .tollbooth {    
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Ftoll.jpg?alt=media&token=d4d69c3e-c1e8-4570-9cb7-c9d3264325f6);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Ftoll.jpg?alt=media&token=d4d69c3e-c1e8-4570-9cb7-c9d3264325f6);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 8px;
     height: 140px;
   }
   .departure{     
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fdeparture.jpg?alt=media&token=bcbfe9cb-766f-467f-b855-47f615237f30);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fdeparture.jpg?alt=media&token=bcbfe9cb-766f-467f-b855-47f615237f30);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 8px;
     height: 140px;
   }  
   .navigation{    
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4)30%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fnavigation.jpg?alt=media&token=98bc5fb0-e39b-4913-b1ba-19e102132e43);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2)30%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fnavigation.jpg?alt=media&token=98bc5fb0-e39b-4913-b1ba-19e102132e43);
     background-size: cover;
     margin: 8px;
     height: 140px;
   }
   .itinerary{    
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3)30%, rgba(255, 255, 255, 0.3) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fitinerary.jpg?alt=media&token=a893ee33-4305-41f5-b969-8bbe35d64ccc);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2)30%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fitinerary.jpg?alt=media&token=a893ee33-4305-41f5-b969-8bbe35d64ccc);
     background-size: cover;
     margin: 8px;
     height: 140px;
   }
 
   .tea {    
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3) 30%, rgba(255, 255, 255, 0.3) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Ftea.jpg?alt=media&token=24e83524-9ba1-4c68-b559-27965d72b7ea);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Ftea.jpg?alt=media&token=24e83524-9ba1-4c68-b559-27965d72b7ea);
     background-size: cover;
     margin: 8px;
     height: 140px;
   }
   
   .visitor {    
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3)30%, rgba(255, 255, 255, 0.3) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fvisitor.jpg?alt=media&token=21681060-508c-4e3f-8139-1fe6c44a326d);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2)30%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fvisitor.jpg?alt=media&token=21681060-508c-4e3f-8139-1fe6c44a326d);
     background-size: cover;
     margin: 8px;
     height: 140px;
   }
 
   .meeting-room {    
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4)30%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fmeeting-room.jpg?alt=media&token=05c45da0-01cd-4308-9945-6deb5c59e37f);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2)30%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/home%2Fmeeting-room.jpg?alt=media&token=05c45da0-01cd-4308-9945-6deb5c59e37f);
     background-size: cover;
     margin: 8px;
     height: 140px;

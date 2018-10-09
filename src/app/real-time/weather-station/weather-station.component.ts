@@ -27,8 +27,7 @@ export class WeatherStationComponent implements OnInit, OnDestroy {
 
     ngOnInit() {
         this.weather$ = this.weatherBureauService.weather$.subscribe(result => {
-            this.data = result;
-           
+            this.data = result;           
         });
         this.weatherBureauService.check();
         this.weatherBureauService.check();
