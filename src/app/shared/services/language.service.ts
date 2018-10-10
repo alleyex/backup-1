@@ -15,6 +15,7 @@ export class LanguageService {
         let browserLang = translate.getBrowserLang();
         let setLang = browserLang.match(/en|vi|th|zh-tw|ja|ms|ko|in/) ? browserLang : 'en';
         translate.use(setLang);
+       
 
     }
 

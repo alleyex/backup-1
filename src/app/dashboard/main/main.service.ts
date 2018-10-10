@@ -31,7 +31,7 @@ export class MainService {
 
     setPosition(nodeId: string, listId: string, position: number) {
         let node = document.getElementById(nodeId);
-        let list = document.getElementById(listId);
+        let list = document.getElementById(listId);     
         list.insertBefore(node, list.childNodes[position]);
     }
 
