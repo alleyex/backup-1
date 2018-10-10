@@ -25,8 +25,8 @@ export class MainService {
         this.setPosition('ecotourism-contain', 'store', 5);
         this.setPosition('toll-contain', 'information', 7);
         this.setPosition('departure-contain', 'information', 7);
-        this.setPosition('tea-content', 'information', 13);
-        this.setPosition('visitor-content', 'information', 13);
+        this.setPosition('tea-content', 'information', 15);
+        this.setPosition('visitor-content', 'information', 15);
     }
 
     setPosition(nodeId: string, listId: string, position: number) {
