@@ -329,6 +329,13 @@
       "content":" 30Tuổi Cedar đứng bên cạnh, uống một cốc Wuling trang trại trà đặc biệt hoa oải hương, thêm với Fen Jing để hẹn hò rừng!", 
       "product":"Trứng bánh ngọt, bánh onion, shredded gà mì, mì ống, Pizza có sẵn trên trang web(5吋), Mike gà cốm, lát dày, thịt túi, bánh bao thịt, vv nóng đồ uống quán trà sữa, cà phê, ca cao, gừng trà, trà và như vậy.",   
       "tel":"Điện thoại:04-25901469"    
+    },
+    "traffic": {
+        "road_status": "Thông báo giao thông",
+        "notice_date": "Ngày",
+        "notice_section": "Phần",
+        "notice_contect": "Nội dung"
+  
     }
   
 }
