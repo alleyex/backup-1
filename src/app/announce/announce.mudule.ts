@@ -8,6 +8,7 @@ import { KanbanDirective } from "./kanban/kanban.directive";
 import { PeachComponent } from "./peach/peach.component";
 import { PosterComponent } from "./long-stay/poster.component";
 import { PriceComponent } from "./peach/price.component";
+import { MicroTripComponent } from "./micro-trip/micro-trip.component";
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { PriceComponent } from "./peach/price.component";
        KanbanComponent,
        KanbanDirective,
        PosterComponent,
-       PriceComponent       
+       PriceComponent,
+       MicroTripComponent       
     ],
     imports:[         
          SharedModule
