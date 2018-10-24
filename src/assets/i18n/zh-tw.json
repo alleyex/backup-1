@@ -80,9 +80,10 @@
     "two_single": "2小床",
     "one_king": "1大床",
     "two_double": "2大床",
-    "one_double_two_single": "1大 + 2小床",
+    "one_double_two_single": "1大床 + 2小床",
     "one_double_one_single": "1大床 + 1小床",
-    "four_mattresses": "單人床墊"
+    "four_mattresses": "4個單人床墊",
+    "six_mattresses":"6個單人床墊"
   },
   "campsite": {
     "about": "武陵農場露營區位在高山植物園區，園區內設有生態水池、水中植物池、中藥園區、草園區、花海區等，群山環繞，由雪山管制站至七卡山莊，可清楚地望見無名峰、中央尖山、南湖大山群峰、羅葉尾峰、桃山；山嵐水色，自然天成，是國內難得的天然避暑樂園。",
