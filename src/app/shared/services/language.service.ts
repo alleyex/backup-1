@@ -14,9 +14,8 @@ export class LanguageService {
         translate.setDefaultLang('zh-tw');
         let browserLang = translate.getBrowserLang();
         let setLang = browserLang.match(/en|vi|th|zh-tw|ja|ms|ko|in/) ? browserLang : 'en';
-        translate.use(setLang);
-       
-
+        translate.use(setLang);     
+        //translate.use('ja');
     }
 
     private languages: Language[] = [
@@ -24,7 +23,7 @@ export class LanguageService {
         { code: 'en', region: 'English', display: 'English' },
         { code: 'ja', region: 'Japanese', display: '日本語' },
         { code: 'ko', region: 'Korean', display: '한국어' },
-        { code: 'th', region: 'Thai', display: 'ไทย' },     
+        { code: 'th', region: 'Thai', display: 'ไทย' },
         { code: 'vi', region: 'Vietnamese', display: 'Người việt nam' },
         { code: 'ms', region: 'Malay', display: 'Malay' },
         { code: 'in', region: 'Indonesian', display: 'Indonesian' }
@@ -44,7 +43,7 @@ export class LanguageService {
 }
 
 export interface Language {
-    code: 'en' | 'zh-tw' | 'th' | 'vi' |'ja'|'ms'|'ko'|'in',
-    region: 'English' | 'Chinese (PRC)' | 'Thai' | 'Vietnamese'|'Japanese'|'Korean'|'Malay'|'Indonesian',
-    display: 'English' | '正體中文' | 'ไทย' | 'Người việt nam'|'日本語' | '한국어'|'Malay'|'Indonesian'
+    code: 'en' | 'zh-tw' | 'th' | 'vi' | 'ja' | 'ms' | 'ko' | 'in',
+    region: 'English' | 'Chinese (PRC)' | 'Thai' | 'Vietnamese' | 'Japanese' | 'Korean' | 'Malay' | 'Indonesian',
+    display: 'English' | '正體中文' | 'ไทย' | 'Người việt nam' | '日本語' | '한국어' | 'Malay' | 'Indonesian'
 }
