@@ -35,14 +35,14 @@ export class TrafficStatusComponent implements OnInit, OnDestroy {
 
         this.index++;
         let text = this.status[this.index % this.status.length].comment;
-        console.log(this.translateService.currentLang);
+         // console.log(this.translateService.currentLang);
         if (this.translateService.currentLang == 'zh-tw') {
             this.marquee = text.substr(0, 260);
         }
         else {
             this.googleTranslateService.translate(text, this.translateService.currentLang).subscribe(x => {
                 this.marquee = x.data.translations[0].translatedText.substr(0, 260);
-                console.log(x);
+                // console.log(x);
             });
         }
     }

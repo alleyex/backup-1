@@ -30,7 +30,7 @@ export class MenuComponent implements OnInit {
         this.destination = {  lat:this.data.lat,  lng: this.data.lng };
         this.current$ = this.googleMapService.location$.subscribe(position => {
             this.origin = { lat:  position.coords.latitude, lng: position.coords.longitude };           
-            console.log(position);
+           // console.log(position);
         })
         this.googleMapService.watchLocaltion();
     }
