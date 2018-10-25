@@ -13,7 +13,7 @@
     margin: 8px;
     background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, .3) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fpeach-big.jpg?alt=media&token=829a4ad8-6dc2-4efd-85d1-418fd0ba9815);    
     background-size: cover;
-    text-shadow: 2px 2px 2px white ,-2px -2px 2px white ,-2px 2px 2px white ,2px -2px 2px white;
+    text-shadow: 0 0 .8em white ,0 0 .8em white ,0 0 .8em  white,0 0 .8em white ,0 0 .8em  white;
   }
   
   .slogan {
@@ -26,6 +26,7 @@
   
   .article {
     text-align: left;
+    line-height: 32px
   }
   
   .contain {
