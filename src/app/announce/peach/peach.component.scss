@@ -11,13 +11,14 @@
     width: calc(100% - 16px);
     height: 376px;
     margin: 8px;
-    background : linear-gradient(to bottom right, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fpeach-big.jpg?alt=media&token=d5e70f9a-71e5-401e-af95-8cfa8bb605ac);    
+    background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, .3) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fpeach-big.jpg?alt=media&token=829a4ad8-6dc2-4efd-85d1-418fd0ba9815);    
     background-size: cover;
+    text-shadow: 2px 2px 2px white ,-2px -2px 2px white ,-2px 2px 2px white ,2px -2px 2px white;
   }
   
   .slogan {
     max-width: 460px;
-    bottom: 40px;
+    bottom: 20px;
     right: 60px;
     position: absolute;    
     z-index: 40;
@@ -56,24 +57,24 @@
   
   @media only screen and (max-width:480px) {
     .content {      
-        background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fpeach-small.jpg?alt=media&token=1741e05c-509b-4a43-9664-0f6c2641f6ae);
+        background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fpeach-small.jpg?alt=media&token=92d06d21-cc64-4bc5-9bfa-1d9cbe80befa);
         background-size: cover;
       }
     .slogan {
       width:calc(100%-20px);
-      bottom: 40px;
+      bottom: 20px;
       right: 4px;
       left: 4px;
       
     }
     h1{
-      font-size: 20px;
+      font-size: 16px;
     }
     .article {         
       margin: 8px;
     }  
     .contain {   
-      font-size: 16px;
+      font-size: 12px;
       margin: 8px;
        
     }
