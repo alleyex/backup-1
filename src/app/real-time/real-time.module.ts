@@ -2,25 +2,31 @@ import { NgModule } from '@angular/core';
 
 import { WeatherStationComponent } from './weather-station/weather-station.component';
 import { WeatherBureauService } from './weather-bureau.service';
-import { SharedModule } from '../shared/shared.module';
-import { TrafficStatusComponent } from './traffic-status/traffic-status.component';
-import { TrafficStatusService } from './traffic-status.service';
+import { SharedModule } from '../shared/shared.module'; 
+ 
+import { HighwayComponent } from './highway/highway.component';
+import { HighwayService } from './highway/highway.service';
+import { RoadStatusComponent } from './highway/road-status/road-status.component';
+ 
 
 @NgModule({
     declarations: [
-        WeatherStationComponent,
-        TrafficStatusComponent
+        WeatherStationComponent,         
+        HighwayComponent,
+        RoadStatusComponent
     ],
     imports:[
        SharedModule
     ],
     exports: [
-        WeatherStationComponent,
-        TrafficStatusComponent
+        HighwayComponent,
+        WeatherStationComponent
+         
     ],
     providers:[
         WeatherBureauService,
-        TrafficStatusService
+        
+        HighwayService
     ]
 })
 export class RealTimeModule {}

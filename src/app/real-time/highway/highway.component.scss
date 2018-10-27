@@ -1,0 +1,38 @@
+:host{   
+    display: inline-block; 
+    width: calc(100% - 12px);
+  
+    height:360px;    
+    //border: 1px solid lightblue;   
+    text-align: left;     
+    margin: 6px;
+    vertical-align: top; 
+    overflow-y:auto;  
+    -ms-overflow-style: none;
+    overflow: auto;
+}
+
+:host::-webkit-scrollbar {
+    display:none;    
+}
+
+.marked{
+    border:2px solid gray;
+}
+
+div{
+ margin: 12px 24px; 
+} 
+
+@media only screen and (max-width:1200px) {
+   
+}
+@media screen and (max-width:1023px) {
+
+}
+@media only screen and (max-width:768px) {
+
+}
+@media only screen and (max-width:480px) {
+       
+}

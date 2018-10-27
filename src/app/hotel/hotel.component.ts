@@ -4,7 +4,7 @@ import { DeviceService } from '../dashboard/device.service';
 import { Subscription } from 'rxjs';
 import { MatDialog } from '@angular/material';
 
-import { MenuComponent } from '../restaurant/menu/menu.component';
+
 import { GoogleMapComponent } from '../google-map/google-map.component';
 import { AlbumService } from '../dashboard/album.service';
 

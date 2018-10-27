@@ -36,7 +36,7 @@ export class MainComponent implements OnInit, DoCheck,OnDestroy {
             this.mainService.setScroll(place, 600, 600, 68);
         } else {
             if (this.place != 'other') {
-                this.mainService.gatPosition(this.place, place,target);
+                this.mainService.getPosition(this.place, place,target);
             } else {
                 this.place = place;
                 this.mainService.setScroll(target, 600, 600, 68);

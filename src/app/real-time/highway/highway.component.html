@@ -1,0 +1,5 @@
+<div>    
+    <app-road-status *ngFor="let status of statuses; let i = index" [ngClass]="{marked: markedIndex ===i}" [status]="status"
+        (click)="markedIndex = 100">
+    </app-road-status>
+</div>

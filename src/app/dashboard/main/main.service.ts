@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ScrollToConfigOptions, ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
 import { Subject } from 'rxjs';
-import { element } from '../../../../node_modules/@angular/core/src/render3/instructions';
+
 
 @Injectable()
 export class MainService {
@@ -31,28 +31,36 @@ export class MainService {
 
     setPosition(nodeId: string, listId: string, position: number) {
         let node = document.getElementById(nodeId);
-        let list = document.getElementById(listId);     
+        let list = document.getElementById(listId);
         list.insertBefore(node, list.childNodes[position]);
     }
 
-    gatPosition(past: string, place: string, target: string) {
+    getPosition(past: string, place: string, target: string) {
 
         let el = document.getElementById(past);
+
+        //元素上邊到視窗上邊的距離;
         let offset = el.getBoundingClientRect().top
+
         if (offset < -100) {
+            // 68 is toolbar height, 
             this.setScroll(place, 200, 0, 68);
             setTimeout(() => {
                 this.place$.next(place);
                 let pastEl = document.getElementById(past + '-contain');
-                pastEl.style.display = 'none';
+              //  pastEl.style.display = 'none';
+                pastEl.style.visibility = 'hidden';
 
                 let placeEl = document.getElementById(place);
                 window.scrollTo(0, placeEl.offsetTop);
-
+                
                 setTimeout(() => {
-                    pastEl.style.display = 'block';
+                    // IE not support style.display
+                    //pastEl.style.display = 'block';
+                    pastEl.style.visibility = 'visible';
+
                 }, 900);
-                this.setScroll(target, 600, 800, 68);
+                this.setScroll(target, 600, 1000, 68);
             }, 400);
 
         } else {
@@ -61,31 +69,8 @@ export class MainService {
         }
     }
 
-    private hied(past: string, place: string) {
-        let placeEl = document.getElementById(place);
-        let pastEl = document.getElementById(past + '-contain');
-        pastEl.style.display = 'none';
-
-        window.scrollTo(0, placeEl.offsetTop);
-        setTimeout(() => {
-            pastEl.style.display = 'block';
-            this.place$.next(place);
-            console.log('pastEl.style.display  : block');
-        }, 900);
-
-    }
-
-    private after(time: number, place: string, target: string) {
-        let interval = setInterval(() => {
-            clearInterval(interval);
-
-            this.setScroll(target, 600, 900, 68);
-        }, time);
-    }
-
     setScroll(target: string, duration: number, time: number, adject: number) {
-        let interval = setInterval(() => {
-            clearInterval(interval);
+        setTimeout(() => {
             let el = document.getElementById(target);
             let offset = el.getBoundingClientRect().top - adject;
             const config: ScrollToConfigOptions = {
@@ -93,6 +78,7 @@ export class MainService {
                 duration: duration,
                 easing: 'easeOutQuad',
             };
+
             this.scrollToService.scrollTo(config);
         }, time);
     }
