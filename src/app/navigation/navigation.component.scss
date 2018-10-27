@@ -1,3 +1,9 @@
+
+div{
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+
 div.content {
     max-width: 800px;  
     text-align: left;  

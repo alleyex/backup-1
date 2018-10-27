@@ -2,6 +2,11 @@ mat-card{
   text-align: left;
 }
 
+div{
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+
 gallery, img{
   display: inline-block;
   margin:   8px;

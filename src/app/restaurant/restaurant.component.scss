@@ -4,6 +4,11 @@ div.content {
   margin: 0px 12px; 
 }
 
+div{
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+
 hr {  
   border: 0;
   border-bottom: 1px dashed #ccc;
