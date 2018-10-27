@@ -3,6 +3,12 @@
 	margin: 16px;
 }
 
+div{
+	-ms-overflow-style: none;
+	overflow: auto;
+  }
+  
+
 .explain{	
 	max-width: 1200px;	
 	list-style-type: none;  

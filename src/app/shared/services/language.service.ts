@@ -13,9 +13,10 @@ export class LanguageService {
         this.default = this.languages[0];
         translate.setDefaultLang('zh-tw');
         let browserLang = translate.getBrowserLang();
-        let setLang = browserLang.match(/en|vi|th|zh-tw|ja|ms|ko|in/) ? browserLang : 'en';
-        translate.use(setLang);     
-        //translate.use('ja');
+        let setLang = browserLang.match(/vi|th|zh-tw|ja|ms|ko|in/) ? browserLang : 'zh-tw';
+        //let setLang = browserLang.match(/en|vi|th|zh-tw|ja|ms|ko|in/) ? browserLang : 'zh-tw';
+        //translate.use('zh-tw');     
+         translate.use(setLang);       
     }
 
     private languages: Language[] = [
