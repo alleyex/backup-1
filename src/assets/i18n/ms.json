@@ -50,6 +50,7 @@
     "notice_sorce": "Stesen Penyiaran Polis"
   },
   "wuling-hotel": {
+    "order":"Tempahan dalam talian",
     "introduction": "Ladang ini menawarkan pelbagai pilihan penginapan dan jenis bilik di Rumah Tamu Wuling, Ladang Percutian, dan pavilion Shanshui. Bilik untuk dua, tiga, empat dan enam orang serta golongan cacat yang mana harganya berkisar daripada $3420 hingga $7500.",
     "wuling_hotel": "Rumah Tamu Wuling",
     "shanshui_villa": "Pavilion Shanshui",
@@ -86,6 +87,7 @@
     "six_mattresses":"6 tilam bujang"
   },
   "campsite": {
+    "order":"Tempahan dalam talian",
     "about": "Kawasan perkhemahan menawarkan banyak pilihan untuk tetamu kami. Di samping dapat memasang khemah di atas katil trak untuk menikmati keseronokan berkhemah, kami juga menawarkan khemah di udara, kabin kecil, rumah perkhemahan yang comel, dan rumah dengan pemandangan. Kawasan perkhemahan terletak di kawasan botani bagi tumbuh-tumbuhan Alps yang menawarkan sumber ekologi yang pelbagai. Percutian di hutan semula jadi tidak syak lagi menjadi satu keseronokan dalam kehidupan. Kawasan perkhemahan dilengkapi dengan kemudahan moden, seperti tempat mengecas, soket kuasa, dan mandian. Memasak di luar juga disediakan. Bar kopi di kawasan perkhemahan menawarkan sarapan dan minuman pelbagai pilihan.",
     "camp_pallet": "lokasi perkhemahan",
     "price": "senarai harga",

@@ -50,6 +50,7 @@
     "notice_sorce": "Police Broadcast station"
   },
   "wuling-hotel": {
+    "order":"Online reservations",
     "introduction": "The Farm offers a variety of choices in lodging and room types in Wuling Guest House, Leisure Farm, and Shanshui pavilion. Rooms for two, three, four, six, and the handicapped range in price from $3420 to $7500.",
     "wuling_hotel": "Wuling Guest House",
     "shanshui_villa": "Shanshui pavilion",
@@ -86,6 +87,7 @@
     "six_mattresses":"6 single mattresses"
   },
   "campsite": {
+    "order":"Online reservations",
     "about": "The camping area offers many choices for our guests. In addition to pitching a tent on a truck bed to experience the fun of camping, we offer tents in the air, small cabins, cute camping houses, and houses with views. The camping area is located in the botanical area of alpine vegetation that offers rich ecological resources. Vacationing in natural forests is no doubt a joy in life. The camping area is furnished with modern conveniences, such as charging bases, power sockets, and showers. Outdoor cooking is available. The coffee bar in the camping area offers breakfast and beverages with various choices",
     "camp_pallet": "camp location",
     "price": "list price",

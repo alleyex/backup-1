@@ -50,6 +50,7 @@
         "notice_sorce": "Đài phát thanh cảnh sát"
     },
     "wuling-hotel": {
+        "order":"Đặt phòng qua mạng",
         "introduction": "Nông trại cung cấp nhiều dịch vụ nghỉ ngơi với các loại phòng phong phú tại nhà khách Quốc Dân, nông trang nghỉ dưỡng và khu Sơn Thủy. Cung cấp phòng đôi, phòng 3 người, phòng 4 người, phòng 6 người và phòng không chướng ngại vật. Giá phòng giao động từ 3.420 NT$ đến 7.500NT$.",
         "wuling_hotel": "Nhà khách Quốc Dân",
         "shanshui_villa": "Sơn Thủy quán",
@@ -86,6 +87,7 @@
         "six_mattresses": "6 đệm đơn"
     },
     "campsite": {
+        "order":"Đặt phòng qua mạng",
         "about": "Khu cắm trại cung cấp cho du khách sự lựa chọn đa dạng, ngoài khu vực kệ gỗ có chỗ đỗ xe để dựng lều,  giúp du khách trải nghiệm sự thú vị trong hoạt động cắm trại, nông trại còn cung cấp các gian lều trên cao, các gian nhà gỗ nhỏ, các nhà trại đáng yêu và các gian nhà mở để ngắm cảnh v.v. Khu vực cắm trại nằm trong vườn thực vật núi cao có hệ sinh thái phong phú, nghỉ dưỡng giữa rừng cao là một sự tận hưởng vô cùng thú vị. Khu vực cắm trại có cung cấp các chức năng sử dụng thuận tiện, như ổ cắm điện, rắc cắm điện, thiết bị vệ sinh v.v. Ngoài ra còn có chỗ để tổ chức các hoạt động trải nghiệm như nướng thịt v.v. Quán cà phê Sâm Lâm (Senlin) tại khu vực cắm trại có cung cấp các loại đồ ăn như bữa sáng, đồ giải khát, giúp cho sự lựa chọn về ẩm thực càng thêm phong phú và tiện lợi.",
         "camp_pallet": "Vị trí cắm trại",
         "price": "Mức giá",

@@ -50,6 +50,7 @@
     "notice_sorce": "Stasiun Radio Polisi"
   },
   "wuling-hotel": {
+    "order":"Pemesanan Kamar Online",
     "introduction": "Tempat pertanian tersebut tersedia Hotel Tamu Wuling, Rumah Pertanian Rekreasi dan Gedung Gunung dan Air serta berbagai pilihan akomodasi dan tipe kamar. Menyediakan kamar 2 orang, 3 orang, 4 orang, 6 orang serta kamar bebas hambatan, harganya dari NT$ 3.420 hingga NT$ 7.500 untuk setiap kamar tamu.",
     "wuling_hotel": "Hotel Tamu",
     "shanshui_villa": "Gedung Gunung dan Air",
@@ -86,6 +87,7 @@
     "six_mattresses": "6 kasur single"
   },
   "campsite": {
+    "order":"Pemesanan Kamar Online",
     "about": "Area perkemahan memberikan banyak pilihan kepada tamu nginap, selain palet mobil yang dasar untuk mendirikan tenda menikmati kesenangan perkemahan, terlebih lagi menyediakan tenda udara, rumah kayu kecil dan rumah kemah lucu, rumah pemandangan dan banyak pilihan. Area perkemahan berada di area flora gunung tinggi, memiliki beragam sumber daya ekologi, liburan hutan bersama dengan alam pasti adalah sejenis kenikmatan. Area perkemahan terlebih lagi menyediakan penggunaan fungsionalitas yang nyaman, misalnya soket listrik, steker, peralatan pemandian dan sebagainya, terlebih lagi bisa memasak berpiknik serta kegiatan pengalaman lainnya. Bar kopi hutan area perkemahan juga tersedia sarapan pagi, minuman dan makanan lainnya, makan dan minum lebih beragam.",
     "camp_pallet": "Lokasi Perkemahan",
     "price": "Harga Tetap",

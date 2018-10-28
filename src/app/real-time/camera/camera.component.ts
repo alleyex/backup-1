@@ -5,13 +5,13 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './camera.component.html',
     styleUrls: ['./camera.component.scss']
 })
-export class CameraComponent implements OnInit {  
-     
-    ngOnInit(){        
+export class CameraComponent implements OnInit {
+
+    ngOnInit() {
         document.querySelector('.camera').addEventListener('click', this.clickVedio);
     }
 
-    clickVedio(e){
-        document.querySelector('.camera').classList.toggle('big');            
+    clickVedio() {
+        document.querySelector('.camera').classList.toggle('big');
     }
 }
