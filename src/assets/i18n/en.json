@@ -50,7 +50,7 @@
     "notice_sorce": "Police Broadcast station"
   },
   "wuling-hotel": {
-    "order":"Online reservations",
+    "order": "Online reservations",
     "introduction": "The Farm offers a variety of choices in lodging and room types in Wuling Guest House, Leisure Farm, and Shanshui pavilion. Rooms for two, three, four, six, and the handicapped range in price from $3420 to $7500.",
     "wuling_hotel": "Wuling Guest House",
     "shanshui_villa": "Shanshui pavilion",
@@ -84,10 +84,10 @@
     "one_double_two_single": "1 big bed + 2 small beds",
     "one_double_one_single": "1 big bed + 1 small bed",
     "four_mattresses": "4 single mattresses",
-    "six_mattresses":"6 single mattresses"
+    "six_mattresses": "6 single mattresses"
   },
   "campsite": {
-    "order":"Online reservations",
+    "order": "Online reservations",
     "about": "The camping area offers many choices for our guests. In addition to pitching a tent on a truck bed to experience the fun of camping, we offer tents in the air, small cabins, cute camping houses, and houses with views. The camping area is located in the botanical area of alpine vegetation that offers rich ecological resources. Vacationing in natural forests is no doubt a joy in life. The camping area is furnished with modern conveniences, such as charging bases, power sockets, and showers. Outdoor cooking is available. The coffee bar in the camping area offers breakfast and beverages with various choices",
     "camp_pallet": "camp location",
     "price": "list price",
@@ -223,7 +223,7 @@
     "by_van": "Shuttle bus",
     "ego_bus": "Taiwan Tour Bus (trip duration 4 hours. Departs every day. 72 hours advance reservation is required. Telephone 02-27965696)",
     "ego_taipei_wuling": "Taipei Railroad station East 3 entrance  → Welcome Bridge → Medical Station → Hoya Resort Hotel Wuling 07:30",
-    "ego_wuling_taipei": "Hoya Resort Hotel Wuling main entrance → Medical Station → Welcome Bridge → Taipei Railroad station 13:30",    
+    "ego_wuling_taipei": "Hoya Resort Hotel Wuling main entrance → Medical Station → Welcome Bridge → Taipei Railroad station 13:30",
     "lion_bus": "Lion Express (Taipei - Wuling shuttle bus, reservation 02-87939611)",
     "lion_taipei_wuling": "Meet at the retail store in the front of Taipei Railroad Station - Wuling Farm visitor center. Bus departs at 06:40.",
     "lion_wuling_taipei": "Wuling Farm visitor center - Taipei Railroad Station. Bus departs at 16:30.",
@@ -274,13 +274,13 @@
     "name": "Tea House",
     "content": "The Wuling Farm Tea House mainly sells tea and agricultural products with a limited menu of hot food. Space is available for tea-loving guests to make tea that is cultivated in this natural environment.",
     "open": "Business hours: 7:30-18:00 daily",
-    "holiday":"School summer and winter vacations and the Cherry Blossom season:  7:00-18:30 daily"    
+    "holiday": "School summer and winter vacations and the Cherry Blossom season:  7:00-18:30 daily"
   },
   "visitor_center": {
     "name": "Visitor Center",
     "content": "The visitor center of Wuling Farm sells primarily necessities (like slippers and toothpaste) and popular food (crackers, beverage, agricultural products).",
     "product": "On holidays, hot food like chicken noodle, pork ball soup, oden, and Zhongzi are also available.",
-    "open": "Business hours: 7:00-19:00 daily"   
+    "open": "Business hours: 7:00-19:00 daily"
   },
   "meeting_room": {
     "conter_method": "Renting Wuling Farm conference room (briefing room)",
@@ -300,10 +300,10 @@
     "center_period": "Each time slot is $1500 to cover water, cleaning, lighting equipment, maintenance, and repair. Please bring your cups and ball point pens.",
     "center_copy": "Copy $20, Fax $10"
   },
-  "coffee_bar" :{
-    "name":"Forest coffee bar",
-    "content":"Snuggled in the midst of 30-year-old Japanese cedars, the forest coffee bar offers specially-made lavender milk tea for guests to enjoy in the company of phytoncide and a lush forest.", 
-    "product":"Also on its menu are egg pancake, green onion torn pancake, chicken noodle, yi noodle, pizza (5-inch), Mike chicken nugget, thick-sliced toast, pork steamed bun, and zhongzi. Hot drinks include milk tea, coffee, cocoa, ginger tea, and flora tea.",   
-    "tel":"Order line 04-25901469"    
+  "coffee_bar": {
+    "name": "Forest coffee bar",
+    "content": "Snuggled in the midst of 30-year-old Japanese cedars, the forest coffee bar offers specially-made lavender milk tea for guests to enjoy in the company of phytoncide and a lush forest.",
+    "product": "Also on its menu are egg pancake, green onion torn pancake, chicken noodle, yi noodle, pizza (5-inch), Mike chicken nugget, thick-sliced toast, pork steamed bun, and zhongzi. Hot drinks include milk tea, coffee, cocoa, ginger tea, and flora tea.",
+    "tel": "Order line 04-25901469"
   }
 }
