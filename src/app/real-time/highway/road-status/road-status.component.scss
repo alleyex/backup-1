@@ -44,11 +44,29 @@
    
 }
 @media screen and (max-width:1023px) {
-
+    :host{    
+        box-shadow: 4px 4px 4px #ccc;   
+        margin:10px 0;
+        padding:4px 8px;     
+        font-size: 12px;
+        line-height: 16px;       
+    }   
 }
 @media only screen and (max-width:768px) {
-
+    :host{    
+        box-shadow: 4px 4px 4px #ccc;   
+        margin:10px 0;
+        padding:4px 8px;     
+        font-size: 10px;
+        line-height: 14px;       
+    }   
 }
 @media only screen and (max-width:480px) {
-   
+    :host{    
+        box-shadow: 4px 4px 4px #ccc;   
+        margin:10px 0;
+        padding:4px 8px;     
+        font-size: 10px;
+        line-height: 14px;       
+    }   
 }

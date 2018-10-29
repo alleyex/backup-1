@@ -7,10 +7,10 @@ import { Subscription } from 'rxjs';
     templateUrl: './main.component.html',
     styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit, DoCheck,OnDestroy {
-    place: string = 'other';
+export class MainComponent implements OnInit, DoCheck, OnDestroy {
+    place = 'other';
     isPhone = true;
-    place$ : Subscription;
+    place$: Subscription;
 
     constructor(private mainService: MainService) {}
 
@@ -19,24 +19,23 @@ export class MainComponent implements OnInit, DoCheck,OnDestroy {
     }
 
     ngDoCheck() {
-        if (window.innerWidth <= 480 && this.isPhone == true) {
+        if (window.innerWidth <= 480 && this.isPhone === true) {
             this.isPhone = false;
             this.mainService.smallScreen();
         }
-        if (window.innerWidth > 480 && this.isPhone == false) {
+        if (window.innerWidth > 480 && this.isPhone === false) {
             this.isPhone = true;
             this.mainService.bigScreen();
         }
     }
 
     onClick(place: string, target: string) {
-       
-        if (this.place == place) {
+        if (this.place === place) {
             this.place = 'other';
             this.mainService.setScroll(place, 600, 600, 68);
         } else {
-            if (this.place != 'other') {
-                this.mainService.getPosition(this.place, place,target);
+            if (this.place !== 'other') {
+                this.mainService.getPosition(this.place, place, target);
             } else {
                 this.place = place;
                 this.mainService.setScroll(target, 600, 600, 68);
@@ -44,7 +43,7 @@ export class MainComponent implements OnInit, DoCheck,OnDestroy {
         }
     }
 
-    ngOnDestroy(){
+    ngOnDestroy() {
         this.place$.unsubscribe();
     }
 }

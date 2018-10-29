@@ -17,3 +17,28 @@
     font-size: 14px;
     line-height:18px;
   }
+
+  @media only screen and (max-width:1200px) {
+   
+  }
+  @media screen and (max-width:1023px) {
+    .box {    
+      min-width: 0;
+      font-size: 12px;
+      line-height:16px;
+    } 
+  }
+  @media only screen and (max-width:768px) {
+    .box {    
+      min-width: 0;
+      font-size: 10px;
+      line-height:14px;
+    } 
+  }
+  @media only screen and (max-width:480px) {
+    .box {    
+       min-width: 0;
+       font-size: 10px;
+       line-height:14px;
+     } 
+  }

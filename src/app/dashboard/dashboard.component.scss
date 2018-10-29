@@ -5,12 +5,13 @@ header{
   z-index: 2;
 }
 
+
 mat-drawer-content{
   margin-top :  68px;
 }
 
 @media only screen and (max-width:480px) {
   mat-drawer{
-  width:calc(100vw - 40px );
-}
+    width:calc(100vw - 40px );
+  }
 }
