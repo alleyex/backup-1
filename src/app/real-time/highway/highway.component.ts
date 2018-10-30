@@ -11,8 +11,8 @@ export class HighwayComponent implements OnInit {
     markedIndex = 100;
 
     constructor(private realtimeService: HighwayService) { }
-       
+
     ngOnInit(): void {
-        this.statuses = this.realtimeService.getRoadStatus();       
-    } 
+        this.statuses = this.realtimeService.getRoadStatus();
+    }
 }

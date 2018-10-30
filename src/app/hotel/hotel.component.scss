@@ -46,6 +46,15 @@ td{
     background-color: #FFFFFF;     
   }
 
+.booking{
+    visibility:visible;
+}
+
+.notChinese{
+     
+    visibility: hidden;
+}
+
 
 @media only screen and (max-width:768px) {  
     img{     

@@ -49,6 +49,15 @@ td{
   background-color: #FFFFFF;     
 }
 
+.order{
+  visibility:visible;
+}
+
+.notChinese{
+   
+  visibility: hidden;
+}
+
 @media screen and (max-width:1023px) {
   gallery, img{     
     max-height: 200px;

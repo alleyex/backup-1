@@ -48,12 +48,12 @@ export class MainService {
                 this.place$.next(place);
                 const pastEl = document.getElementById(past + '-contain');
                 pastEl.style.visibility = 'hidden';
-                pastEl.style.display = 'none';
+                // pastEl.style.display = 'none';
                 this.setScroll(place, 0, 0, 68);
                 setTimeout(() => {
                     this.setScroll(target, 600, 0, 68);
                     pastEl.style.visibility = 'visible';
-                    pastEl.style.display = 'block';
+                   // pastEl.style.display = 'block';
                 }, 1000);
             }, 200);
 

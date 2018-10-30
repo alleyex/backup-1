@@ -7,6 +7,7 @@ import { MatDialog } from '@angular/material';
 
 import { GoogleMapComponent } from '../google-map/google-map.component';
 import { AlbumService } from '../dashboard/album.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-hotel',
@@ -15,19 +16,28 @@ import { AlbumService } from '../dashboard/album.service';
     animations: [ExpandModel]
 })
 export class HotelComponent implements OnInit, OnChanges, OnDestroy {
-    constructor(private deviceService: DeviceService,private albumService: AlbumService, private dialog: MatDialog) { }
+    constructor(private deviceService: DeviceService, private albumService: AlbumService,
+        private dialog: MatDialog , private translateService: TranslateService) { }
 
     @Input() place: string;
     isDivVisible = false;
     isCellphone$: Subscription;
-    
+
     ngOnInit() {
         this.isCellphone$ = this.deviceService.isCellpone$.subscribe(result => { });
         this.albumService.getPictures();
+
+        this.translateService.onLangChange.subscribe((event) => {
+            if (this.translateService.currentLang === 'zh-tw') {
+               const el = document.querySelector('.booking').classList.remove('notChinese');
+            } else {
+                const el = document.querySelector('.booking').classList.add('notChinese');
+            }
+        });
     }
 
     ngOnChanges() {
-        if (this.place == 'hotel') {
+        if (this.place === 'hotel') {
             this.isDivVisible = true;
         } else {
             this.isDivVisible = false;
@@ -41,7 +51,7 @@ export class HotelComponent implements OnInit, OnChanges, OnDestroy {
     }
 
     openMap(lat: number, lng: number) {
-        console.log(lat + ':'+lng);
+        console.log(lat + ':' + lng);
         this.dialog.open(GoogleMapComponent, {
             data: {
                 lat: lat,
@@ -52,6 +62,4 @@ export class HotelComponent implements OnInit, OnChanges, OnDestroy {
         });
 
     }
-
-     
 }

@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-
 @Injectable()
 export class HighwayService {
     constructor(private httpCliend: HttpClient) { }
 
     getRoadStatus(): RoadStatus[] {
-        let list: RoadStatus[] = [];
+        const list: RoadStatus[] = [];
         const url = 'https://us-central1-mercury-object.cloudfunctions.net/traffic';
         this.httpCliend.get<any>(url).subscribe(result => {
             result.forEach(element => {
@@ -22,9 +21,10 @@ export class HighwayService {
         return list;
     }
 }
+
 export interface RoadStatus {
-    happendate: string,
-    name: string,
-    roadtype: string,
-    comment: string
+    happendate: string;
+    name: string;
+    roadtype: string;
+    comment: string;
 }
