@@ -11,8 +11,8 @@ export class DepartureComponent implements OnChanges {
     isDivVisible = false;
     @Input() place: string;
 
-    ngOnChanges() {     
-        if (this.place == 'departure') {
+    ngOnChanges() {
+        if (this.place === 'departure') {
             this.isDivVisible = true;
 
         } else {

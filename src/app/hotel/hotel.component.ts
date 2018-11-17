@@ -29,9 +29,9 @@ export class HotelComponent implements OnInit, OnChanges, OnDestroy {
 
         this.translateService.onLangChange.subscribe((event) => {
             if (this.translateService.currentLang === 'zh-tw') {
-               const el = document.querySelector('.booking').classList.remove('notChinese');
+                 document.querySelector('.booking').classList.remove('notChinese');
             } else {
-                const el = document.querySelector('.booking').classList.add('notChinese');
+                  document.querySelector('.booking').classList.add('notChinese');
             }
         });
     }

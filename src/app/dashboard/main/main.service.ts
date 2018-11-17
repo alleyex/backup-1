@@ -42,24 +42,17 @@ export class MainService {
         const offset = el.getBoundingClientRect().top;
 
         if (offset < -100) {
-            // 68 is toolbar height
-            this.setScroll(place, 200, 0, 68);
-            setTimeout(() => {
-                this.place$.next(place);
-                const pastEl = document.getElementById(past + '-contain');
-                pastEl.style.visibility = 'hidden';
-                // pastEl.style.display = 'none';
-                this.setScroll(place, 0, 0, 68);
-                setTimeout(() => {
-                    this.setScroll(target, 600, 0, 68);
-                    pastEl.style.visibility = 'visible';
-                   // pastEl.style.display = 'block';
-                }, 1000);
-            }, 200);
+            // const pastEl = document.getElementById(past + '-contain');
+            // pastEl.style.visibility = 'hidden';
+            // pastEl.style.display = 'none';
+            // pastEl.style.visibility = 'visible';
+            // pastEl.style.display = 'block';
 
+            this.place$.next(place);
+            this.setScroll(target, 500, 500, 68);
         } else {
             this.place$.next(place);
-            this.setScroll(target, 500, 1000, 68);
+            this.setScroll(target, 500, 500, 68);
         }
     }
 

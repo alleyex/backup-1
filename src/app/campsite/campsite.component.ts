@@ -21,9 +21,9 @@ export class CampsiteComponent implements OnInit, OnChanges {
 
         this.translateService.onLangChange.subscribe((event) => {
             if (this.translateService.currentLang === 'zh-tw') {
-               const el = document.querySelector('.order').classList.remove('notChinese');
+                document.querySelector('.order').classList.remove('notChinese');
             } else {
-                const el = document.querySelector('.order').classList.add('notChinese');
+                document.querySelector('.order').classList.add('notChinese');
             }
         });
     }

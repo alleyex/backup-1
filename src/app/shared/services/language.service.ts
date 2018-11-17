@@ -23,10 +23,10 @@ export class LanguageService {
         { code: 'en', region: 'English', display: 'English' },
         { code: 'ja', region: 'Japanese', display: '日本語' },
         { code: 'ko', region: 'Korean', display: '한국어' },
-        { code: 'th', region: 'Thai', display: 'ไทย' },
-        { code: 'vi', region: 'Vietnamese', display: 'Người việt nam' },
-        { code: 'ms', region: 'Malay', display: 'Malay' },
-        { code: 'in', region: 'Indonesian', display: 'Indonesian' }
+        { code: 'th', region: 'Thai', display: 'ภาษาไทย' },
+        { code: 'vi', region: 'Vietnamese', display: 'Tiếng Việt' },
+        { code: 'ms', region: 'Malay', display: 'Bahasa Malaysia' },
+        { code: 'in', region: 'Indonesian', display: 'Bahasa Indonesia' }
     ];
 
     getLanguages() {
@@ -45,5 +45,5 @@ export class LanguageService {
 export interface Language {
     code: 'en' | 'zh-tw' | 'th' | 'vi' | 'ja' | 'ms' | 'ko' | 'in';
     region: 'English' | 'Chinese (PRC)' | 'Thai' | 'Vietnamese' | 'Japanese' | 'Korean' | 'Malay' | 'Indonesian';
-    display: 'English' | '正體中文' | 'ไทย' | 'Người việt nam' | '日本語' | '한국어' | 'Malay' | 'Indonesian';
+    display: 'English' | '正體中文' | 'ภาษาไทย' | 'Tiếng Việt' | '日本語' | '한국어' | 'Bahasa Malaysia' | 'Bahasa Indonesia';
 }
