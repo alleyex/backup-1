@@ -1,0 +1,13 @@
+{
+    "/pbsmgt": {
+      "target": "http://rtr.pbs.gov.tw",
+      "secure": true,
+      "changeOrigin": true
+    },
+    "/api": {
+      "target": "https://opendata.cwb.gov.tw",
+      "secure": true,
+      "changeOrigin": true
+    }
+  }
+  
