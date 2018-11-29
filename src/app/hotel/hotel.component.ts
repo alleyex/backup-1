@@ -4,9 +4,7 @@ import { DeviceService } from '../dashboard/device.service';
 import { Subscription } from 'rxjs';
 import { MatDialog } from '@angular/material';
 
-
 import { GoogleMapComponent } from '../google-map/google-map.component';
-import { AlbumService } from '../dashboard/album.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -16,8 +14,8 @@ import { TranslateService } from '@ngx-translate/core';
     animations: [ExpandModel]
 })
 export class HotelComponent implements OnInit, OnChanges, OnDestroy {
-    constructor(private deviceService: DeviceService, private albumService: AlbumService,
-        private dialog: MatDialog , private translateService: TranslateService) { }
+    constructor(private deviceService: DeviceService,
+        private dialog: MatDialog, private translateService: TranslateService) { }
 
     @Input() place: string;
     isDivVisible = false;
@@ -25,13 +23,13 @@ export class HotelComponent implements OnInit, OnChanges, OnDestroy {
 
     ngOnInit() {
         this.isCellphone$ = this.deviceService.isCellpone$.subscribe(result => { });
-        this.albumService.getPictures();
+
 
         this.translateService.onLangChange.subscribe((event) => {
             if (this.translateService.currentLang === 'zh-tw') {
-                 document.querySelector('.booking').classList.remove('notChinese');
+                document.querySelector('.booking').classList.remove('notChinese');
             } else {
-                  document.querySelector('.booking').classList.add('notChinese');
+                document.querySelector('.booking').classList.add('notChinese');
             }
         });
     }

@@ -5,12 +5,7 @@ import { LightboxModule } from '@ngx-gallery/lightbox';
 import { GallerizeModule } from '@ngx-gallery/gallerize';
 
 import { AgmCoreModule } from '@agm/core';
-import { AgmDirectionModule } from 'agm-direction'
-
-import { AngularFireModule } from 'angularfire2';
-
-
-
+import { AgmDirectionModule } from 'agm-direction';
 
 import { DashboardComponent } from './dashboard.component';
 import { MainService } from './main/main.service';
@@ -42,11 +37,6 @@ import { GoogleMapComponent } from '../google-map/google-map.component';
 import { GoogleMapService } from '../google-map/google-map.service';
 import { DeviceService } from './device.service';
 import { MenuComponent } from '../restaurant/menu/menu.component';
-import { firebase_config } from 'src/environments/environment';
-import { AlbumService } from './album.service';
-
-
-
 @NgModule({
     declarations: [
         DashboardComponent,
@@ -87,14 +77,12 @@ import { AlbumService } from './album.service';
             loop: true
         }),
         LightboxModule.forRoot(),
-        GallerizeModule,
-        AngularFireModule.initializeApp(firebase_config)
-
+        GallerizeModule
     ],
     exports: [
         DashboardComponent
     ],
-    providers: [MainService, GoogleMapService, DeviceService, AlbumService],
+    providers: [MainService, GoogleMapService, DeviceService],
     entryComponents: [GoogleMapComponent, MenuComponent]
 })
 export class DashboardModule { }

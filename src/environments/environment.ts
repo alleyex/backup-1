@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyA_FkcNyF9t5vLSAKVcymsotgjsiI0RYQA',
+    authDomain: 'react-object.firebaseapp.com',
+    databaseURL: 'https://react-object.firebaseio.com',
+    projectId: 'react-object',
+    storageBucket: 'react-object.appspot.com',
+    messagingSenderId: '633230915893'
+  }
 };
 
 /*
@@ -13,13 +21,3 @@ export const environment = {
  * because it will have performance impact when throw error
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
-
-
-export const  firebase_config = {
-  apiKey: "AIzaSyAgwGuzdarnbXx6Ajk2Y1QohOLPj94HkU4",
-  authDomain: "mercury-object.firebaseapp.com",
-  databaseURL: "https://mercury-object.firebaseio.com",
-  projectId: "mercury-object",
-  storageBucket: "mercury-object.appspot.com",
-  messagingSenderId: "851571343543"      
-};
