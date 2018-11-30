@@ -1,16 +1,21 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DatabaseService } from './database.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable()
 export class GuestService {
-    constructor(private httpClient: HttpClient, private database: DatabaseService) { }
+    constructor(private httpClient: HttpClient, private database: DatabaseService, private translate: TranslateService) { }
 
-    public async Log() {
+    public Log(event: string) {
         const data = {};
+        data['event'] = event;
 
         const now = new Date();
         data['date'] = now;
+
+        const browserLang = this.translate.getBrowserLang();
+        data['browserLang'] = browserLang;
 
         this.getIp(data);
     }
@@ -19,13 +24,49 @@ export class GuestService {
         const ip = localStorage.getItem('ip');
         if (ip) {
             data['ip'] = ip;
-            this.save(data);
+            this.getArea(data);
 
         } else {
             const url = 'https://api.ipify.org/';
             this.httpClient.get(url, { responseType: 'text' }).subscribe(res => {
                 localStorage.setItem('ip', res);
                 data['ip'] = res;
+                this.getArea(data);
+            });
+        }
+    }
+
+    private getArea(data: any) {
+        const info = localStorage.getItem('ipinfo');
+        if (info) {
+            const ipinfo = JSON.parse(info);
+            data['address'] = ipinfo.ipAddress;
+            data['city'] = ipinfo.cityName;
+            data['timeZone'] = ipinfo.timeZone;
+            data['longitude'] = ipinfo.longitude;
+            data['latitude'] = ipinfo.latitude;
+            if (ipinfo.countryCode === 'TW') {
+                data['country'] = 'Taiwan';
+            } else {
+                data['country'] = ipinfo.countryName;
+            }
+            this.save(data);
+
+        } else {
+            // tslint:disable-next-line:max-line-length
+            const url = 'https://api.ipinfodb.com/v3/ip-city/?key=25864308b6a77fd90f8bf04b3021a48c1f2fb302a676dd3809054bc1b07f5b42&format=json';
+            this.httpClient.get<any>(url).subscribe(res => {
+                localStorage.setItem('ipinfo', JSON.stringify(res));
+                data['address'] = res.ipAddress;
+                data['city'] = res.cityName;
+                data['timeZone'] = res.timeZone;
+                data['longitude'] = res.longitude;
+                data['latitude'] = res.latitude;
+                if (res.countryCode === 'TW') {
+                    data['country'] = 'Taiwan';
+                } else {
+                    data['country'] = res.countryName;
+                }
                 this.save(data);
             });
         }

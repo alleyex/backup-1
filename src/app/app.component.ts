@@ -13,6 +13,6 @@ export class AppComponent implements OnInit {
   constructor(private guest: GuestService) { }
 
   ngOnInit() {
-    this.guest.Log();
+    this.guest.Log('reload');
   }
 }

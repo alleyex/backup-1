@@ -14,7 +14,7 @@ export class LanguageService {
         translate.setDefaultLang('zh-tw');
         const browserLang = translate.getBrowserLang();
         const setLang = browserLang.match(/vi|th|zh-tw|ja|ms|ko|in/) ? browserLang : 'zh-tw';
-        // let setLang = browserLang.match(/en|vi|th|zh-tw|ja|ms|ko|in/) ? browserLang : 'zh-tw';
+        // let setLang = browserLang.match(/en|vi|th|zh|ja|ms|ko|in/) ? browserLang : 'zh-tw';
         // translate.use('zh-tw');
          translate.use(setLang);    }
 
