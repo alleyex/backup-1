@@ -4,7 +4,6 @@ import { TranslateModule } from '@ngx-translate/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 
-
 @NgModule({
     exports: [
         CommonModule,
@@ -14,4 +13,4 @@ import { MaterialModule } from './material.module';
         BrowserAnimationsModule
     ]
 })
-export class SharedModule { }
+export class SharedModule {}

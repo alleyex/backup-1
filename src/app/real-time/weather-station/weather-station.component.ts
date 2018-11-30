@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { WeatherStation, WeatherBureauService } from '../weather-bureau.service';
 import { Subscription } from 'rxjs';
+import { WeatherService, WeatherStation } from './weather.service';
 
 @Component({
     selector: 'app-weather-station',
@@ -11,11 +11,11 @@ export class WeatherStationComponent implements OnInit, OnDestroy {
 
     weather$: Subscription;
     data: WeatherStation = {
-        altitude:'',
-        date:'',
+        altitude: '',
+        date: '',
         highest: '',
-        humidity:'',
-        lowest:'',
+        humidity: '',
+        lowest: '',
         rain: '',
         temperature: '',
         time: ''
@@ -23,17 +23,17 @@ export class WeatherStationComponent implements OnInit, OnDestroy {
 
     interval: any;
 
-    constructor(private weatherBureauService: WeatherBureauService) { }
+    constructor(private weatherService: WeatherService) { }
 
     ngOnInit() {
-        this.weather$ = this.weatherBureauService.weather$.subscribe(result => {
-            this.data = result;           
+        this.weather$ = this.weatherService.weather$.subscribe(result => {
+            this.data = result;
         });
-        this.weatherBureauService.check();
-        this.weatherBureauService.check();
-        //每5分鐘檢查1次
+        this.weatherService.check();
+        this.weatherService.check();
+        // 每5分鐘檢查1次
         this.interval = setInterval(() => {
-            this.weatherBureauService.check();
+            this.weatherService.check();
         }, 300000);
     }
 

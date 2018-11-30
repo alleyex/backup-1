@@ -1,12 +1,12 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { LanguageService, Language } from '../../shared/services/language.service';
-import { IpService } from 'src/app/shared/services/ip.service';
+ 
 
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss'],
-    providers: [LanguageService, IpService]
+    providers: [LanguageService]
 })
 export class HeaderComponent implements OnInit {
     @Output() rightnavToggle = new EventEmitter<void>();
@@ -15,11 +15,9 @@ export class HeaderComponent implements OnInit {
 
     languages: Language[];
 
-    constructor(private languageService: LanguageService, private ipService: IpService) { }
+    constructor(private languageService: LanguageService) { }
     ngOnInit() {
         this.languages = this.languageService.getLanguages();
-        this.ipService.getClientIp();
-
     }
 
     onToggleRightnav() {

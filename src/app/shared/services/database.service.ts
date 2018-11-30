@@ -1,20 +1,25 @@
 import { Injectable } from '@angular/core';
 import * as firebase from 'firebase/app';
 import 'firebase/database';
+import { environment } from 'src/environments/environment';
 
 @Injectable()
 export class DatabaseService {
+
+    constructor() {
+        firebase.initializeApp(environment.firebase);
+    }
+
     // Set data
     set() {
         firebase.database().ref('/refName/childRef2').set('value!');
     }
 
     // Update data
-    update() {
+    update(node: string, data: any) {
+        const key = firebase.database().ref().child(node).push().key;
         const updates = {};
-        updates['/refName/childRef2'] = 'hi you';
-        updates['/anotherRefName'] = 'another value';
-        updates['/numbers'] = 5;
+        updates[node + key] = data;
         firebase.database().ref().update(updates);
     }
 

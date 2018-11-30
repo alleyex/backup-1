@@ -3,10 +3,10 @@ import { HttpClient } from '@angular/common/http';
 import { Subject } from 'rxjs';
 
 @Injectable()
-export class WeatherBureauService {
-    weather$= new Subject<WeatherStation>();
+export class WeatherService {
+    weather$ = new Subject<WeatherStation>();
     constructor(private httpCliend: HttpClient) { }
-    
+
     check() {
         let data: WeatherStation;
         const url = 'https://us-central1-mercury-object.cloudfunctions.net/weather';
@@ -14,7 +14,7 @@ export class WeatherBureauService {
             observe: 'body',
             responseType: 'json'
         }).subscribe(result => {
-            let query = result.records.location[0];
+            const query = result.records.location[0];
             data = {
                 altitude: query.weatherElement[0].elementValue,
                 date: query.time.obsTime.substr(0, 10),
@@ -28,17 +28,17 @@ export class WeatherBureauService {
 
             this.weather$.next(data);
         });
-       
+
     }
 }
 
 export interface WeatherStation {
-    altitude: string ,
-    date: string,
-    highest: string,
-    humidity: string,
-    lowest: string,
-    rain: string,
-    temperature: string,
-    time: string
+    altitude: string;
+    date: string;
+    highest: string;
+    humidity: string;
+    lowest: string;
+    rain: string;
+    temperature: string;
+    time: string;
 }
