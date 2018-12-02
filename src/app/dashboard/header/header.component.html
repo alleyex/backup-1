@@ -1,47 +1,48 @@
-<mat-toolbar color="primary">
-    <div style="font-size: 12px;">
-        <img class="logo" src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/toolbar%2Flogo.jpg?alt=media&token=41348d38-9f34-4d93-8fdf-5c9f35fdb32d" alt="Wuling farm">
-        <!-- <a href="https://docs.google.com/document/d/1WBJwhB2F3M2n7wUPZzj-5HufyyI1qyRwnxMPBQVDLDQ/edit?usp=sharing"
+<mat-toolbar class="main" color="primary">
+  <div style="font-size: 12px;">
+    <img class="logo" src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/toolbar%2Flogo.jpg?alt=media&token=41348d38-9f34-4d93-8fdf-5c9f35fdb32d"
+      alt="Wuling farm">
+    <!-- <a href="https://docs.google.com/document/d/1WBJwhB2F3M2n7wUPZzj-5HufyyI1qyRwnxMPBQVDLDQ/edit?usp=sharing"
             style="text-decoration:none; color:white">測試用（開發中）</a> -->
+  </div>
+  <div class="seprator"></div>
+  <div>
+    <a class="bnt" href="https://www.facebook.com/WulingFarm0510">
+      <i class="fa fa-facebook-square icon icon-white awesome"></i>
+    </a>
 
-        <!-- <button mat-icon-button (click)="onToggleLeftnav()">
-            <mat-icon>menu</mat-icon>
-        </button> -->
-    </div>
-    <div class="seprator"></div>
-    <div>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/WulingFarm0510">
-                    <i class="fa fa-facebook-official" style="font-size:24px; color:white ;margin: 10px "></i>
-                </a>
-            </li>
-            <li>
-                <button mat-icon-button [matMenuTriggerFor]="m">
-                    <mat-icon>translate</mat-icon>
-                </button>
-                <mat-menu #m="matMenu">
-                    <button #b [id]="language.code" mat-menu-item *ngFor="let language of languages" (click)="languageSelected(language)">{{language.display}}</button>
-                </mat-menu>
-            </li>
-            <li>
-                <a href="https://s3.wuling-farm.com.tw/home">
-                    <mat-icon style="font-size:24px; color:white ;margin: 10px ">account_balance</mat-icon>
-                </a>
-            </li>
-            <!-- <li>
-                <button mat-icon-button>
-                    <mat-icon>shopping_cart</mat-icon>
-                </button>
-            </li> -->
-            <!-- <li>
-                <button mat-icon-button (click)="onToggleRightnav()">
-                    <mat-icon>person</mat-icon>
-                </button>
-                 
-              
-            </li> -->
+    <a class="bnt" href="#" [matMenuTriggerFor]="m">
+      <mat-icon class="icon icon-white">translate</mat-icon>
+    </a>
 
-        </ul>
-    </div>
+    <mat-menu #m="matMenu">
+      <button #b [id]="language.code" mat-menu-item *ngFor="let language of languages" (click)="languageSelected(language)">{{language.display}}</button>
+    </mat-menu>
+
+    <a class="bnt" href="https://s3.wuling-farm.com.tw/home">
+
+      <mat-icon class="icon icon-white">account_balance</mat-icon>
+    </a>
+
+    <a class="bnt" href="#" (click)="onToggleRightnav()">
+      <mat-icon class="icon icon-white">person</mat-icon>
+    </a>
+
+
+    <!--       
+      <a href="https://s3.wuling-farm.com.tw/home">
+        <mat-icon style="font-size:24px; color:white ;margin: 10px ">account_balance</mat-icon>
+      </a> -->
+
+    <!--
+        <button mat-icon-button>
+            <mat-icon>shopping_cart</mat-icon>
+        </button>
+    -->
+
+
+    <!-- <button class="bnt" mat-icon-button (click)="onToggleRightnav()">
+      <mat-icon>person</mat-icon>
+    </button> -->
+  </div>
 </mat-toolbar>

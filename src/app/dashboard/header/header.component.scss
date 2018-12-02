@@ -1,20 +1,68 @@
-.seprator{     
-    flex: 1 1 auto;      
+.seprator {
+  flex: 1 1 auto;
 }
 
-ul{   
-    display: flex; 
-    list-style: none;
-    padding:0;
-    margin:0;
+.logo {
+  height: 60px;
+  vertical-align: middle;
 }
 
-li {
-    margin:0px  5px;   
+.main {
+  padding-right: 30px;
+
+
 }
 
-.logo{
-    height: 60px;
-    vertical-align: middle;
+.bnt {
+  animation-name: moveInLeft;
+  animation-duration: 1s;
 }
- 
+
+.bnt:link,
+.bnt:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 6px;
+  padding: 4px;
+  display: inline-block;
+}
+
+.icon {
+  vertical-align: bottom;
+  position: relative;
+  transition: all .1s;
+}
+
+.icon-white {
+  color: white;
+}
+
+.icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .6)
+}
+
+.icon:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .6)
+}
+
+.awesome {
+  font-size: 26px;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-2px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

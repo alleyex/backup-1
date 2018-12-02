@@ -1,6 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { LanguageService, Language } from '../../shared/services/language.service';
- 
 
 @Component({
     selector: 'app-header',
@@ -22,7 +21,7 @@ export class HeaderComponent implements OnInit {
 
     onToggleRightnav() {
         this.rightnavToggle.emit();
-        console.log('onToggleRightnav()');
+        // console.log('onToggleRightnav()');
     }
     onToggleLeftnav() {
         this.leftnavToggle.emit();

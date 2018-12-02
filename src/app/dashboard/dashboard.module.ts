@@ -19,7 +19,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { SharedModule } from '../shared/shared.module';
 
 import { RealTimeModule } from '../real-time/real-time.module';
-import { AnnounceModule } from '../announce/announce.mudule';
+import { AnnounceModule } from '../announce/announce.module';
 import { HotelComponent } from '../hotel/hotel.component';
 import { CampsiteComponent } from '../campsite/campsite.component';
 import { RestaurantComponent } from '../restaurant/restaurant.component';
@@ -37,6 +37,7 @@ import { GoogleMapComponent } from '../google-map/google-map.component';
 import { GoogleMapService } from '../google-map/google-map.service';
 import { DeviceService } from './device.service';
 import { MenuComponent } from '../restaurant/menu/menu.component';
+import { AuthModule } from '../auth/auth.module';
 @NgModule({
     declarations: [
         DashboardComponent,
@@ -62,6 +63,7 @@ import { MenuComponent } from '../restaurant/menu/menu.component';
         MenuComponent
     ],
     imports: [
+        AuthModule,
         SharedModule,
         RealTimeModule,
         AnnounceModule,
