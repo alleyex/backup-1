@@ -1,0 +1,17 @@
+<main class="main">
+  <article class="title">
+    Forgot your password?
+  </article>
+  <div class="box">
+    <p class="brief">To reset your password, please enter your registered email address.</p>
+  </div>
+  <div class="box">
+    <form [formGroup]="forgotForm" class="send" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <input id="email" matInput placeholder="Email" formControlName="email" required>
+        <mat-icon matSuffix> email</mat-icon>
+      </mat-form-field>
+      <button type="submit" mat-raised-button color="primary">Send</button>
+    </form>
+  </div>
+</main>

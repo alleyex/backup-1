@@ -1,11 +1,17 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DatabaseService } from './database.service';
 import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 
 @Injectable()
-export class GuestService {
-    constructor(private httpClient: HttpClient, private database: DatabaseService, private translate: TranslateService) { }
+export class GuestService implements OnDestroy {
+    constructor(private httpClient: HttpClient,
+        private database: DatabaseService,
+        private translate: TranslateService) { }
+
+    getIp$: Subscription;
+    getArea$: Subscription;
 
     public Log(event: string) {
         const data = {};
@@ -28,7 +34,7 @@ export class GuestService {
 
         } else {
             const url = 'https://api.ipify.org/';
-            this.httpClient.get(url, { responseType: 'text' }).subscribe(res => {
+            this.getIp$ = this.httpClient.get(url, { responseType: 'text' }).subscribe(res => {
                 localStorage.setItem('ip', res);
                 data['ip'] = res;
                 this.getArea(data);
@@ -55,7 +61,7 @@ export class GuestService {
         } else {
             // tslint:disable-next-line:max-line-length
             const url = 'https://api.ipinfodb.com/v3/ip-city/?key=25864308b6a77fd90f8bf04b3021a48c1f2fb302a676dd3809054bc1b07f5b42&format=json';
-            this.httpClient.get<any>(url).subscribe(res => {
+            this.getArea$ = this.httpClient.get<any>(url).subscribe(res => {
                 localStorage.setItem('ipinfo', JSON.stringify(res));
                 data['address'] = res.ipAddress;
                 data['city'] = res.cityName;
@@ -75,5 +81,10 @@ export class GuestService {
     private save(data: any) {
         const node = 'guests/';
         this.database.update(node, data);
+    }
+
+    ngOnDestroy(){
+        this.getIp$.unsubscribe();
+        this.getArea$.unsubscribe();
     }
 }

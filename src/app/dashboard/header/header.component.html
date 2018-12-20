@@ -1,9 +1,9 @@
 <mat-toolbar class="main" color="primary">
   <div style="font-size: 12px;">
-    <img class="logo" src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/toolbar%2Flogo.jpg?alt=media&token=41348d38-9f34-4d93-8fdf-5c9f35fdb32d"
-      alt="Wuling farm">
-    <!-- <a href="https://docs.google.com/document/d/1WBJwhB2F3M2n7wUPZzj-5HufyyI1qyRwnxMPBQVDLDQ/edit?usp=sharing"
-            style="text-decoration:none; color:white">測試用（開發中）</a> -->
+    <a routerLink="/" routerLinkActive="active">
+      <img class="logo bnt icon" src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/toolbar%2Flogo.jpg?alt=media&token=41348d38-9f34-4d93-8fdf-5c9f35fdb32d"
+        alt="Wuling farm">
+    </a>
   </div>
   <div class="seprator"></div>
   <div>
@@ -11,9 +11,9 @@
       <i class="fa fa-facebook-square icon icon-white awesome"></i>
     </a>
 
-    <a class="bnt" href="#" [matMenuTriggerFor]="m">
-      <mat-icon class="icon icon-white">translate</mat-icon>
-    </a>
+    <button type="button" class="bnt">
+      <mat-icon class=" icon  icon-white" [matMenuTriggerFor]="m">translate</mat-icon>
+    </button>
 
     <mat-menu #m="matMenu">
       <button #b [id]="language.code" mat-menu-item *ngFor="let language of languages" (click)="languageSelected(language)">{{language.display}}</button>
@@ -24,25 +24,18 @@
       <mat-icon class="icon icon-white">account_balance</mat-icon>
     </a>
 
-    <a class="bnt" href="#" (click)="onToggleRightnav()">
-      <mat-icon class="icon icon-white">person</mat-icon>
+    <a routerLink="/auth/login" routerLinkActive="active" class="bnt"  *ngIf="!logged">
+      <mat-icon class="icon icon-white" >person</mat-icon>
     </a>
-
-
-    <!--       
-      <a href="https://s3.wuling-farm.com.tw/home">
-        <mat-icon style="font-size:24px; color:white ;margin: 10px ">account_balance</mat-icon>
-      </a> -->
-
+    <a routerLink="/auth/profile" routerLinkActive="active" class="bnt" *ngIf="logged">
+      <mat-icon class="icon icon-white" >settings</mat-icon>
+    </a>
+    
     <!--
         <button mat-icon-button>
             <mat-icon>shopping_cart</mat-icon>
         </button>
     -->
-
-
-    <!-- <button class="bnt" mat-icon-button (click)="onToggleRightnav()">
-      <mat-icon>person</mat-icon>
-    </button> -->
+ 
   </div>
 </mat-toolbar>

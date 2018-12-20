@@ -1,11 +1,11 @@
 <main class="main">
   <article class="title">
-    Sign up for free to get started!
+    Log in to Wuling Farm!
   </article>
 
-  <form class="sign" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <form class="sign" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div class="link">
-      Sign up or log in <a routerLink="/auth/login" routerLinkActive="active">here</a>
+    Log in or sign up   <a routerLink="/auth/signup" routerLinkActive="active">here</a>
     </div>
     <div>
       <mat-form-field>
@@ -22,9 +22,11 @@
     <div>
       {{error}}
     </div>
-    <button type="submit" [disabled]="!registerForm.valid" mat-raised-button color="primary">Sign Up</button>
-
-
+    <button type="submit" [disabled]="!loginForm.valid" mat-raised-button color="primary">Log in</button>
+    <a routerLink="/auth/forgot" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Forgot password?</a> <br>
+    
   </form>
   <app-external></app-external>
 </main>
+{{user}}<br>
+{{verified}}

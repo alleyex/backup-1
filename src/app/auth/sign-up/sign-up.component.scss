@@ -1,3 +1,34 @@
-.main{
-    padding: 15px 40px;
+.main {
+  width: 100%;
+  text-align: center;
 }
+
+.title {
+  margin: 36px 0;  
+  font-size: 20px;
+} 
+
+.sign {
+  background-color: #e6e6e6;
+  font-size: 14px;
+  display: inline-block;
+  width: 320px;
+  min-height: 320px;
+  vertical-align: middle;
+  padding-top: 24px;
+}
+
+.link{
+  margin-bottom :24px;
+}
+
+.input{
+  margin-top: 20px;
+}
+
+button {
+  width: calc(100% - 60px);
+  margin: 12px ;
+}
+
+ 

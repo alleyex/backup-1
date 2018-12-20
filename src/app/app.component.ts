@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from './shared/services/auth.service';
+import * as firebase from 'firebase/app';
+import 'firebase/database';
+import { environment } from 'src/environments/environment';
+
 import { DatabaseService } from './shared/services/database.service';
 import { GuestService } from './shared/services/guest.service';
 
@@ -7,10 +10,13 @@ import { GuestService } from './shared/services/guest.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [AuthService, DatabaseService, GuestService]
+  providers: [DatabaseService, GuestService]
 })
 export class AppComponent implements OnInit {
-  constructor(private guest: GuestService) { }
+
+  constructor(private guest: GuestService) {
+    firebase.initializeApp(environment.firebase);
+  }
 
   ngOnInit() {
     this.guest.Log('reload');

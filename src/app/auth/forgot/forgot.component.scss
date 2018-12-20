@@ -1,0 +1,29 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.title {
+  margin: 36px 0;
+  font-size: 20px;
+}
+
+.box {
+  background-color: #e6e6e6;
+  display: inline-block;
+  vertical-align: top;
+  width: 320px;
+  min-height: 180px;
+  font-size: 14px;
+}
+
+.brief {
+  padding: 20px 12px;
+  text-align: left;
+}
+
+.send {
+  padding: 32px 40px;
+  text-align: right;
+}

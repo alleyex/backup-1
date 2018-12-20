@@ -6,10 +6,6 @@ import { environment } from 'src/environments/environment';
 @Injectable()
 export class DatabaseService {
 
-    constructor() {
-        firebase.initializeApp(environment.firebase);
-    }
-
     // Set data
     set() {
         firebase.database().ref('/refName/childRef2').set('value!');

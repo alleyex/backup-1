@@ -1,0 +1,24 @@
+<main class="main"  *ngIf="user" >
+  <article class="title">
+    Your profile
+  </article>
+  <div class="box">
+    <form [formGroup]="profileForm">
+      <div class="field">
+        <label for="name">Name:</label> <input id="name" formControlName="name"  >
+      </div>
+      <div class="field">
+        <label for="email">Email:</label> <input id="email" formControlName="email" >
+      </div>
+      <div class="field">
+        <label for="phone">Cellphone:</label> <input id="phone" formControlName="phone" >
+      </div>
+    </form>
+  </div>
+  <div class="box">
+      <div class="signout">
+        <button  mat-raised-button color="primary" (click)="onLogout()">Log out</button>
+      </div>
+
+  </div>
+</main>

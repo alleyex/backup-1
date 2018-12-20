@@ -30,6 +30,7 @@ import {
     MatToolbarModule,
     MatTooltipModule,
     MatStepperModule,
+    MatBadgeModule,
 } from '@angular/material';
 import {MatNativeDateModule, MatRippleModule} from '@angular/material';
 import {CdkTableModule} from '@angular/cdk/table';
@@ -49,6 +50,7 @@ exports: [
         MatAutocompleteModule,
         MatButtonModule,
         MatButtonToggleModule,
+        MatBadgeModule,
         MatCardModule,
         MatCheckboxModule,
         MatChipsModule,

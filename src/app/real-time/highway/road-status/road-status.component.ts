@@ -1,7 +1,8 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 import { RoadStatus } from '../highway.service';
 import { GoogleTranslateService } from 'src/app/shared/services/google-translate.service';
 import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 
 
 @Component({
@@ -10,11 +11,14 @@ import { TranslateService } from '@ngx-translate/core';
     styleUrls: ['./road-status.component.scss'],
     providers: [GoogleTranslateService]
 })
-export class RoadStatusComponent implements OnInit {
+export class RoadStatusComponent implements OnInit, OnDestroy {
     @Input() status: RoadStatus;
 
     private original: RoadStatus;
     private english: RoadStatus;
+    translate$: Subscription;
+    googleOrg$: Subscription;
+    googleType$: Subscription;
 
     constructor(private googleTranslateService: GoogleTranslateService, private translateService: TranslateService) { }
 
@@ -25,7 +29,7 @@ export class RoadStatusComponent implements OnInit {
             this.convert();
         }
 
-        this.translateService.onLangChange.subscribe((event) => {
+        this.translate$ = this.translateService.onLangChange.subscribe((event) => {
             if (this.translateService.currentLang === 'zh-tw') {
                 this.status = Object.assign({}, this.original);
             } else {
@@ -38,15 +42,21 @@ export class RoadStatusComponent implements OnInit {
         });
     }
 
+    ngOnDestroy() {
+        this.translate$.unsubscribe();
+        this.googleType$.unsubscribe();
+        this.googleOrg$.unsubscribe();
+    }
+
     private convert() {
 
         this.english = Object.assign({}, this.status);
 
-        this.googleTranslateService.translate(this.replace(this.original.comment), 'en').subscribe(result => {
+        this.googleOrg$ = this.googleTranslateService.translate(this.replace(this.original.comment), 'en').subscribe(result => {
             this.status.comment = this.english.comment = result.data.translations[0].translatedText;
         });
 
-        this.googleTranslateService.translate(this.original.roadtype, 'en').subscribe(result => {
+        this.googleType$ = this.googleTranslateService.translate(this.original.roadtype, 'en').subscribe(result => {
             this.status.roadtype = this.english.roadtype = result.data.translations[0].translatedText;
         });
     }

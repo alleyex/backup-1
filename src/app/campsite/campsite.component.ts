@@ -1,9 +1,10 @@
-import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, OnDestroy } from '@angular/core';
 import { Gallery, GalleryItem, ImageItem, GalleryConfig, GalleryRef } from '@ngx-gallery/core';
 import { ExpandModel } from '../dashboard/main/main.model';
 import { MatDialog } from '@angular/material';
 import { GoogleMapComponent } from '../google-map/google-map.component';
 import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'app-campsite',
@@ -11,21 +12,29 @@ import { TranslateService } from '@ngx-translate/core';
     styleUrls: ['./campsite.component.scss'],
     animations: [ExpandModel]
 })
-export class CampsiteComponent implements OnInit, OnChanges {
+export class CampsiteComponent implements OnInit, OnDestroy, OnChanges {
     constructor(private gallery: Gallery, private dialog: MatDialog, private translateService: TranslateService) { }
 
     isDivVisible = false;
+    translate$: Subscription;
     @Input() place: string;
+
     ngOnInit() {
         this.album();
 
-        this.translateService.onLangChange.subscribe((event) => {
+        this.translate$ = this.translateService.onLangChange.subscribe((event) => {
             if (this.translateService.currentLang === 'zh-tw') {
                 document.querySelector('.order').classList.remove('notChinese');
             } else {
                 document.querySelector('.order').classList.add('notChinese');
             }
         });
+
+    }
+
+    ngOnDestroy() {
+        this.translate$.unsubscribe();
+
     }
 
     ngOnChanges() {
@@ -59,6 +68,8 @@ export class CampsiteComponent implements OnInit, OnChanges {
             width: '100vw',
         });
     }
+
+
 }
 
 const data = [

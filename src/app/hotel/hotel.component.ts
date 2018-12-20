@@ -20,12 +20,13 @@ export class HotelComponent implements OnInit, OnChanges, OnDestroy {
     @Input() place: string;
     isDivVisible = false;
     isCellphone$: Subscription;
+    translate$: Subscription;
 
     ngOnInit() {
         this.isCellphone$ = this.deviceService.isCellpone$.subscribe(result => { });
 
 
-        this.translateService.onLangChange.subscribe((event) => {
+        this.translate$ = this.translateService.onLangChange.subscribe((event) => {
             if (this.translateService.currentLang === 'zh-tw') {
                 document.querySelector('.booking').classList.remove('notChinese');
             } else {
@@ -46,6 +47,7 @@ export class HotelComponent implements OnInit, OnChanges, OnDestroy {
 
     ngOnDestroy() {
         this.isCellphone$.unsubscribe();
+        this.translate$.unsubscribe();
     }
 
     openMap(lat: number, lng: number) {

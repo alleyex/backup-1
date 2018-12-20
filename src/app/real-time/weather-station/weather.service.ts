@@ -1,16 +1,17 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Subject } from 'rxjs';
+import { Subject, Subscription } from 'rxjs';
 
 @Injectable()
-export class WeatherService {
+export class WeatherService implements OnDestroy {
     weather$ = new Subject<WeatherStation>();
     constructor(private httpCliend: HttpClient) { }
+    getWeater$: Subscription;
 
     check() {
         let data: WeatherStation;
         const url = 'https://us-central1-mercury-object.cloudfunctions.net/weather';
-        this.httpCliend.get<any>(url, {
+        this.getWeater$ = this.httpCliend.get<any>(url, {
             observe: 'body',
             responseType: 'json'
         }).subscribe(result => {
@@ -28,7 +29,10 @@ export class WeatherService {
 
             this.weather$.next(data);
         });
+    }
 
+    ngOnDestroy(){
+        this.getWeater$.unsubscribe();
     }
 }
 

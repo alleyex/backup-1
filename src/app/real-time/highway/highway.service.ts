@@ -1,14 +1,16 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Subscription } from 'rxjs';
 
 @Injectable()
-export class HighwayService {
+export class HighwayService implements OnDestroy {
     constructor(private httpCliend: HttpClient) { }
+    status$: Subscription;
 
     getRoadStatus(): RoadStatus[] {
         const list: RoadStatus[] = [];
         const url = 'https://us-central1-mercury-object.cloudfunctions.net/traffic';
-        this.httpCliend.get<any>(url).subscribe(result => {
+        this.status$ = this.httpCliend.get<any>(url).subscribe(result => {
             result.forEach(element => {
                 list.push({
                     happendate: element.happendate,
@@ -19,6 +21,10 @@ export class HighwayService {
             });
         });
         return list;
+    }
+
+    ngOnDestroy() {
+        this.status$.unsubscribe();
     }
 }
 
