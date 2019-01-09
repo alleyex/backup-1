@@ -38,6 +38,10 @@ import { GoogleMapService } from '../google-map/google-map.service';
 import { DeviceService } from './device.service';
 import { MenuComponent } from '../restaurant/menu/menu.component';
 import { AuthModule } from '../auth/auth.module';
+import { ContactUsComponent } from '../contact-us/contact-us.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 @NgModule({
     declarations: [
         DashboardComponent,
@@ -60,14 +64,17 @@ import { AuthModule } from '../auth/auth.module';
         VisitorCenterComponent,
         CoffeeBarComponent,
         GoogleMapComponent,
-        MenuComponent
+        MenuComponent,
+        ContactUsComponent
+        
     ],
     imports: [
         AuthModule,
         SharedModule,
         RealTimeModule,
         AnnounceModule,
-        RealTimeModule,
+        RealTimeModule,        
+        ReactiveFormsModule,
         AppRoutingModule,
         AgmCoreModule,
         AgmDirectionModule,

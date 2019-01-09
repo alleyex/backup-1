@@ -1,32 +1,29 @@
 <main class="main">
-  <article class="title">
-    Log in to Wuling Farm!
-  </article>
+    <article class="title">
+        Log in to Wuling Farm!
+    </article>
 
-  <form class="sign" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <div class="link">
-    Log in or sign up   <a routerLink="/auth/signup" routerLinkActive="active">here</a>
-    </div>
-    <div>
-      <mat-form-field>
-        <input id="email" matInput placeholder="Email" formControlName="email" required>
-        <mat-icon matSuffix> email</mat-icon>
-      </mat-form-field>
+    <form class="sign" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="link">
+            Log in or sign up <a routerLink="/auth/signup" routerLinkActive="active">here</a>
+        </div>
+        <div>
+            <mat-form-field>
+                <input id="email" matInput placeholder="Email" formControlName="email" required>
+                <mat-icon matSuffix> email</mat-icon>
+            </mat-form-field>
 
-      <mat-form-field class="input">
-        <input matInput placeholder="Password" [type]="visibility ?  'text':'password'" formControlName="password"
-          required>
-        <mat-icon matSuffix (click)="visibility = !visibility">{{visibility ? 'visibility': 'visibility_off'}}</mat-icon>
-      </mat-form-field>
-    </div>
-    <div>
-      {{error}}
-    </div>
-    <button type="submit" [disabled]="!loginForm.valid" mat-raised-button color="primary">Log in</button>
-    <a routerLink="/auth/forgot" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Forgot password?</a> <br>
-    
-  </form>
-  <app-external></app-external>
+            <mat-form-field class="input">
+                <input matInput placeholder="Password" [type]="visibility ?  'text':'password'" formControlName="password" required>
+                <mat-icon matSuffix (click)="visibility = !visibility">{{visibility ? 'visibility': 'visibility_off'}}</mat-icon>
+            </mat-form-field>
+        </div>
+        <div>
+            {{error}}
+        </div>
+        <button type="submit" [disabled]="!loginForm.valid" mat-raised-button color="primary">Log in</button>
+        <a routerLink="/auth/forgot" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Forgot password?</a> <br>
+
+    </form>
+    <app-external></app-external>
 </main>
-{{user}}<br>
-{{verified}}

@@ -1,0 +1,29 @@
+<main class="main">
+    <article class="title">
+        Contact us
+    </article>
+
+    <form class="sign" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="link">
+            How can i help you?
+        </div>
+        <div class="input">
+            <mat-form-field>
+                <textarea id="question" matInput placeholder="question" formControlName="question" required></textarea>
+            </mat-form-field>
+            <mat-form-field>
+                <input id="name" matInput placeholder="name" formControlName="name" required>
+            </mat-form-field>
+            <mat-form-field>
+                <input id="email" matInput placeholder="Email" formControlName="email" required>
+            </mat-form-field>
+            <mat-form-field>
+                <input id="phone" matInput placeholder="phone" formControlName="phone">
+            </mat-form-field>
+
+        </div>
+
+        <button button type="submit" [disabled]="!contactForm.valid" mat-raised-button color="primary">Submiy</button>
+    </form>
+
+</main>

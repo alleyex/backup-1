@@ -1,41 +1,40 @@
 <mat-toolbar class="main" color="primary">
-  <div style="font-size: 12px;">
-    <a routerLink="/" routerLinkActive="active">
-      <img class="logo bnt icon" src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/toolbar%2Flogo.jpg?alt=media&token=41348d38-9f34-4d93-8fdf-5c9f35fdb32d"
-        alt="Wuling farm">
-    </a>
-  </div>
-  <div class="seprator"></div>
-  <div>
-    <a class="bnt" href="https://www.facebook.com/WulingFarm0510">
-      <i class="fa fa-facebook-square icon icon-white awesome"></i>
-    </a>
+    <div style="font-size: 12px;">
+        <a routerLink="/" routerLinkActive="active">
+            <img class="logo bnt icon" src="https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/toolbar%2Flogo.jpg?alt=media&token=41348d38-9f34-4d93-8fdf-5c9f35fdb32d" alt="Wuling farm">
+        </a>
+    </div>
+    <div class="seprator"></div>
+    <div>
+        <a class="bnt" href="https://www.facebook.com/WulingFarm0510">
+            <i class="fa fa-facebook-square icon icon-white awesome"></i>
+        </a>
 
-    <button type="button" class="bnt">
+        <button type="button" class="bnt">
       <mat-icon class=" icon  icon-white" [matMenuTriggerFor]="m">translate</mat-icon>
     </button>
 
-    <mat-menu #m="matMenu">
-      <button #b [id]="language.code" mat-menu-item *ngFor="let language of languages" (click)="languageSelected(language)">{{language.display}}</button>
-    </mat-menu>
+        <mat-menu #m="matMenu">
+            <button #b [id]="language.code" mat-menu-item *ngFor="let language of languages" (click)="languageSelected(language)">{{language.display}}</button>
+        </mat-menu>
 
-    <a class="bnt" href="https://s3.wuling-farm.com.tw/home">
+        <a class="bnt" href="https://s3.wuling-farm.com.tw/home">
 
-      <mat-icon class="icon icon-white">account_balance</mat-icon>
-    </a>
+            <mat-icon class="icon icon-white">account_balance</mat-icon>
+        </a>
 
-    <a routerLink="/auth/login" routerLinkActive="active" class="bnt"  *ngIf="!logged">
+        <!-- <a routerLink="/auth/login" routerLinkActive="active" class="bnt"  *ngIf="!logged">
       <mat-icon class="icon icon-white" >person</mat-icon>
     </a>
     <a routerLink="/auth/profile" routerLinkActive="active" class="bnt" *ngIf="logged">
       <mat-icon class="icon icon-white" >settings</mat-icon>
-    </a>
-    
-    <!--
+    </a> -->
+
+        <!--
         <button mat-icon-button>
             <mat-icon>shopping_cart</mat-icon>
         </button>
     -->
- 
-  </div>
+
+    </div>
 </mat-toolbar>

@@ -12,6 +12,7 @@ export class SignUpComponent {
     constructor(private authService: AuthService) { }
 
     error: string;
+    visibility = true;
 
     registerForm = new FormGroup(
         {

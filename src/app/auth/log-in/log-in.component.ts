@@ -14,6 +14,7 @@ export class LogInComponent {
     error: string;
     user: string;
     verified: boolean;
+    visibility = true;
 
     loginForm = new FormGroup(
         {

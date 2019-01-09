@@ -55,8 +55,10 @@ export class GuestService implements OnDestroy {
                 data['country'] = 'Taiwan';
             } else {
                 data['country'] = ipinfo.countryName;
+                this.save(data);
             }
-            this.save(data);
+            
+             
 
         } else {
             // tslint:disable-next-line:max-line-length
@@ -71,16 +73,24 @@ export class GuestService implements OnDestroy {
                 if (res.countryCode === 'TW') {
                     data['country'] = 'Taiwan';
                 } else {
-                    data['country'] = res.countryName;
-                }
-                this.save(data);
+                    data['country'] = res.countryName;   
+                    this.save(data);               
+                }               
+                
+                
+
+                 
+              
+               
             });
         }
     }
 
     private save(data: any) {
+      
         const node = 'guests/';
-        this.database.update(node, data);
+        
+       this.database.update(node, data);
     }
 
     ngOnDestroy(){
