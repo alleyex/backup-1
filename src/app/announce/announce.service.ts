@@ -9,14 +9,18 @@ export class AnnounceService {
         return [
             new KanbanItem(PeachComponent, {
                 stop: false
+            }),
+            new KanbanItem(LongStayComponent, {
+                stop: false
             })
-            // ,
-            // new KanbanItem(LongStayComponent, {
-            //     stop: false
-            // })
+        ];
+    }
+
+    getCanbans() {
+        return [
+            new KanbanItem(PeachComponent, {
+                stop: false
+            })
         ];
     }
 }
-
-
-

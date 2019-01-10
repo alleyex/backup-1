@@ -2,6 +2,8 @@ import { Component, OnInit, ComponentFactoryResolver, Input, ViewChild, Output, 
 
 import { KanbanDirective } from './kanban.directive';
 import { KanbanItem, BaseComponent } from '../announce.model';
+import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'app-kanban',
@@ -12,14 +14,23 @@ export class KanbanComponent implements OnInit, OnDestroy {
     @Input() kanbans: KanbanItem[];
     @Output() changed = new EventEmitter<number>();
     @ViewChild(KanbanDirective) host: KanbanDirective;
-
-    constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
+    translate$: Subscription;
+    constructor(private componentFactoryResolver: ComponentFactoryResolver, private translateService: TranslateService) { }
     ngOnInit() {
         this.loadComponent();
         this.automatic();
+        this.translate$ = this.translateService.onLangChange.subscribe((event) => {
+
+            setTimeout(() => {
+                if (this.kanbans.length === 1) {
+                this.index = 0;
+                }                
+                this.loadComponent();
+            }, 200);
+        });
     }
 
-    index = 0;
+    index = 1;
     currentData: any;
 
     loadComponent() {
@@ -37,7 +48,9 @@ export class KanbanComponent implements OnInit, OnDestroy {
     interval: any;
 
     automatic() {
+
         this.interval = setInterval(() => {
+
             this.index = (this.index + 1) % this.kanbans.length;
             this.loadComponent();
         }, 5000);
@@ -51,6 +64,7 @@ export class KanbanComponent implements OnInit, OnDestroy {
 
     ngOnDestroy() {
         clearInterval(this.interval);
+        this.translate$.unsubscribe();
     }
 
 }

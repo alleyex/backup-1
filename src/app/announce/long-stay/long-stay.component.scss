@@ -1,91 +1,90 @@
-.container {    
-    height: 392px;     
+.container {
+    height: 392px;
     background-image: linear-gradient( to bottom right, #D3D3D3 30%, #F0F0F0 100%);
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  .content {
+}
+
+.content {
     position: relative;
     display: inline-block;
     width: calc(100% - 16px);
     height: 376px;
     margin: 8px;
-    background : linear-gradient(to bottom right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 80%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Flong-stay%2Fpeach-big.jpg?alt=media&token=48e9878c-9d5d-4036-97e3-38682ae4f896);    
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 80%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fsakura-big.jpg?alt=media&token=0f5a23fc-7068-4f25-a5a9-a4081cdb22e1);
     background-size: cover;
-    text-shadow: 0 0 .8em white ,0 0 .8em white ,0 0 .8em  white,0 0 .8em white ,0 0 .8em  white;
-  }
-  
-  .slogan {
+    text-shadow: 0 0 .8em white, 0 0 .8em white, 0 0 .8em white, 0 0 .8em white, 0 0 .8em white;
+}
+
+.slogan {
     max-width: 640px;
     bottom: 15px;
     right: 60px;
-    position: absolute;    
+    position: absolute;
     z-index: 40;
-  }
-  
-  .article {
+}
+
+.article {
     text-align: left;
-    line-height: 32px  
-  }
-  
-  .contain {
-    text-align: left;
-    line-height: 20px ;
+    line-height: 32px
+}
+
+.contain {
+    text-align: right;
+    line-height: 20px;
     margin: 8px;
-  }
-  
-  @media only screen and (max-width:1200px) {
-   
-  }
-  
-  /* Small tablet to big tablet: 768px to 1023  */
-  
-  @media screen and (max-width:1023px) {}
-  
-  /* Small phones to small tablets: from 0 to 480px */
-  
-  @media only screen and (max-width:768px) {
-    .article {    
-      margin: 20px;
+}
+
+@media only screen and (max-width:1200px) {}
+
+
+/* Small tablet to big tablet: 768px to 1023  */
+
+@media screen and (max-width:1023px) {}
+
+
+/* Small phones to small tablets: from 0 to 480px */
+
+@media only screen and (max-width:768px) {
+    .article {
+        margin: 20px;
     }
-    
-    .contain {   
-      margin: 20px;
+    .contain {
+        margin: 20px;
     }
-  }
-  
-  /* Small phone: from 0 to 480px */
-  
-  @media only screen and (max-width:480px) {
-    .content {      
-      background : linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Flong-stay%2Fpeach-small.jpg?alt=media&token=4090df96-b855-4b34-b8bc-eab30e5ca90e);
-      background-size: cover;
+}
+
+
+/* Small phone: from 0 to 480px */
+
+@media only screen and (max-width:480px) {
+    .content {
+        background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 100%), url(https://firebasestorage.googleapis.com/v0/b/mercury-object.appspot.com/o/announce%2Fpeach%2Fsarura-small.jpg?alt=media&token=62d8a459-a082-462a-ad0f-7e2dfdd9847c);
+        background-size: cover;
     }
     .slogan {
-      width:calc(100%-20px);
-      bottom: 20px;
-      right: 4px;
-      left: 4px;     
+        width: calc(100%-20px);
+        bottom: 20px;
+        right: 4px;
+        left: 4px;
     }
-    h1{
-      font-size: 16px;
+    h1 {
+        font-size: 16px;
     }
-    .article {        
-      margin: 8px;     
-    }  
-    .contain {   
-      font-size: 12px;
-      margin: 8px;
-       
+    .article {
+        margin: 8px;
     }
-  }
-  
-  @media only screen and (max-width:280px) {
-    h1{
-      font-size: 18px;
+    .contain {
+        font-size: 12px;
+        margin: 8px;
     }
-    .contain {   
-      font-size: 14px;
+}
+
+@media only screen and (max-width:280px) {
+    h1 {
+        font-size: 18px;
     }
-  }
+    .contain {
+        font-size: 14px;
+    }
+}
