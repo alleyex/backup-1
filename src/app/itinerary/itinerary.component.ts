@@ -11,8 +11,8 @@ export class ItineraryComponent  implements OnChanges {
     isDivVisible = false;
     @Input() place: string;
 
-    ngOnChanges() {      
-        if (this.place == 'itinerary') {
+    ngOnChanges() {
+        if (this.place === 'itinerary') {
             this.isDivVisible = true;
 
         } else {

@@ -11,8 +11,8 @@ export class NavigationComponent implements OnChanges {
     isDivVisible = false;
     @Input() place: string;
 
-    ngOnChanges() {    
-        if (this.place == 'navigation') {
+    ngOnChanges() {
+        if (this.place === 'navigation') {
             this.isDivVisible = true;
 
         } else {
