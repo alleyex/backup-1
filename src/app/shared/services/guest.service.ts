@@ -55,11 +55,7 @@ export class GuestService implements OnDestroy {
                 data['country'] = 'Taiwan';
             } else {
                 data['country'] = ipinfo.countryName;
-                this.save(data);
             }
-            
-             
-
         } else {
             // tslint:disable-next-line:max-line-length
             const url = 'https://api.ipinfodb.com/v3/ip-city/?key=25864308b6a77fd90f8bf04b3021a48c1f2fb302a676dd3809054bc1b07f5b42&format=json';
@@ -73,27 +69,21 @@ export class GuestService implements OnDestroy {
                 if (res.countryCode === 'TW') {
                     data['country'] = 'Taiwan';
                 } else {
-                    data['country'] = res.countryName;   
-                    this.save(data);               
-                }               
-                
-                
-
-                 
-              
-               
+                    data['country'] = res.countryName;
+                }
             });
         }
+        this.save(data);
     }
 
     private save(data: any) {
-      
+        if (data['country'] !== 'Taiwan') {
         const node = 'guests/';
-        
-       this.database.update(node, data);
+        this.database.update(node, data);
+        }
     }
 
-    ngOnDestroy(){
+    ngOnDestroy() {
         this.getIp$.unsubscribe();
         this.getArea$.unsubscribe();
     }
