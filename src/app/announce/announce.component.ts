@@ -15,28 +15,29 @@ export class AnnounceComponent implements OnInit {
     kanbans: KanbanItem[];
     index: number;
     translate$: Subscription;
-    
-    constructor(private announceService: AnnounceService,private translateService: TranslateService) { }
 
-    ngOnInit() { 
+    constructor(private announceService: AnnounceService, private translateService: TranslateService) { }
+
+    ngOnInit() {
         this.kanbans = this.announceService.getKanbans();
         this.translate$ = this.translateService.onLangChange.subscribe((event) => {
             if (this.translateService.currentLang === 'zh-tw') {
-                this.kanbans = this.announceService.getKanbans();
+                // this.kanbans = this.announceService.getKanbans();
+                this.kanbans = this.announceService.getCanbans();
             } else {
                 this.kanbans = this.announceService.getCanbans();
-                  
+
             }
         });
     }
 
-    kanbanChanged(index: number) {        
+    kanbanChanged(index: number) {
         this.index = index;
     }
 
-    kanbanSelected(index:number){        
+    kanbanSelected(index: number) {
         this.kanban.manually(index);
     }
 
-    
+
 }

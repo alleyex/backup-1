@@ -1,37 +1,47 @@
-:host{   
-    display: inline-block; 
-    width: calc(100% - 12px);   
-    text-align: left;     
-    margin: 24px 16px 0 16px;
-    vertical-align: top; 
-    overflow-y:auto;  
+:host {
+    display: inline-block;
+    width: calc(100% - 12px);
+    text-align: left;
+    margin: 14px 8px 0 8px;
+    vertical-align: top;
+    overflow-y: auto;
     -ms-overflow-style: none;
-    overflow: auto;     
+    overflow: auto;
 }
 
-img{
-    max-width:calc(100% - 20px);    
+img {
+    max-width: calc(100% - 20px);
     max-height: 80px
 }
 
-.big{
-    max-width:calc(100% - 20px);     
+.camera {
+    margin: 0 8px;
+    width: 160px;
+    height: 90px;
+}
+
+.camera:hover {
+    width: 320px;
+    height: 180px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .6)
+}
+
+ 
+
+.big {
+    max-width: calc(100% - 20px);
     max-height: 100%
 }
 
-@media only screen and (max-width:1200px) {
-   
-}
-@media screen and (max-width:1023px) {
+@media only screen and (max-width:1200px) {}
 
-}
-@media only screen and (max-width:768px) {
+@media screen and (max-width:1023px) {}
 
-}
+@media only screen and (max-width:768px) {}
+
 @media only screen and (max-width:480px) {
-    img{
-      
-        max-width:calc(100% - 20px);    
+    img {
+        max-width: calc(100% - 20px);
         max-height: 60px
-    } 
+    }
 }

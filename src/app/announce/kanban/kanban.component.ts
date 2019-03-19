@@ -23,8 +23,8 @@ export class KanbanComponent implements OnInit, OnDestroy {
 
             setTimeout(() => {
                 if (this.kanbans.length === 1) {
-                this.index = 0;
-                }                
+                    this.index = 0;
+                }
                 this.loadComponent();
             }, 200);
         });
@@ -35,12 +35,12 @@ export class KanbanComponent implements OnInit, OnDestroy {
 
     loadComponent() {
 
-        let item = this.kanbans[this.index];
-        let componentFactory = this.componentFactoryResolver.resolveComponentFactory(item.component);
-        let viewContainerRef = this.host.viewContainerRef;
+        const item = this.kanbans[this.index];
+        const componentFactory = this.componentFactoryResolver.resolveComponentFactory(item.component);
+        const viewContainerRef = this.host.viewContainerRef;
         viewContainerRef.clear();
 
-        let componentRef = viewContainerRef.createComponent(componentFactory);
+        const componentRef = viewContainerRef.createComponent(componentFactory);
         this.currentData = (<BaseComponent>componentRef.instance).data = item.data;
         this.changed.emit(this.index);
     }

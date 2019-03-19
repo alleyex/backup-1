@@ -1,4 +1,4 @@
-import { Type } from "@angular/core";
+import { Type } from '@angular/core';
 
 export class KanbanItem {
     constructor(public component: Type<any>, public data: any) { }
